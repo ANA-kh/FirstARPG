@@ -8,6 +8,12 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Skill" t="Include">
+            <e p="ISkill.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
+            <e p="SkillContext.cs" t="Include" />
+            <e p="SkillManager.cs" t="Include" />
+          </e>
           <e p="TestMove.cs" t="Include" />
           <e p="TestPlayerController.cs" t="Include" />
         </e>
