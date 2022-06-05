@@ -7,15 +7,66 @@
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="Skill" t="Include">
-            <e p="ISkill.cs" t="Include" />
-            <e p="Skill.cs" t="Include" />
-            <e p="SkillContext.cs" t="Include" />
-            <e p="SkillManager.cs" t="Include" />
+        <e p="Modules" t="Include">
+          <e p="EventSystem" t="Include">
+            <e p="EventSystemByID" t="Include">
+              <e p="EventID.cs" t="Include" />
+              <e p="IdEventSystem.cs" t="Include" />
+            </e>
+            <e p="EventSystemByType" t="Include">
+              <e p="TypeEventSystem.cs" t="Include" />
+            </e>
           </e>
-          <e p="TestMove.cs" t="Include" />
-          <e p="TestPlayerController.cs" t="Include" />
+          <e p="FSM" t="Include">
+            <e p="Fsm.cs" t="Include" />
+            <e p="FsmState.cs" t="Include" />
+            <e p="FsmTest.cs" t="Include" />
+            <e p="FsmTestMono.cs" t="Include" />
+            <e p="IFsm.cs" t="Include" />
+          </e>
+          <e p="Singleton" t="Include">
+            <e p="MonoSingleton.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="InputCache.cs" t="Include" />
+          <e p="test" t="Include">
+            <e p="AnimationEvent" t="Include">
+              <e p="AnimationEventConfigurator.cs" t="Include" />
+              <e p="AnimationEventReceiver.cs" t="Include" />
+            </e>
+            <e p="BattleSystem" t="Include">
+              <e p="BattleObject.cs" t="Include" />
+              <e p="BattleObjectComponentBase.cs" t="Include" />
+              <e p="DamageBattleComponent.cs" t="Include" />
+              <e p="EasyFactionConst.cs" t="Include" />
+              <e p="GenericHitStopProcess.cs" t="Include" />
+              <e p="HitStopBattleComponent.cs" t="Include" />
+              <e p="PhysicsBattleComponent.cs" t="Include" />
+            </e>
+            <e p="DemoCode" t="Include">
+              <e p="DestroySelf.cs" t="Include" />
+              <e p="SMB_FallingRisingRouting.cs" t="Include" />
+              <e p="TestEnemy.cs" t="Include" />
+              <e p="Tutorial.cs" t="Include" />
+            </e>
+            <e p="Motor" t="Include">
+              <e p="CharacterMotor.cs" t="Include" />
+            </e>
+            <e p="PlayerSkill_SkillAttack1.cs" t="Include" />
+            <e p="PlayerSkill_SkillAttack2.cs" t="Include" />
+            <e p="PlayerSkill_SkillAttack3.cs" t="Include" />
+            <e p="Skill" t="Include">
+              <e p="ISkill.cs" t="Include" />
+              <e p="Skill.cs" t="Include" />
+              <e p="SkillContext.cs" t="Include" />
+              <e p="SkillManager.cs" t="Include" />
+            </e>
+            <e p="SkillManagerInitialization.cs" t="Include" />
+            <e p="TestMove.cs" t="Include" />
+            <e p="TestPlayerController.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="FirstARPG.sln" t="IncludeFlat" />

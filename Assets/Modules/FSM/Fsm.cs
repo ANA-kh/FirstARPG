@@ -17,7 +17,7 @@ namespace FSM
         public string Name
         {
             get => _name;
-            protected set => _name = value ?? string.Empty;
+            private set => _name = value ?? string.Empty;
         }
         public T Owner => _owner;
         public Type OwnerType => typeof(T);
