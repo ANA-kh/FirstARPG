@@ -1,4 +1,4 @@
-﻿namespace EventSystem.EventSystemByID
+﻿namespace MEventSystem.EventSystemByID
 {
     public enum EventID
     {

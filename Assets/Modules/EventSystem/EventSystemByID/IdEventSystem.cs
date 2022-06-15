@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EventSystem.EventSystemByID
+namespace MEventSystem.EventSystemByID
 {
     public delegate void EventHandler(params object[] data);
     

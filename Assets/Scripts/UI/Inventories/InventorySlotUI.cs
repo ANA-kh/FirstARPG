@@ -1,9 +1,10 @@
 ﻿using FirstARPG.Inventories;
+using FirstARPG.UI.Dragging;
 using UnityEngine;
 
 namespace FirstARPG.UI.Inventories
 {
-    public class InventorySlotUI : MonoBehaviour
+    public class InventorySlotUI : MonoBehaviour,IDragContainer<InventoryItem>
     {
         [SerializeField] InventoryItemIcon icon = null;
         

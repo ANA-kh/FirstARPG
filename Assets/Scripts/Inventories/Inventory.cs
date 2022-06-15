@@ -83,37 +83,33 @@ namespace FirstARPG.Inventories
         }
 
         /// <summary>
-        /// 添加item到第一个空位;若已有相同item且可堆叠,则存放在该位置
+        /// 找到第一个可存放item的位置，空格或可堆叠位置
         /// </summary>
         /// <param name="item"></param>
         /// <param name="number"></param>
         /// <returns></returns>
-        public bool AddToFirstEmptySlot(InventoryItem item, int number)
+        public bool AddToFirstEnableSlot(InventoryItem item, int number)
         {
-            int i = FindStack(item);
-
-            if (i >= 0)
+            for (int i = 0; i < number; i++)
             {
-                _slots[i].item = item;
-                _slots[i].number += number;
-                inventoryUpdated?.Invoke();
-                return true;
-            }
-            else
-            {
-                for (int j = 0; j < number; j++)
+                if (!AddToFirstEnableSlot(item))
                 {
-                    var sloIndex = FindEmptySlot();
-                    if (sloIndex < 0)
-                    {
-                        return false;
-                    }
-
-                    _slots[sloIndex].item = item;
-                    _slots[sloIndex].number = 1;
-                    inventoryUpdated?.Invoke();
+                    return false;
                 }
             }
+            return true;
+        }
+        
+        private bool AddToFirstEnableSlot(InventoryItem item)
+        {
+            var i = FindSlot(item);
+            if (i < 0)
+            {
+                return false;
+            }
+            _slots[i].item = item;
+            _slots[i].number += 1;
+            inventoryUpdated?.Invoke();
             return true;
         }
         
@@ -164,7 +160,7 @@ namespace FirstARPG.Inventories
         {
             if (_slots[slot].item != null)
             {
-                return AddToFirstEmptySlot(item, number); ;
+                return AddToFirstEnableSlot(item, number); ;
             }
 
             var i = FindStack(item);
@@ -229,7 +225,7 @@ namespace FirstARPG.Inventories
         }
 
         /// <summary>
-        /// 查找可堆叠item的格子
+        /// 查找可堆叠item的非空格子
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>

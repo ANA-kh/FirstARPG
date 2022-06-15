@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EventSystem.EventSystemByType
+namespace MEventSystem.EventSystemByType
 {
     public interface ITypeEventSystem
     {
