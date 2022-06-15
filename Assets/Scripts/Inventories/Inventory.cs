@@ -92,23 +92,31 @@ namespace FirstARPG.Inventories
         {
             int i = FindStack(item);
 
-            if (i < 0)
+            if (i >= 0)
             {
-                return false;
+                _slots[i].item = item;
+                _slots[i].number += number;
+                inventoryUpdated?.Invoke();
+                return true;
             }
-
-            _slots[i].item = item;
-            _slots[i].number += number;
-            if (inventoryUpdated != null)
+            else
             {
-                inventoryUpdated();
+                for (int j = 0; j < number; j++)
+                {
+                    var sloIndex = FindEmptySlot();
+                    if (sloIndex < 0)
+                    {
+                        return false;
+                    }
+
+                    _slots[sloIndex].item = item;
+                    _slots[sloIndex].number = 1;
+                    inventoryUpdated?.Invoke();
+                }
             }
             return true;
         }
-
-        /// <summary>
-        /// Is there an instance of the item in the inventory?
-        /// </summary>
+        
         public bool HasItem(InventoryItem item)
         {
             for (int i = 0; i < _slots.Length; i++)
@@ -120,27 +128,17 @@ namespace FirstARPG.Inventories
             }
             return false;
         }
-
-        /// <summary>
-        /// Return the item type in the given slot.
-        /// </summary>
+        
         public InventoryItem GetItemInSlot(int slot)
         {
             return _slots[slot].item;
         }
-
-        /// <summary>
-        /// Get the number of items in the given slot.
-        /// </summary>
+        
         public int GetNumberInSlot(int slot)
         {
             return _slots[slot].number;
         }
-
-        /// <summary>
-        /// Remove a number of items from the given slot. Will never remove more
-        /// that there are.
-        /// </summary>
+        
         public void RemoveFromSlot(int slot, int number)
         {
             _slots[slot].number -= number;
@@ -190,13 +188,13 @@ namespace FirstARPG.Inventories
         {
             _slots = new InventorySlot[inventorySize];
             
-            //Test
-            var item = InventoryItem.GetFromID("e0256ee9-632a-4c3f-b3e5-a6b2dbebf5fb");
-            AddToFirstEmptySlot(item, 3);
-            item = InventoryItem.GetFromID("ef442e2b-5e9a-496d-9094-13692ea67297");
-            AddToFirstEmptySlot(item, 3);
-            item = InventoryItem.GetFromID("0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf");
-            AddToFirstEmptySlot(item, 3);
+            // //Test
+            // var item = InventoryItem.GetFromID("e0256ee9-632a-4c3f-b3e5-a6b2dbebf5fb");
+            // AddToFirstEmptySlot(item, 3);
+            // item = InventoryItem.GetFromID("ef442e2b-5e9a-496d-9094-13692ea67297");
+            // AddToFirstEmptySlot(item, 3);
+            // item = InventoryItem.GetFromID("0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf");
+            // AddToFirstEmptySlot(item, 3);
         }
 
         /// <summary>

@@ -19,178 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model" />
-    <list id="706e5018-31f0-4946-addb-f85a605f15b7" name="add inventory.cs and some resources" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/CodeReadingNote.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Background_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Background_02.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Background_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Background_06.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Button_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/Button_05.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/Button_Desk_short.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/Button_Desk_short.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/ScrollingBar_Long_size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/ScrollingBar_Long_size.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/ScrollingLine_Long_size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.1/ScrollingLine_Long_size.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemCategory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemCategory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
-    <list id="fd7db515-570d-454c-bd55-9d579897afd3" name="add inventoryItems" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipLocation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipLocation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipableItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipableItem.cs.meta" afterDir="false" />
-    </list>
-    <list id="30db58bf-728c-428e-8284-e27f077c025a" name="add save system" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/ISaveable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/ISaveable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SaveableEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SaveableEntity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SerializableVector3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SerializableVector3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/PeristentObjectSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/PeristentObjectSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-    </list>
-    <list id="0d8e5228-4f40-445b-ab83-9a623cc88694" name="add some Resources" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Coins Pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Coins Pack/Money_Perspective.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Coins Pack/Money_Perspective/Coin_Gold_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Coins Pack/Money_Perspective/Coin_Gold_02.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Potion_01(Purple)_No BG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Potion_01(Purple)_No BG.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Potion_01(Red)_No BG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/Potion_01(Red)_No BG.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Boots_1_b_nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Boots_1_b_nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Chest_04_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Chest_04_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Dagger_01_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Dagger_01_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Gloves_02_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Gloves_02_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Hammer_01_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Hammer_01_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Head_01_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Head_01_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Head_08_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Head_08_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Pants_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Pants_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Shield_01_Nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_Shield_01_Nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_scroll_NOBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Universal Gold Icons Sample/T_scroll_NOBG.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Hat.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Hat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
     </list>
     <list id="d511c985-f308-4fe9-ac65-da50fed559af" name="inventoryPrefab" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/Inventory.prefab" afterDir="false" />
@@ -230,9 +65,12 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/91/2aaa71f2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D672EF0D-95B2-4490-89B8-789A939DFAD2/ad/e49f30bf/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/ef/a0ca34b7/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DEE53327-89AB-43DD-A30F-837D99674EFE/eb/59208327/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/82/ba781cb4/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -254,21 +92,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/test/TestMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputCache.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving/SerializableVector3.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemCategory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDragItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving/ISaveable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving/SaveableEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipableItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/EquipLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Saving/PeristentObjectSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -301,10 +140,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14156">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="25964">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14156" />
+      <option name="pid" value="25964" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -319,10 +158,13 @@
       <changelist id="d511c985-f308-4fe9-ac65-da50fed559af" name="inventoryPrefab" comment="" />
       <changelist id="6bf3a933-7c9e-4367-b749-96c20ffcf049" name="temp" comment="" />
       <changelist id="3c7f46db-53bb-49f0-b859-e0d8719aa70c" name="nomal" comment="" />
-      <changelist id="0d8e5228-4f40-445b-ab83-9a623cc88694" name="add some Resources" comment="" />
-      <changelist id="fd7db515-570d-454c-bd55-9d579897afd3" name="add inventoryItems" comment="" />
-      <changelist id="706e5018-31f0-4946-addb-f85a605f15b7" name="add inventory.cs and some resources" comment="" />
-      <changelist id="30db58bf-728c-428e-8284-e27f077c025a" name="add save system" comment="" />
+      <changelist id="" name="add some Resources" comment="" />
+      <changelist id="" name="add inventoryItems" comment="" />
+      <changelist id="" name="add inventory.cs and some resources" comment="" />
+      <changelist id="" name="add save system" comment="" />
+      <changelist id="" name="add some resources" comment="" />
+      <changelist id="" name="add inventory.cs and some resources" comment="" />
+      <changelist id="" name="add inventoryItems" comment="" />
       <created>1654163056214</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -331,7 +173,7 @@
       <workItem from="1654323220250" duration="23966000" />
       <workItem from="1654395789266" duration="2021000" />
       <workItem from="1655187855186" duration="8769000" />
-      <workItem from="1655260286335" duration="11808000" />
+      <workItem from="1655260286335" duration="17543000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -375,7 +217,56 @@
       <option name="project" value="LOCAL" />
       <updated>1655272570251</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add save system">
+      <created>1655279379635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279379635</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add inventoryItems">
+      <created>1655279428706</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279428706</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add inventory.cs and some resources">
+      <created>1655279458404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279458404</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add some resources">
+      <created>1655279469642</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279469642</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add inventoryItems">
+      <created>1655279784459</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279784459</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add inventory.cs and some resources">
+      <created>1655279813409</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279813409</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add some resources">
+      <created>1655279827209</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279827209</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,101 +291,103 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="some RPG model" />
     <MESSAGE value="add my modules" />
-    <MESSAGE value="add save system" />
-    <MESSAGE value="add inventory.cs and some resources" />
-    <MESSAGE value="add inventoryItems" />
     <MESSAGE value="add some Resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some Resources" />
+    <MESSAGE value="add save system" />
+    <MESSAGE value="add inventoryItems" />
+    <MESSAGE value="add inventory.cs and some resources" />
+    <MESSAGE value="add some resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some resources" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="519" height="464" key="DebuggerActiveHint" timestamp="1654355134381">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="479" height="348" key="DebuggerActiveHint" timestamp="1655287362420">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="519" height="464" key="DebuggerActiveHint/0.0.2560.1440@0.0.2560.1440" timestamp="1654355134381" />
+    <state width="479" height="348" key="DebuggerActiveHint/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287362420" />
     <state x="97" y="102" width="1272" height="1240" key="DiffContextDialog" timestamp="1654346818408">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="97" y="102" width="1272" height="1240" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1654346818408" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1655287314345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314345" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1655287314345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314345" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1655287314345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314345" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1655287314345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.1.bottom" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314345" />
+    <state width="1877" height="270" key="GridCell.Tab.1.bottom" timestamp="1655287315102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.1.center" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287315102" />
+    <state width="1877" height="270" key="GridCell.Tab.1.center" timestamp="1655287315102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.1.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.1.left" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.1.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287315102" />
+    <state width="1877" height="270" key="GridCell.Tab.1.left" timestamp="1655287315102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.1.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.1.right" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.1.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287315102" />
+    <state width="1877" height="270" key="GridCell.Tab.1.right" timestamp="1655287315102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.1.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.2.bottom" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.1.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287315102" />
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom" timestamp="1655287314191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.2.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.2.center" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314191" />
+    <state width="1877" height="270" key="GridCell.Tab.2.center" timestamp="1655287314191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.2.center/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.2.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.2.left" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.2.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314191" />
+    <state width="1877" height="270" key="GridCell.Tab.2.left" timestamp="1655287314191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.2.left/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.2.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.2.right" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.2.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314191" />
+    <state width="1877" height="270" key="GridCell.Tab.2.right" timestamp="1655287314191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.2.right/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.2.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.3.bottom" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.2.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314191" />
+    <state width="1877" height="270" key="GridCell.Tab.3.bottom" timestamp="1655287314192">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.3.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873397" />
-    <state width="1877" height="270" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.3.center" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314192" />
+    <state width="1877" height="270" key="GridCell.Tab.3.center" timestamp="1655287314192">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.3.center/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.3.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.3.left" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.3.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314192" />
+    <state width="1877" height="270" key="GridCell.Tab.3.left" timestamp="1655287314192">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.3.left/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.3.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
-    <state width="1877" height="270" key="GridCell.Tab.3.right" timestamp="1655278940515">
+    <state width="1877" height="270" key="GridCell.Tab.3.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314192" />
+    <state width="1877" height="270" key="GridCell.Tab.3.right" timestamp="1655287314192">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1412" height="288" key="GridCell.Tab.3.right/0.0.2560.1440@0.0.2560.1440" timestamp="1654356873396" />
-    <state width="1877" height="270" key="GridCell.Tab.3.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655278940515" />
+    <state width="1877" height="270" key="GridCell.Tab.3.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655287314192" />
     <state x="549" y="437" key="RiderGenerateDialog" timestamp="1654334059752">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -503,11 +396,15 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="141" y="368" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1654406185719" />
-    <state x="434" y="477" key="VCS.ChangelistChooser" timestamp="1655279082184">
+    <state x="434" y="477" key="VCS.ChangelistChooser" timestamp="1655279522769">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="579" y="636" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1654327764888" />
-    <state x="434" y="477" key="VCS.ChangelistChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655279082184" />
+    <state x="434" y="477" key="VCS.ChangelistChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655279522769" />
+    <state x="783" y="453" key="VCS.EditChangelistDialog" timestamp="1655279823244">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="783" y="453" key="VCS.EditChangelistDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1655279823244" />
     <state x="402" y="452" width="661" height="536" key="find.popup" timestamp="1654349202602">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -535,56 +432,17 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Saving/SaveableEntity.cs</url>
-          <line>60</line>
-          <properties documentPath="D:\unityProject\FirstARPG\Assets\Scripts\Saving\SaveableEntity.cs" initialLine="71">
-            <startOffsets>
-              <option value="1837" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1875" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs</url>
-          <line>263</line>
-          <properties documentPath="D:\unityProject\FirstARPG\Assets\Scripts\Inventories\Inventory.cs" initialLine="256">
-            <startOffsets>
-              <option value="6833" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6890" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs</url>
-          <line>277</line>
+          <line>275</line>
           <properties documentPath="D:\unityProject\FirstARPG\Assets\Scripts\Inventories\Inventory.cs" initialLine="270">
             <startOffsets>
-              <option value="7300" />
+              <option value="7289" />
             </startOffsets>
             <endOffsets>
-              <option value="7347" />
+              <option value="7336" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs</url>
-          <line>21</line>
-          <properties documentPath="D:\unityProject\FirstARPG\Assets\Scripts\UI\Inventories\InventorySlotUI.cs" initialLine="21">
-            <startOffsets>
-              <option value="491" />
-            </startOffsets>
-            <endOffsets>
-              <option value="570" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
