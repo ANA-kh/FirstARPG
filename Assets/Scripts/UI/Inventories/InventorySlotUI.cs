@@ -1,10 +1,11 @@
 ﻿using FirstARPG.Inventories;
 using FirstARPG.UI.Dragging;
+using FirstARPG.UI.Tooltips;
 using UnityEngine;
 
 namespace FirstARPG.UI.Inventories
 {
-    public class InventorySlotUI : MonoBehaviour,IDragContainer<InventoryItem>
+    public class InventorySlotUI : MonoBehaviour,IItemHolder,IDragContainer<InventoryItem>
     {
         [SerializeField] InventoryItemIcon icon = null;
         
@@ -34,7 +35,7 @@ namespace FirstARPG.UI.Inventories
             _inventory.AddItemToSlot(_index, item, number);
         }
 
-        public InventoryItem GetItem()
+        public InventoryItem GetItem()//两个接口都会调用这个函数
         {
             return _inventory.GetItemInSlot(_index);
         }

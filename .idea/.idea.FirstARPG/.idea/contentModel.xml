@@ -62,6 +62,12 @@
               <e p="InventorySlotUI.cs" t="Include" />
               <e p="InventoryUI.cs" t="Include" />
             </e>
+            <e p="Tooltips" t="Include">
+              <e p="IItemHolder.cs" t="Include" />
+              <e p="ItemTooltip.cs" t="Include" />
+              <e p="ItemTooltipSpawner.cs" t="Include" />
+              <e p="TooltipSpawner.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

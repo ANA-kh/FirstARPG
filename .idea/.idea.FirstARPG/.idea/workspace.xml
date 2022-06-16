@@ -26,30 +26,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/DragItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/DragItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragContainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragDestination.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragDestination.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragSource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragSource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDragItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDragItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/IItemHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/IItemHolder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltipSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltipSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/TooltipSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/TooltipSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/Armor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Armor.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/Hat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Hat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/sword.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventoryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventoryItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByID/EventID.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByID/EventID.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByID/IdEventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByID/IdEventSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByType/TypeEventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/EventSystem/EventSystemByType/TypeEventSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventorySlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventorySlot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs" afterDir="false" />
@@ -83,9 +79,8 @@
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/InputCache.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/ComposeAttackController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/95/6d19de05/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/74/a1fd19b2/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/ComposeAttackController_Test.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/18/ebc5c089/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -120,8 +115,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragDestination.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IDragSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/IItemHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/ItemTooltipSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltips/TooltipSpawner.cs" />
       </list>
     </option>
   </component>
@@ -155,10 +156,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="41468">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="41468" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -177,6 +178,7 @@
       <workItem from="1654163065615" duration="947000" />
       <workItem from="1654323220250" duration="23966000" />
       <workItem from="1654395789266" duration="2021000" />
+      <workItem from="1655385333846" duration="4391000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654333611317</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add item drag function">
+      <created>1655306262142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655306262142</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +258,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="some RPG model" />
     <MESSAGE value="add my modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="add my modules" />
+    <MESSAGE value="add item drag function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add item drag function" />
   </component>
   <component name="WindowStateProjectService">
     <state width="519" height="464" key="DebuggerActiveHint" timestamp="1655306061044">
@@ -260,70 +270,70 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="97" y="102" width="1272" height="1240" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1654346818408" />
-    <state width="1234" height="289" key="GridCell.Tab.0.bottom" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.0.bottom" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.0.center" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.0.center" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.0.left" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.0.left" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.0.right" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.0.right" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.1.bottom" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.1.bottom" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.1.center" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.1.center" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.1.left" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.1.left" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.1.right" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.1.right" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.2.bottom" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.2.bottom" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.2.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.2.center" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.2.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.2.center" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.2.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.2.left" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.2.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.2.left" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.2.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.2.right" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.2.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.2.right" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.2.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.3.bottom" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.2.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.3.bottom" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.3.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.3.center" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.3.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.3.center" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.3.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.3.left" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.3.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.3.left" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.3.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
-    <state width="1234" height="289" key="GridCell.Tab.3.right" timestamp="1655306081817">
+    <state width="1412" height="289" key="GridCell.Tab.3.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
+    <state width="1412" height="289" key="GridCell.Tab.3.right" timestamp="1655306277837">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="289" key="GridCell.Tab.3.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306081817" />
+    <state width="1412" height="289" key="GridCell.Tab.3.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655306277837" />
     <state x="248" y="126" key="MergeDialog" timestamp="1655298413789">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -344,10 +354,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1083" y="633" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1655298686463" />
-    <state x="402" y="452" width="661" height="536" key="find.popup" timestamp="1655302174503">
+    <state x="1063" y="326" width="661" height="536" key="find.popup" timestamp="1655389594072">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="402" y="452" width="661" height="536" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1655302174503" />
+    <state x="1063" y="326" width="661" height="536" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1655389594072" />
     <state x="1030" y="433" key="git4idea.branch.GitSmartOperationDialog" timestamp="1655298228965">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -388,13 +398,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs</url>
-          <line>33</line>
+          <line>34</line>
           <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\UI\Inventories\InventorySlotUI.cs" initialLine="33">
             <startOffsets>
-              <option value="889" />
+              <option value="930" />
             </startOffsets>
             <endOffsets>
-              <option value="936" />
+              <option value="977" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
