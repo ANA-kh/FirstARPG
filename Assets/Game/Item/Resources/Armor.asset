@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf
   displayName: Hat
-  description: 
+  description: a armor
   icon: {fileID: 21300000, guid: 7bcee3dac4c974d43b329ee45aef4c99, type: 3}
   stackable: 0
   price: 10
