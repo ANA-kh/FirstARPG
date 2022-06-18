@@ -31,7 +31,7 @@ namespace FirstARPG.UI
             }
         }
 
-        public void Toggle(GameObject uiContainer)
+        private void Toggle(GameObject uiContainer)
         {
             uiContainer.SetActive(!uiContainer.activeSelf);
         }
