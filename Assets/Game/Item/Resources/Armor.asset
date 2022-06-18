@@ -17,6 +17,6 @@ MonoBehaviour:
   description: a armor
   icon: {fileID: 21300000, guid: 7bcee3dac4c974d43b329ee45aef4c99, type: 3}
   stackable: 0
-  price: 10
+  price: 100
   category: 1
   allowedEquipLocation: 0

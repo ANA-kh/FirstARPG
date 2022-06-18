@@ -17,6 +17,6 @@ MonoBehaviour:
   description: 'universe invincible super big sword '
   icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
   stackable: 0
-  price: 10
+  price: 100
   category: 1
   allowedEquipLocation: 0

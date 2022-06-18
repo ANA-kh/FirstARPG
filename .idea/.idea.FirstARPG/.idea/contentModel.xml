@@ -40,6 +40,7 @@
             <e p="InventoryItem.cs" t="Include" />
             <e p="ItemCategory.cs" t="Include" />
             <e p="ItemDropper.cs" t="Include" />
+            <e p="Purse.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="CursorType.cs" t="Include" />
@@ -54,6 +55,11 @@
             <e p="SerializableVector3.cs" t="Include" />
           </e>
           <e p="SavingWrapper.cs" t="Include" />
+          <e p="Shops" t="Include">
+            <e p="Shop.cs" t="Include" />
+            <e p="ShopItem.cs" t="Include" />
+            <e p="Shopper.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="Dragging" t="Include">
               <e p="DragItem.cs" t="Include" />
@@ -69,6 +75,12 @@
               <e p="InventoryItemIcon.cs" t="Include" />
               <e p="InventorySlotUI.cs" t="Include" />
               <e p="InventoryUI.cs" t="Include" />
+              <e p="PurseUI.cs" t="Include" />
+            </e>
+            <e p="Shops" t="Include">
+              <e p="FilterButtonUI.cs" t="Include" />
+              <e p="RowUI.cs" t="Include" />
+              <e p="ShopUI.cs" t="Include" />
             </e>
             <e p="ShowHideUI.cs" t="Include" />
             <e p="Tooltips" t="Include">

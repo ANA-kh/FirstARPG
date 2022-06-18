@@ -26,17 +26,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/Armor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Armor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/Fireball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Fireball.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Item/Resources/sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/sword.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
     </list>
-    <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
-    <list id="673b4618-41a4-4ac0-b0ff-26e4447c2fa0" name="add p" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IRaycastable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IRaycastable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" afterDir="false" />
+    <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -78,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/a6/5b424336/Cursor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/74/a1fd19b2/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/ComposeAttackController_Test.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/18/ebc5c089/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -127,8 +139,51 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/IRaycastable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Purse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/PurseUI.cs" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml">
+      <ranges>
+        <range start1="42" end1="42" start2="42" end2="43" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="56" end1="56" start2="57" end2="62" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="71" end1="71" start2="77" end2="83" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml">
+      <ranges>
+        <range start1="28" end1="29" start2="28" end2="34" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="30" end1="39" start2="35" end2="50" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="80" end1="80" start2="91" end2="92" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="129" end1="129" start2="141" end2="149" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="132" end1="132" start2="152" end2="186" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="143" end1="145" start2="197" end2="198" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="178" end1="179" start2="231" end2="232" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="187" end1="188" start2="240" end2="241" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="252" end1="253" start2="305" end2="320" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="316" end1="317" start2="383" end2="385" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="327" end1="328" start2="395" end2="396" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="330" end1="332" start2="398" end2="400" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="334" end1="336" start2="402" end2="404" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="338" end1="340" start2="406" end2="408" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="342" end1="344" start2="410" end2="412" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="346" end1="348" start2="414" end2="416" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="350" end1="352" start2="418" end2="420" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="354" end1="356" start2="422" end2="424" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="358" end1="359" start2="426" end2="427" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="427" end1="428" start2="495" end2="496" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="430" end1="431" start2="498" end2="499" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+        <range start1="447" end1="461" start2="515" end2="515" changelist="65b27e1d-8998-4f7f-aa20-5099068aea99" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="2A1327OACu4Q2tBAsqk2RirMedk" />
   <component name="ProjectLevelVcsManager">
@@ -141,8 +196,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.6608479" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008313" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.66083336" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -176,7 +230,7 @@
       <changelist id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="" />
       <changelist id="67696da1-6cb9-47e0-b3dc-f232a8ef1a02" name="testCode" comment="" />
       <changelist id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="tooltipsUI" comment="" />
-      <changelist id="673b4618-41a4-4ac0-b0ff-26e4447c2fa0" name="add p" comment="" />
+      <changelist id="" name="add p" comment="" />
       <created>1654163056214</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -185,7 +239,7 @@
       <workItem from="1654323220250" duration="23966000" />
       <workItem from="1654395789266" duration="2021000" />
       <workItem from="1655385333846" duration="8182000" />
-      <workItem from="1655531276117" duration="3671000" />
+      <workItem from="1655531276117" duration="6263000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -250,7 +304,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655535590653</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add PlayerController and mouse type">
+      <created>1655535823789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655535823789</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add PlayerController and mouse type">
+      <created>1655535840931</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655535840931</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add purse">
+      <created>1655538320843</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655538320843</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +389,9 @@
     <MESSAGE value="add actionslot UI" />
     <MESSAGE value="add open hide ui" />
     <MESSAGE value="add resources cursor ico" />
-    <option name="LAST_COMMIT_MESSAGE" value="add resources cursor ico" />
+    <MESSAGE value="add PlayerController and mouse type" />
+    <MESSAGE value="add purse" />
+    <option name="LAST_COMMIT_MESSAGE" value="add purse" />
   </component>
   <component name="WindowStateProjectService">
     <state width="519" height="464" key="DebuggerActiveHint" timestamp="1655393129473">
@@ -325,38 +402,38 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="97" y="102" width="1272" height="1240" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1654346818408" />
-    <state width="1234" height="295" key="GridCell.Tab.0.bottom" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.0.bottom" timestamp="1655535759112">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.0.center" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655535759112" />
+    <state width="1231" height="295" key="GridCell.Tab.0.center" timestamp="1655535759112">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.0.left" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655535759112" />
+    <state width="1231" height="295" key="GridCell.Tab.0.left" timestamp="1655535759112">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.0.right" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655535759112" />
+    <state width="1231" height="295" key="GridCell.Tab.0.right" timestamp="1655535759112">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.1.bottom" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655535759112" />
+    <state width="1231" height="295" key="GridCell.Tab.1.bottom" timestamp="1655535760646">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.1.center" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1655535760646" />
+    <state width="1231" height="295" key="GridCell.Tab.1.center" timestamp="1655535760646">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.1.left" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1655535760646" />
+    <state width="1231" height="295" key="GridCell.Tab.1.left" timestamp="1655535760646">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
-    <state width="1234" height="295" key="GridCell.Tab.1.right" timestamp="1655393997966">
+    <state width="1231" height="295" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1655535760646" />
+    <state width="1231" height="295" key="GridCell.Tab.1.right" timestamp="1655535760646">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="295" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655393997966" />
+    <state width="1231" height="295" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1655535760646" />
     <state width="1234" height="295" key="GridCell.Tab.2.bottom" timestamp="1655393997966">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -425,10 +502,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1030" y="433" key="git4idea.branch.GitSmartOperationDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655298228965" />
-    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1654349155864">
+    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1655536123791">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1654349155864" />
+    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1655536123791" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -447,18 +524,30 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <condition expression="type == CursorType.None" language="C#" />
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs</url>
-          <line>108</line>
-          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\Player\PlayerController.cs" initialLine="108">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs</url>
+          <line>12</line>
+          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\Shops\Shopper.cs" initialLine="12">
             <startOffsets>
-              <option value="3033" />
+              <option value="264" />
             </startOffsets>
             <endOffsets>
-              <option value="3080" />
+              <option value="288" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs</url>
+          <line>329</line>
+          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\Shops\Shop.cs" initialLine="329">
+            <startOffsets>
+              <option value="10151" />
+            </startOffsets>
+            <endOffsets>
+              <option value="10213" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
