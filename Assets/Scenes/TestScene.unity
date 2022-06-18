@@ -1737,6 +1737,7 @@ GameObject:
   - component: {fileID: 1788026693}
   - component: {fileID: 1788026698}
   - component: {fileID: 1788026699}
+  - component: {fileID: 1788026700}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -1858,6 +1859,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a332070ebf44e884c40d68f48e56b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1788026700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303815a2370a45b68458fe4e0b59921c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorMappingsField:
+  - type: 0
+    texture: {fileID: 0}
+    hotspot: {x: 0, y: 0}
+  - type: 2
+    texture: {fileID: 2800000, guid: 2e71a8202d3b4a3448ec85ced5a40265, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 4
+    texture: {fileID: 2800000, guid: e4fac5245b727db42ba0ca0258851b83, type: 3}
+    hotspot: {x: 0, y: 0}
+  maxNavMeshProjectionDistanceField: 1
+  raycastRadiusField: 1
+  _numberOfAbilitiesField: 6
 --- !u!1001 &1830803695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2745,7 +2771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1751578590959208660, guid: b2b05268cccdda941abd27a6a18f731e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -546.3892
+      value: -546.3895
       objectReference: {fileID: 0}
     - target: {fileID: 1751763274381300116, guid: b2b05268cccdda941abd27a6a18f731e, type: 3}
       propertyPath: m_AnchorMax.x
