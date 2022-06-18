@@ -8,6 +8,7 @@ namespace FirstARPG.Abilities
     public class Ability : ActionItem
     {
         [SerializeField] private TargetingStrategy _targetingStrategy;
+        [SerializeField] private FilterStrategy[] _filterStrategys;
         [SerializeField] float _cooldownTime = 0;
         [SerializeField] float _manaCost = 0;
 
@@ -20,12 +21,17 @@ namespace FirstARPG.Abilities
 
         private void TargetAcquired(IEnumerable<GameObject> targets)
         {
+            Debug.Log("Target Acquired");
+            
+            foreach (var filterStrategy in _filterStrategys)
+            {
+                targets = filterStrategy.Filter(targets);
+            }
+            
             foreach (var gameObject in targets)
             {
                 Debug.Log($"{gameObject.name}");
             }
-
-            Debug.Log("Target Acquired");
         }
         
     }

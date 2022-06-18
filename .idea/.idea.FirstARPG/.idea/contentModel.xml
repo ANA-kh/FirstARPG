@@ -33,6 +33,10 @@
           <e p="Abilities" t="Include">
             <e p="Ability.cs" t="Include" />
             <e p="AbilityData.cs" t="Include" />
+            <e p="Filters" t="Include">
+              <e p="TagFilter.cs" t="Include" />
+            </e>
+            <e p="FilterStrategy.cs" t="Include" />
             <e p="IAction.cs" t="Include" />
             <e p="Targeting" t="Include">
               <e p="DelayedClickTargeting.cs" t="Include" />
