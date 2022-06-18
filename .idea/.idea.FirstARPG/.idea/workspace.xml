@@ -26,26 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/Inventory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventoryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventoryItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
-    </list>
-    <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Fireball.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Item/Resources/Fireball.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ActionBar.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ActionBar.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ActionSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ActionSlot.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
     </list>
+    <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs.meta" afterDir="false" />
@@ -78,11 +65,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/InputCache.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/ComposeAttackController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/95/6d19de05/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/74/a1fd19b2/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
@@ -130,6 +115,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
       </list>
     </option>
   </component>
@@ -187,6 +173,7 @@
       <workItem from="1654323220250" duration="23966000" />
       <workItem from="1654395789266" duration="2021000" />
       <workItem from="1655385333846" duration="8182000" />
+      <workItem from="1655531276117" duration="1489000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -223,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655390525214</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add actionslot">
+      <created>1655531465010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655531465010</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add actionslot UI">
+      <created>1655531474782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655531474782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +284,9 @@
     <MESSAGE value="add item drag function" />
     <MESSAGE value="add tooltips  fix bag display bug" />
     <MESSAGE value="add tooltips ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tooltips ui" />
+    <MESSAGE value="add actionslot" />
+    <MESSAGE value="add actionslot UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add actionslot UI" />
   </component>
   <component name="WindowStateProjectService">
     <state width="519" height="464" key="DebuggerActiveHint" timestamp="1655393129473">

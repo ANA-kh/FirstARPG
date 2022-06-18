@@ -65,6 +65,7 @@
               <e p="InventorySlotUI.cs" t="Include" />
               <e p="InventoryUI.cs" t="Include" />
             </e>
+            <e p="ShowHideUI.cs" t="Include" />
             <e p="Tooltips" t="Include">
               <e p="IItemHolder.cs" t="Include" />
               <e p="ItemTooltip.cs" t="Include" />
