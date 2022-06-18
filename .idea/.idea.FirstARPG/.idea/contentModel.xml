@@ -30,6 +30,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Abilities" t="Include">
+            <e p="Ability.cs" t="Include" />
+            <e p="AbilityData.cs" t="Include" />
+            <e p="IAction.cs" t="Include" />
+            <e p="Targeting" t="Include">
+              <e p="DelayedClickTargeting.cs" t="Include" />
+              <e p="DemoTargeting.cs" t="Include" />
+            </e>
+            <e p="TargetingStrategy.cs" t="Include" />
+          </e>
           <e p="InputCache.cs" t="Include" />
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />

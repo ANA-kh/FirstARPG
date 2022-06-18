@@ -16,9 +16,10 @@ namespace FirstARPG.Inventories
         /// 使用item
         /// </summary>
         /// <param name="user"></param>
-        public virtual void Use(GameObject user)
+        public virtual bool Use(GameObject user)
         {
             Debug.Log("Using action: " + this);
+            return true;
         }
 
         public bool isConsumable()
