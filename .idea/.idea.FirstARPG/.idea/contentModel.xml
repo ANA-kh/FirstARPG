@@ -41,6 +41,11 @@
             <e p="ItemCategory.cs" t="Include" />
             <e p="ItemDropper.cs" t="Include" />
           </e>
+          <e p="Player" t="Include">
+            <e p="CursorType.cs" t="Include" />
+            <e p="IRaycastable.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+          </e>
           <e p="Saving" t="Include">
             <e p="ISaveable.cs" t="Include" />
             <e p="PeristentObjectSpawner.cs" t="Include" />
