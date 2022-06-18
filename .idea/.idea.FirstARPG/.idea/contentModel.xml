@@ -33,6 +33,7 @@
           <e p="InputCache.cs" t="Include" />
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />
+            <e p="ActionStore.cs" t="Include" />
             <e p="EquipableItem.cs" t="Include" />
             <e p="EquipLocation.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
@@ -56,6 +57,8 @@
               <e p="IDragSource.cs" t="Include" />
             </e>
             <e p="Inventories" t="Include">
+              <e p="ActionSlotUI.cs" t="Include" />
+              <e p="EquipmentSlotUI.cs" t="Include" />
               <e p="InventoryDragItem.cs" t="Include" />
               <e p="InventoryDropTarget.cs" t="Include" />
               <e p="InventoryItemIcon.cs" t="Include" />

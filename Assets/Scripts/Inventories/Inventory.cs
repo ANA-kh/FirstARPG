@@ -184,13 +184,16 @@ namespace FirstARPG.Inventories
         {
             _slots = new InventorySlot[inventorySize];
             
-            // //Test
-            // var item = InventoryItem.GetFromID("e0256ee9-632a-4c3f-b3e5-a6b2dbebf5fb");
-            // AddToFirstEmptySlot(item, 3);
-            // item = InventoryItem.GetFromID("ef442e2b-5e9a-496d-9094-13692ea67297");
-            // AddToFirstEmptySlot(item, 3);
-            // item = InventoryItem.GetFromID("0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf");
-            // AddToFirstEmptySlot(item, 3);
+            //Test
+            var item = InventoryItem.GetFromID("e0256ee9-632a-4c3f-b3e5-a6b2dbebf5fb");
+            AddToFirstEnableSlot(item, 3);
+            item = InventoryItem.GetFromID("ef442e2b-5e9a-496d-9094-13692ea67297");
+            AddToFirstEnableSlot(item, 3);
+            item = InventoryItem.GetFromID("0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf");
+            AddToFirstEnableSlot(item, 3);
+            item = InventoryItem.GetFromID("82d72e62-0992-403e-a330-b48be4701ad9");
+            AddToFirstEnableSlot(item, 2);
+            
         }
 
         /// <summary>
