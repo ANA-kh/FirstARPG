@@ -34,7 +34,7 @@ namespace FirstARPG.Abilities.Targeting
                 _targetingPrefabInstance.transform.localScale = new Vector3(_areaAffectRadius* 2,1,_areaAffectRadius*2);
             }
             _targetingPrefabInstance.gameObject.SetActive(true);
-            while (true)
+            while (!data.IsCancelled())
             {
                 Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
 
@@ -45,17 +45,17 @@ namespace FirstARPG.Abilities.Targeting
                     if (Input.GetMouseButtonDown(0))
                     {
                         yield return new WaitWhile(()=> Input.GetMouseButton(0));
-                        playerController.enabled = true;
-                        _targetingPrefabInstance.gameObject.SetActive(false);
                         data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectInRadius(raycastHit.point));
-                        finished();
-                        yield break;
+                        break;
                     }
                 }
 
                 yield return null;
             }
+            playerController.enabled = true;
+            _targetingPrefabInstance.gameObject.SetActive(false);
+            finished();
         }
 
         private IEnumerable<GameObject> GetGameObjectInRadius(Vector3 point)

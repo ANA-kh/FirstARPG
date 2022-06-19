@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using FirstARPG.Attributes;
 using FirstARPG.Inventories;
+using FirstARPG.Miscs;
 using UnityEngine;
 
 namespace FirstARPG.Abilities
@@ -28,6 +29,10 @@ namespace FirstARPG.Abilities
                 return false;
             }
             var data = new AbilityData(user);
+
+            var actionScheduler = user.GetComponent<ActionScheduler>();
+            actionScheduler.StartAction(data);
+            
            _targetingStrategy.StartTargeting(data,() =>
            {
                TargetAcquired(data);
@@ -38,9 +43,9 @@ namespace FirstARPG.Abilities
 
         private void TargetAcquired(AbilityData data)
         {
-            Debug.Log("Target Acquired");
-            
-            var mana = data.GetUser().GetComponent<Mana>();
+            if (data.IsCancelled()) return;
+
+                var mana = data.GetUser().GetComponent<Mana>();
             if (!mana.UseMana(_manaCost))
             {
                 return;
