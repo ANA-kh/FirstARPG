@@ -49,6 +49,11 @@ namespace FirstARPG.Abilities.Targeting
                         data.SetTargets(GetGameObjectInRadius(raycastHit.point));
                         break;
                     }
+                    else if (Input.GetMouseButton(1))
+                    {
+                        data.Cancel();
+                        break;
+                    }
                 }
 
                 yield return null;

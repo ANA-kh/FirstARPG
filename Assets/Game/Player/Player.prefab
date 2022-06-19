@@ -2474,6 +2474,8 @@ MonoBehaviour:
   maxNavMeshProjectionDistanceField: 1
   raycastRadiusField: 1
   _numberOfAbilitiesField: 6
+  _rightHand: {fileID: 7953084275372974291}
+  _leftHand: {fileID: 3303038616687643352}
 --- !u!114 &8875412999855088193
 MonoBehaviour:
   m_ObjectHideFlags: 0

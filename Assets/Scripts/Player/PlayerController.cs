@@ -21,6 +21,9 @@ namespace FirstARPG.Player
         [SerializeField] float raycastRadiusField = 1f;
         [SerializeField] private int _numberOfAbilitiesField = 6;
 
+        [SerializeField] private Transform _rightHand;
+        [SerializeField] private Transform _leftHand;
+
         bool _isDraggingUI = false;
         private ActionStore _actionStore;
         
@@ -125,6 +128,18 @@ namespace FirstARPG.Player
         public static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if (isRightHand)
+            {
+                return _rightHand;
+            }
+            else
+            {
+                return _leftHand;
+            }
         }
     }
 }

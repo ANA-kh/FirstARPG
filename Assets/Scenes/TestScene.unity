@@ -2532,6 +2532,10 @@ MonoBehaviour:
     InitialStock: 50
     BuyingDiscountPercentage: 0
     levleToUnlock: 0
+  - Item: {fileID: 11400000, guid: 4063fe4f74678f5408156872841dca77, type: 2}
+    InitialStock: 50
+    BuyingDiscountPercentage: 0
+    levleToUnlock: 0
 --- !u!135 &1656058047
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4189,7 +4193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875412999855088202, guid: 870463fadfa43d34cacc11069e7fb2a1, type: 3}
       propertyPath: m_Name
-      value: ybot@Walking
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870463fadfa43d34cacc11069e7fb2a1, type: 3}

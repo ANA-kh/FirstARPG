@@ -45,6 +45,7 @@
               <e p="DelayCompositeEffect.cs" t="Include" />
               <e p="HealthEffect.cs" t="Include" />
               <e p="OrientToTargetEffect.cs" t="Include" />
+              <e p="SpawnProjectileEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />
               <e p="TriggerAnimationEffect.cs" t="Include" />
             </e>
@@ -67,6 +68,9 @@
             <e p="HealthDisplay.cs" t="Include" />
             <e p="Mana.cs" t="Include" />
             <e p="ManaDisplay.cs" t="Include" />
+          </e>
+          <e p="Combat" t="Include">
+            <e p="Projectile.cs" t="Include" />
           </e>
           <e p="InputCache.cs" t="Include" />
           <e p="Inventories" t="Include">
