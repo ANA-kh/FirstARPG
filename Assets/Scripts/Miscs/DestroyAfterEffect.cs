@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FirstARPG.Core
+namespace FirstARPG.Miscs
 {
     public class DestroyAfterEffect : MonoBehaviour
     {

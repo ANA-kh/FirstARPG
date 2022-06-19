@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FirstARPG.Managers
+namespace FirstARPG.Miscs
 {
     public class PersistentObjectSpawner : MonoBehaviour
     {

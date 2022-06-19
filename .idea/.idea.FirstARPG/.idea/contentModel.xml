@@ -33,6 +33,9 @@
           <e p="Abilities" t="Include">
             <e p="Ability.cs" t="Include" />
             <e p="AbilityData.cs" t="Include" />
+            <e p="Effects" t="Include">
+              <e p="HealthEffect.cs" t="Include" />
+            </e>
             <e p="EffectStrategy.cs" t="Include" />
             <e p="Filters" t="Include">
               <e p="TagFilter.cs" t="Include" />
@@ -47,6 +50,7 @@
           </e>
           <e p="Attributes" t="Include">
             <e p="Health.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
             <e p="HealthDisplay.cs" t="Include" />
             <e p="Mana.cs" t="Include" />
             <e p="ManaDisplay.cs" t="Include" />
@@ -63,8 +67,9 @@
             <e p="ItemDropper.cs" t="Include" />
             <e p="Purse.cs" t="Include" />
           </e>
-          <e p="Managers" t="Include">
+          <e p="Miscs" t="Include">
             <e p="ActionScheduler.cs" t="Include" />
+            <e p="CameraFacing.cs" t="Include" />
             <e p="DestroyAfterEffect.cs" t="Include" />
             <e p="PersistentObjectSpawner.cs" t="Include" />
           </e>

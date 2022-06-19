@@ -1,7 +1,7 @@
 using FirstARPG.Abilities;
 using UnityEngine;
 
-namespace FirstARPG.Managers
+namespace FirstARPG.Miscs
 {
     public class ActionScheduler : MonoBehaviour
     {
