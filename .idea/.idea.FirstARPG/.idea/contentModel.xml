@@ -7,6 +7,13 @@
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Asset Packs" t="Include">
+          <e p="SimpleFX" t="Include">
+            <e p="Materials" t="Include">
+              <e p="UnlitVertexColour_Alpha.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Modules" t="Include">
           <e p="EventSystem" t="Include">
             <e p="EventSystemByID" t="Include">
@@ -33,6 +40,7 @@
           <e p="Abilities" t="Include">
             <e p="Ability.cs" t="Include" />
             <e p="AbilityData.cs" t="Include" />
+            <e p="CooldownStore.cs" t="Include" />
             <e p="Effects" t="Include">
               <e p="HealthEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FirstARPG.Attributes;
 using FirstARPG.Inventories;
 using UnityEngine;
 
@@ -15,6 +16,17 @@ namespace FirstARPG.Abilities
 
         public override bool Use(GameObject user)
         {
+            var mana = user.GetComponent<Mana>();
+            if (mana.GetMana() < _manaCost)
+            {
+                return false;
+            }
+            
+            var cooldownStore = user.GetComponent<CooldownStore>();
+            if (cooldownStore.GetTimeRemaining(this) > 0)
+            {
+                return false;
+            }
             var data = new AbilityData(user);
            _targetingStrategy.StartTargeting(data,() =>
            {
@@ -27,6 +39,14 @@ namespace FirstARPG.Abilities
         private void TargetAcquired(AbilityData data)
         {
             Debug.Log("Target Acquired");
+            
+            var mana = data.GetUser().GetComponent<Mana>();
+            if (!mana.UseMana(_manaCost))
+            {
+                return;
+            }
+            var cooldownStore = data.GetUser().GetComponent<CooldownStore>();
+            cooldownStore.StartCooldown(this,_cooldownTime);
             
             foreach (var filterStrategy in _filterStrategys)
             {

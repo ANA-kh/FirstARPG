@@ -2657,6 +2657,7 @@ GameObject:
   - component: {fileID: 1788026704}
   - component: {fileID: 1788026706}
   - component: {fileID: 1788026707}
+  - component: {fileID: 1788026708}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2899,6 +2900,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2464e060180b42e4a557d2dec00e3009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1788026708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185393be4289485394da603f46b31274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1830803695
@@ -3798,7 +3811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1751763274381300116, guid: b2b05268cccdda941abd27a6a18f731e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9997387
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1751763274381300116, guid: b2b05268cccdda941abd27a6a18f731e, type: 3}
       propertyPath: m_AnchorMin.y

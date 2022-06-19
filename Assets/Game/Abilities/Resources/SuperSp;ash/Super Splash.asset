@@ -25,5 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3cb6f2d2d814e2a4a985364357b81b3b, type: 2}
   _effectStrategies:
   - {fileID: 11400000, guid: 443635d927b82874c9cc7971c3534585, type: 2}
-  _cooldownTime: 0
-  _manaCost: 0
+  - {fileID: 11400000, guid: d606db3c7c5b99741b56d8d2ca2048c5, type: 2}
+  _cooldownTime: 2
+  _manaCost: 100

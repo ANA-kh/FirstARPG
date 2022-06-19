@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: index
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
+      propertyPath: _index
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4613549633073926621, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
       propertyPath: m_Name
       value: ActionSlot (3)
@@ -373,6 +377,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
       propertyPath: index
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
+      propertyPath: _index
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4613549633073926621, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
@@ -481,6 +489,10 @@ PrefabInstance:
       propertyPath: index
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
+      propertyPath: _index
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4613549633073926621, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
       propertyPath: m_Name
       value: ActionSlot (5)
@@ -587,6 +599,10 @@ PrefabInstance:
       propertyPath: index
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
+      propertyPath: _index
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4613549633073926621, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
       propertyPath: m_Name
       value: ActionSlot (1)
@@ -691,6 +707,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
       propertyPath: index
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824114093794569618, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
+      propertyPath: _index
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4613549633073926621, guid: 17b154d542fdebd43949c0f006df5c20, type: 3}
