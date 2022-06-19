@@ -47,6 +47,9 @@
           </e>
           <e p="Attributes" t="Include">
             <e p="Health.cs" t="Include" />
+            <e p="HealthDisplay.cs" t="Include" />
+            <e p="Mana.cs" t="Include" />
+            <e p="ManaDisplay.cs" t="Include" />
           </e>
           <e p="InputCache.cs" t="Include" />
           <e p="Inventories" t="Include">
@@ -62,6 +65,7 @@
           </e>
           <e p="Managers" t="Include">
             <e p="ActionScheduler.cs" t="Include" />
+            <e p="DestroyAfterEffect.cs" t="Include" />
             <e p="PersistentObjectSpawner.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -85,7 +89,9 @@
             <e p="BaseStats.cs" t="Include" />
             <e p="CharacterClass.cs" t="Include" />
             <e p="Experience.cs" t="Include" />
+            <e p="ExperienceDisplay.cs" t="Include" />
             <e p="IModifierProvider.cs" t="Include" />
+            <e p="LevelDisplay.cs" t="Include" />
             <e p="Progression.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
           </e>
