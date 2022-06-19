@@ -2528,6 +2528,10 @@ MonoBehaviour:
     InitialStock: 1
     BuyingDiscountPercentage: 0
     levleToUnlock: 0
+  - Item: {fileID: 11400000, guid: d2e7cc7c3bcfce04ba90f5fc48531f44, type: 2}
+    InitialStock: 50
+    BuyingDiscountPercentage: 0
+    levleToUnlock: 0
 --- !u!135 &1656058047
 SphereCollider:
   m_ObjectHideFlags: 0
