@@ -47,6 +47,7 @@ namespace FirstARPG.Abilities.Targeting
                         yield return new WaitWhile(()=> Input.GetMouseButton(0));
                         playerController.enabled = true;
                         _targetingPrefabInstance.gameObject.SetActive(false);
+                        data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectInRadius(raycastHit.point));
                         finished();
                         yield break;
