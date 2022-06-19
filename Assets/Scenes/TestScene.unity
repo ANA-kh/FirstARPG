@@ -2535,6 +2535,10 @@ GameObject:
   - component: {fileID: 1788026701}
   - component: {fileID: 1788026700}
   - component: {fileID: 1788026702}
+  - component: {fileID: 1788026703}
+  - component: {fileID: 1788026705}
+  - component: {fileID: 1788026704}
+  - component: {fileID: 1788026706}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2706,6 +2710,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb3436cf56241f9b9b08c44bf6a54e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1788026703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062170858337427892d7679af2d218d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1788026704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128f9af7f20c4f96ba923c5b5a8ec145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 0
+  progression: {fileID: 11400000, guid: d55e834faa2941e49b487b6b0a43eaa4, type: 2}
+  levelUpParticleEffect: {fileID: 3242380174161093250, guid: eb95d2cb3bbb2fe4db962566f8269867, type: 3}
+  shouldUseModifiers: 0
+--- !u!114 &1788026705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53487d54d2264d0787ce92ff4f7c97a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regenerationPercentage: 70
+  takeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1788026706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788026692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c682ce6d276a42fda0e6123b389211ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1001 &1830803695
 PrefabInstance:
   m_ObjectHideFlags: 0

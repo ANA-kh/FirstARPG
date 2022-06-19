@@ -9,17 +9,21 @@ namespace FirstARPG.Abilities
     {
         [SerializeField] private TargetingStrategy _targetingStrategy;
         [SerializeField] private FilterStrategy[] _filterStrategys;
+        [SerializeField] private EffectStrategy[] _effectStrategies;
         [SerializeField] float _cooldownTime = 0;
         [SerializeField] float _manaCost = 0;
 
         public override bool Use(GameObject user)
         {
-           _targetingStrategy.StartTargeting(null,TargetAcquired);
+           _targetingStrategy.StartTargeting(null,(IEnumerable<GameObject> targets) =>
+           {
+               TargetAcquired(user, targets);
+           });
 
             return true;
         }
 
-        private void TargetAcquired(IEnumerable<GameObject> targets)
+        private void TargetAcquired(GameObject user,IEnumerable<GameObject> targets)
         {
             Debug.Log("Target Acquired");
             
@@ -28,11 +32,20 @@ namespace FirstARPG.Abilities
                 targets = filterStrategy.Filter(targets);
             }
             
+            foreach (var effect in _effectStrategies)
+            {
+                effect.StartEffect(user,targets, EffectFinished);
+            }
+            
             foreach (var gameObject in targets)
             {
                 Debug.Log($"{gameObject.name}");
             }
         }
-        
+
+        private void EffectFinished()
+        {
+            
+        }
     }
 }

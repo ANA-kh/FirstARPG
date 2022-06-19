@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
-namespace RPG.Core
+namespace FirstARPG.Managers
 {
-    public class PeristentObjectSpawner : MonoBehaviour
+    public class PersistentObjectSpawner : MonoBehaviour
     {
         [SerializeField] GameObject persistentObjectPrefab;
 
