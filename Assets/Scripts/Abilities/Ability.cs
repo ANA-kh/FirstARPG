@@ -15,29 +15,30 @@ namespace FirstARPG.Abilities
 
         public override bool Use(GameObject user)
         {
-           _targetingStrategy.StartTargeting(null,(IEnumerable<GameObject> targets) =>
+            var data = new AbilityData(user);
+           _targetingStrategy.StartTargeting(data,() =>
            {
-               TargetAcquired(user, targets);
+               TargetAcquired(data);
            });
 
             return true;
         }
 
-        private void TargetAcquired(GameObject user,IEnumerable<GameObject> targets)
+        private void TargetAcquired(AbilityData data)
         {
             Debug.Log("Target Acquired");
             
             foreach (var filterStrategy in _filterStrategys)
             {
-                targets = filterStrategy.Filter(targets);
+                data.SetTargets(filterStrategy.Filter(data.GetTargets()));
             }
             
             foreach (var effect in _effectStrategies)
             {
-                effect.StartEffect(user,targets, EffectFinished);
+                effect.StartEffect(data, EffectFinished);
             }
             
-            foreach (var gameObject in targets)
+            foreach (var gameObject in data.GetTargets())
             {
                 Debug.Log($"{gameObject.name}");
             }

@@ -7,54 +7,54 @@ namespace FirstARPG.Abilities
 {
     public class AbilityData : IAction
     {
-        GameObject user;
-        Vector3 targetedPoint;
-        IEnumerable<GameObject> targets;
-        bool cancelled = false;
+        private GameObject _user;
+        private Vector3 _targetedPoint;
+        private IEnumerable<GameObject> _targets;
+        private bool _cancelled = false;
     
         public AbilityData(GameObject user)
         {
-            this.user = user;
+            this._user = user;
         }
     
         public IEnumerable<GameObject> GetTargets()
         {
-            return targets;
+            return _targets;
         }
     
         public void SetTargets(IEnumerable<GameObject> targets)
         {
-            this.targets = targets; 
+            this._targets = targets; 
         }
     
         public Vector3 GetTargetedPoint()
         {
-            return targetedPoint;
+            return _targetedPoint;
         }
     
         public void SetTargetedPoint(Vector3 targetedPoint)
         {
-            this.targetedPoint = targetedPoint;
+            this._targetedPoint = targetedPoint;
         }
     
         public GameObject GetUser()
         {
-            return user;
+            return _user;
         }
     
         public void StartCoroutine(IEnumerator coroutine)
         {
-            user.GetComponent<MonoBehaviour>().StartCoroutine(coroutine);
+            _user.GetComponent<MonoBehaviour>().StartCoroutine(coroutine);
         }
     
         public void Cancel()
         {
-            cancelled = true;
+            _cancelled = true;
         }
     
         public bool IsCancelled()
         {
-            return cancelled;
+            return _cancelled;
         }
     }
 }

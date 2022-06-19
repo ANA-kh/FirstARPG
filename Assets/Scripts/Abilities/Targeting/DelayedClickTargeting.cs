@@ -18,15 +18,14 @@ namespace FirstARPG.Abilities.Targeting
         private Transform _targetingPrefabInstance;
 
 
-        public override void StartTargeting(AbilityData data, Action<IEnumerable<GameObject>> finished)
+        public override void StartTargeting(AbilityData data, Action finished)
         {
-            PlayerController playerController; // = data.GetUser().GetComponent<PlayerController>();
-            playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            var playerController= data.GetUser().GetComponent<PlayerController>();
             playerController.StartCoroutine(Targeting(data, playerController, finished));
         }
 
         private IEnumerator Targeting(AbilityData data, PlayerController playerController,
-            Action<IEnumerable<GameObject>> finished)
+            Action finished)
         {
             playerController.enabled = false;
             if (_targetingPrefabInstance == null)
@@ -39,8 +38,7 @@ namespace FirstARPG.Abilities.Targeting
             {
                 Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
 
-                RaycastHit raycastHit;
-                if (Physics.Raycast(PlayerController.GetMouseRay(), out raycastHit, 1000, _layerMask))
+                if (Physics.Raycast(PlayerController.GetMouseRay(), out var raycastHit, 1000, _layerMask))
                 {
                     _targetingPrefabInstance.transform.position = raycastHit.point;
 
@@ -49,7 +47,8 @@ namespace FirstARPG.Abilities.Targeting
                         yield return new WaitWhile(()=> Input.GetMouseButton(0));
                         playerController.enabled = true;
                         _targetingPrefabInstance.gameObject.SetActive(false);
-                        finished(GetGameObjectInRadius(raycastHit.point));
+                        data.SetTargets(GetGameObjectInRadius(raycastHit.point));
+                        finished();
                         yield break;
                     }
                 }

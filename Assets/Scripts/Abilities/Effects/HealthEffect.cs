@@ -9,16 +9,16 @@ namespace FirstARPG.Abilities.Effects
     public class HealthEffect : EffectStrategy
     {
         [SerializeField] private float _healthChange;
-        public override void StartEffect(GameObject user, IEnumerable<GameObject> targets, Action finished)
+        public override void StartEffect(AbilityData data, Action finished)
         {
-            foreach (var target in targets)
+            foreach (var target in data.GetTargets())
             {
                 var health = target.GetComponent<Health>();
                 if (health)
                 {
                     if (_healthChange < 0)
                     {
-                        health.TakeDamage(user,-_healthChange);
+                        health.TakeDamage(data.GetUser(),-_healthChange);
                     }
                     else
                     {
