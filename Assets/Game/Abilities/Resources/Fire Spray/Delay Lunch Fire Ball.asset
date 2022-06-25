@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cf61daa2b840daa8bd67648aa13b72, type: 3}
   m_Name: Delay Lunch Fire Ball
   m_EditorClassIdentifier: 
-  delay: 0
-  delayedEffects: []
+  delay: 0.7
+  delayedEffects:
+  - {fileID: 11400000, guid: 4ffe4294eb500674497284a289ca2aaf, type: 2}
   abortIfCancelled: 0

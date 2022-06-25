@@ -26,34 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Directional Targeting.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Directional Targeting.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire ball.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire ball.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/CodeReadingNote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/CodeReadingNote.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Anim Fire Spray.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Anim Fire Spray.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Delay Lunch Fire Ball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Delay Lunch Fire Ball.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire Spray.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire Spray.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Spawn Projectile Effect.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Spawn Projectile Effect.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Animation Super Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Animation Super Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Blast Effect Super Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Blast Effect Super Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Delay Effect Super Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Delay Effect Super Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Effect Super Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Effect Super Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Super Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/Super Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/TargetingSuper Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/SuperSp;ash/TargetingSuper Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/PlayerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/PlayerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
     </list>
     <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -106,10 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Purse.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/PurseUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/IAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterSteategy.cs" />
@@ -157,6 +136,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test/DrawRectangDetect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" />
       </list>
     </option>
   </component>
@@ -219,7 +202,7 @@
       <workItem from="1655551610304" duration="6702000" />
       <workItem from="1655610087528" duration="29246000" />
       <workItem from="1655729389132" duration="7225000" />
-      <workItem from="1656142384209" duration="1312000" />
+      <workItem from="1656142384209" duration="5022000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -431,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655648648604</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add DirectionalTargeting  and fire Spray ability">
+      <created>1656144852149</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1656144852149</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +500,8 @@
     <MESSAGE value="add some anim resources" />
     <MESSAGE value="add ability item health potion" />
     <MESSAGE value="add fire spray" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fire spray" />
+    <MESSAGE value="add DirectionalTargeting  and fire Spray ability" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DirectionalTargeting  and fire Spray ability" />
   </component>
   <component name="WindowStateProjectService">
     <state width="519" height="464" key="DebuggerActiveHint" timestamp="1655644540430">
@@ -609,10 +600,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="528" y="638" key="VCS.EditChangelistDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655391595673" />
-    <state x="93" y="100" width="1094" height="1247" key="VCS.FileHistoryDialog" timestamp="1655617672721">
+    <state x="93" y="100" width="1094" height="1247" key="VCS.FileHistoryDialog" timestamp="1656148140128">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="93" y="100" width="1094" height="1247" key="VCS.FileHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655617672721" />
+    <state x="93" y="100" width="1094" height="1247" key="VCS.FileHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1656148140128" />
     <state x="246" y="456" key="Vcs.Push.Dialog.v2" timestamp="1655558933653">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

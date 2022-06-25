@@ -70,6 +70,9 @@
             <e p="Mana.cs" t="Include" />
             <e p="ManaDisplay.cs" t="Include" />
           </e>
+          <e p="CameraContorller" t="Include">
+            <e p="CameraController.cs" t="Include" />
+          </e>
           <e p="Combat" t="Include">
             <e p="Projectile.cs" t="Include" />
           </e>
@@ -117,6 +120,9 @@
             <e p="LevelDisplay.cs" t="Include" />
             <e p="Progression.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
+          </e>
+          <e p="Test" t="Include">
+            <e p="DrawRectangDetect.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="Dragging" t="Include">

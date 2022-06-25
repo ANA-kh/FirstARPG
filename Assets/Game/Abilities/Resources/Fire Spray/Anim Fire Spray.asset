@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13793d703c78456bb0bc43419b799055, type: 3}
   m_Name: Anim Fire Spray
   m_EditorClassIdentifier: 
-  animationTrigger: 
+  animationTrigger: Ability1
