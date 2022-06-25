@@ -20,9 +20,8 @@ MonoBehaviour:
   price: 50
   category: 0
   consumable: 0
-  _targetingStrategy: {fileID: 11400000, guid: 874f115fbfc711742a4d2872a68e2519, type: 2}
-  _filterStrategys:
-  - {fileID: 11400000, guid: 3cb6f2d2d814e2a4a985364357b81b3b, type: 2}
+  _targetingStrategy: {fileID: 11400000, guid: 701face343daa4e44b2a394d9fdc01e2, type: 2}
+  _filterStrategys: []
   _effectStrategies:
   - {fileID: 11400000, guid: 4ffe4294eb500674497284a289ca2aaf, type: 2}
   _cooldownTime: 2

@@ -62,11 +62,6 @@ namespace FirstARPG.Abilities
             {
                 effect.StartEffect(data, EffectFinished);
             }
-            
-            foreach (var gameObject in data.GetTargets())
-            {
-                Debug.Log($"{gameObject.name}");
-            }
         }
 
         private void EffectFinished()

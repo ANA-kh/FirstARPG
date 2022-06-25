@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CodeReadingNote">
-    <topics />
+    <topics>
+      <topic>
+        <name>learn</name>
+        <note />
+        <updatedAt>2022-06-20 23:35:39</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>23</line>
+            <inProject>true</inProject>
+            <url>file://$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs</url>
+            <note>向鼠标位置发射火球</note>
+            <relativePath>Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs</relativePath>
+          </topicLine>
+        </topicLines>
+      </topic>
+    </topics>
     <state lastExportDir="" lastImportDir="" />
   </component>
 </project>

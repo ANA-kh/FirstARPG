@@ -39,6 +39,12 @@ namespace FirstARPG.Player
 
             UseAbilities();
 
+            //TODO delete Debug
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.DrawRay(Camera.main.transform.position,GetMouseRay().direction * 100,Color.red,20);
+            }
+
             if (InteractWithComponent()) return;
 
             SetCursor(CursorType.None);
@@ -109,6 +115,14 @@ namespace FirstARPG.Player
 
         private void SetCursor(CursorType type)
         {
+            // if (type == CursorType.None)
+            // {
+            //     Cursor.visible = false;
+            // }
+            // else
+            // {
+            //     Cursor.visible = true;
+            // }
             CursorMapping mapping = GetCursorMapping(type);
             Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode.Auto);
         }
