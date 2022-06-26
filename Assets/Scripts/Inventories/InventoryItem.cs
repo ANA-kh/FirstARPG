@@ -6,16 +6,18 @@ namespace FirstARPG.Inventories
     public abstract class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
     {
         [Tooltip("唯一id,自动生成")]
-        [SerializeField] string itemID = null;
-        [SerializeField] string displayName = null;
-        [SerializeField][TextArea] string description = null;
-        [SerializeField] Sprite icon = null;
+        [SerializeField] private string itemID = null;
+        [SerializeField] private string displayName = null;
+        [SerializeField][TextArea] private string description = null;
+        [SerializeField] private Sprite icon = null;
+        [Tooltip("掉落物模型")]
+        [SerializeField] private Pickup pickup = null;
         [Tooltip("是否可堆叠")]
-        [SerializeField] bool stackable = false;
+        [SerializeField] private bool stackable = false;
         [SerializeField] private float price = 0;
         [SerializeField] private ItemCategory category = ItemCategory.None;
-        
-        static Dictionary<string, InventoryItem> itemLookupCache;
+
+        private static Dictionary<string, InventoryItem> _itemLookupCache;
         
 
         /// <summary>
@@ -25,24 +27,38 @@ namespace FirstARPG.Inventories
         /// <returns></returns>
         public static InventoryItem GetFromID(string itemID)
         {
-            if (itemLookupCache == null)
+            if (_itemLookupCache == null)
             {
-                itemLookupCache = new Dictionary<string, InventoryItem>();
+                _itemLookupCache = new Dictionary<string, InventoryItem>();
                 var itemList = Resources.LoadAll<InventoryItem>("");
                 foreach (var item in itemList)
                 {
-                    if (itemLookupCache.ContainsKey(item.itemID))
+                    if (_itemLookupCache.ContainsKey(item.itemID))
                     {
-                        Debug.LogError(string.Format("Looks like there's a duplicate InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
+                        Debug.LogError(string.Format("Looks like there's a duplicate InventorySystem ID for objects: {0} and {1}", _itemLookupCache[item.itemID], item));
                         continue;
                     }
 
-                    itemLookupCache[item.itemID] = item;
+                    _itemLookupCache[item.itemID] = item;
                 }
             }
 
-            if (itemID == null || !itemLookupCache.ContainsKey(itemID)) return null;
-            return itemLookupCache[itemID];
+            if (itemID == null || !_itemLookupCache.ContainsKey(itemID)) return null;
+            return _itemLookupCache[itemID];
+        }
+        
+        /// <summary>
+        /// 生成掉落物
+        /// </summary>
+        /// <param name="position">掉落位置</param>
+        /// <param name="number">掉落数量</param>
+        /// <returns></returns>
+        public Pickup SpawnPickup(Vector3 position, int number)
+        {
+            var pickup = Instantiate(this.pickup);
+            pickup.transform.position = position;
+            pickup.Setup(this, number);
+            return pickup;
         }
 
         public Sprite GetIcon()

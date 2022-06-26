@@ -6,6 +6,7 @@
         Combat,
         UI,
         Pickup,
-        Shop
+        Shop,
+        FullPickup
     }
 }

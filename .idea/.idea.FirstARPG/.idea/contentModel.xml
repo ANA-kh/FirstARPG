@@ -13,6 +13,9 @@
               <e p="UnlitVertexColour_Alpha.shader" t="Include" />
             </e>
           </e>
+          <e p="Synty - Polygon Student Sample" t="Include">
+            <e p="README - Usage Rights for these assets.txt" t="Include" />
+          </e>
         </e>
         <e p="Modules" t="Include">
           <e p="EventSystem" t="Include">
@@ -80,13 +83,18 @@
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />
             <e p="ActionStore.cs" t="Include" />
+            <e p="ClickablePickup.cs" t="Include" />
+            <e p="DropLibrary.cs" t="Include" />
             <e p="EquipableItem.cs" t="Include" />
             <e p="EquipLocation.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryItem.cs" t="Include" />
             <e p="ItemCategory.cs" t="Include" />
             <e p="ItemDropper.cs" t="Include" />
+            <e p="Pickup.cs" t="Include" />
+            <e p="PickupSpawner.cs" t="Include" />
             <e p="Purse.cs" t="Include" />
+            <e p="RandomDropper.cs" t="Include" />
           </e>
           <e p="Miscs" t="Include">
             <e p="ActionScheduler.cs" t="Include" />

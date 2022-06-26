@@ -16,6 +16,7 @@ MonoBehaviour:
   displayName: Hat
   description: a hat
   icon: {fileID: 21300000, guid: c1b61b3a91732a747a8496fc75a13fe2, type: 3}
+  pickup: {fileID: 4480266072469511819, guid: df4839b7866d88c4fa9ac9dafae43be3, type: 3}
   stackable: 1
   price: 10
   category: 1

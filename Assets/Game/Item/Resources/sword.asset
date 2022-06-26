@@ -16,6 +16,7 @@ MonoBehaviour:
   displayName: Hat
   description: 'universe invincible super big sword '
   icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
+  pickup: {fileID: 6183311164002777078, guid: 2e8c9720aeaf4384599377644c4283b3, type: 3}
   stackable: 0
   price: 100
   category: 1

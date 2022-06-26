@@ -4,6 +4,7 @@ using System.Linq;
 using FirstARPG.Inventories;
 using FirstARPG.Player;
 using FirstARPG.Saving;
+using FirstARPG.Stats;
 using UnityEngine;
 
 namespace FirstARPG.Shops
@@ -112,10 +113,24 @@ namespace FirstARPG.Shops
         
         private IEnumerable<StockItemConfig> GetAvailableConfigs()
         {
+            var shopperLevel = GetShopperLevel();
             foreach (var config in _stockItemConfigs)
             {
+                if (config.levleToUnlock > shopperLevel)
+                {
+                    continue;
+                }
+
                 yield return config;
             }
+        }
+        
+        private int GetShopperLevel()
+        {
+            var stats = _curShoppper.GetComponent<BaseStats>();
+            if (stats ==null) return 0;
+
+            return stats.GetLevel();
         }
 
 
