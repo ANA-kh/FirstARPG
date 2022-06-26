@@ -26,19 +26,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Anim Fire Spray.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Anim Fire Spray.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Delay Lunch Fire Ball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Delay Lunch Fire Ball.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire Spray.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Fire Spray/Fire Spray.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/PlayerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/PlayerController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/EnvironmentScanner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/EnvironmentScanner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" afterDir="false" />
     </list>
     <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
+    <list id="589df3b0-9e75-46d3-8be0-55981cff9a76" name="complete player move" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs.meta" afterDir="false" />
+    </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs.meta" afterDir="false" />
@@ -89,12 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/IAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterSteategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/States.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/States/Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/States/BaseStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/LazyValue.cs" />
@@ -133,15 +134,40 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/DrawRectangDetect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraContoller/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/EnvironmentScanner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs">
+      <ranges>
+        <range start1="1" end1="2" start2="1" end2="2" changelist="589df3b0-9e75-46d3-8be0-55981cff9a76" />
+        <range start1="5" end1="6" start2="5" end2="6" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="7" end1="9" start2="7" end2="9" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="10" end1="12" start2="10" end2="12" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="13" end1="14" start2="13" end2="14" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="15" end1="17" start2="15" end2="17" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="19" end1="21" start2="19" end2="21" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="22" end1="24" start2="22" end2="24" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="32" end1="34" start2="32" end2="34" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="35" end1="37" start2="35" end2="37" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="38" end1="39" start2="38" end2="39" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="40" end1="41" start2="40" end2="41" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+        <range start1="48" end1="49" start2="48" end2="49" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="2A1327OACu4Q2tBAsqk2RirMedk" />
   <component name="ProjectLevelVcsManager">
@@ -162,7 +188,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.37516004" />
     <property name="add_unversioned_files" value="true" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -190,6 +216,7 @@
       <changelist id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="" />
       <changelist id="67696da1-6cb9-47e0-b3dc-f232a8ef1a02" name="testCode" comment="" />
       <changelist id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="tooltipsUI" comment="" />
+      <changelist id="589df3b0-9e75-46d3-8be0-55981cff9a76" name="complete player move" comment="" />
       <created>1654163056214</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -202,7 +229,11 @@
       <workItem from="1655551610304" duration="6702000" />
       <workItem from="1655610087528" duration="29246000" />
       <workItem from="1655729389132" duration="7225000" />
-      <workItem from="1656142384209" duration="5022000" />
+      <workItem from="1656142384209" duration="6471000" />
+      <workItem from="1656150826036" duration="1366000" />
+      <workItem from="1656169700924" duration="314000" />
+      <workItem from="1656215405638" duration="692000" />
+      <workItem from="1656221325512" duration="1068000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -421,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656144852149</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add CameraContorller">
+      <created>1656148352518</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1656148352518</updated>
+    </task>
+    <task id="LOCAL-00033" summary="complete player move">
+      <created>1656151580362</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1656151580362</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,8 +521,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="some RPG model" />
-    <MESSAGE value="add my modules" />
     <MESSAGE value="add item drag function" />
     <MESSAGE value="add tooltips  fix bag display bug" />
     <MESSAGE value="add tooltips ui" />
@@ -501,9 +544,15 @@
     <MESSAGE value="add ability item health potion" />
     <MESSAGE value="add fire spray" />
     <MESSAGE value="add DirectionalTargeting  and fire Spray ability" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DirectionalTargeting  and fire Spray ability" />
+    <MESSAGE value="add CameraContorller" />
+    <MESSAGE value="complete player move" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete player move" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="380" y="559" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1656148804381">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="380" y="559" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1656148804381" />
     <state width="519" height="464" key="DebuggerActiveHint" timestamp="1655644540430">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -588,18 +637,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="455" y="433" key="RollbackChangesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655617630277" />
-    <state x="141" y="368" key="SettingsEditor" timestamp="1654406185719">
+    <state x="141" y="368" key="SettingsEditor" timestamp="1656148730755">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="141" y="368" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1654406185719" />
-    <state x="579" y="636" key="VCS.ChangelistChooser" timestamp="1655642702255">
+    <state x="141" y="368" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1656148730755" />
+    <state x="579" y="636" key="VCS.ChangelistChooser" timestamp="1656229963825">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="579" y="636" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1655642702255" />
-    <state x="528" y="638" key="VCS.EditChangelistDialog" timestamp="1655391595673">
+    <state x="579" y="636" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1656229963825" />
+    <state x="528" y="638" key="VCS.EditChangelistDialog" timestamp="1656229998080">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="528" y="638" key="VCS.EditChangelistDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655391595673" />
+    <state x="528" y="638" key="VCS.EditChangelistDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1656229998080" />
     <state x="93" y="100" width="1094" height="1247" key="VCS.FileHistoryDialog" timestamp="1656148140128">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -612,18 +661,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1083" y="633" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1655298686463" />
-    <state x="1063" y="326" width="661" height="536" key="find.popup" timestamp="1655735958346">
+    <state x="632" y="326" width="1092" height="738" key="find.popup" timestamp="1656169889317">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1063" y="326" width="661" height="536" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1655735958346" />
+    <state x="632" y="326" width="1092" height="738" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1656169889317" />
     <state x="1030" y="433" key="git4idea.branch.GitSmartOperationDialog" timestamp="1655298228965">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1030" y="433" key="git4idea.branch.GitSmartOperationDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1655298228965" />
-    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1656142651266">
+    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1656169732268">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1656142651266" />
+    <state x="303" y="330" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1656169732268" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

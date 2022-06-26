@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace FirstARPG.CameraController
+namespace FirstARPG.Cameras
 {
     public class CameraController : MonoBehaviour
     {

@@ -70,7 +70,7 @@
             <e p="Mana.cs" t="Include" />
             <e p="ManaDisplay.cs" t="Include" />
           </e>
-          <e p="CameraContorller" t="Include">
+          <e p="Cameras" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
           <e p="Combat" t="Include">
@@ -97,7 +97,13 @@
           <e p="Player" t="Include">
             <e p="CursorType.cs" t="Include" />
             <e p="IRaycastable.cs" t="Include" />
+            <e p="Parkour System" t="Include">
+              <e p="EnvironmentScanner.cs" t="Include" />
+              <e p="ParkourAction.cs" t="Include" />
+              <e p="ParkourController.cs" t="Include" />
+            </e>
             <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerSimpleMove.cs" t="Include" />
           </e>
           <e p="Saving" t="Include">
             <e p="ISaveable.cs" t="Include" />
