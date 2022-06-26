@@ -25,7 +25,7 @@ namespace FirstARPG.Cameras
 
         private void Start()
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()

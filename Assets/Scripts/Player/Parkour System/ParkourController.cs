@@ -72,6 +72,7 @@ namespace FirstARPG.Player
 
             yield return new WaitForSeconds(action.PostActionDelay);
 
+            _playerController.ResetMove();
             _playerController.SetControl(true);
             _inAction = false;
         }
@@ -80,7 +81,8 @@ namespace FirstARPG.Player
         {
             if (_animator.isMatchingTarget) return;
 
-            _animator.MatchTarget(action.MatchPos, transform.rotation, action.MatchBodyPart,
+            Debug.DrawLine(action.MatchPos,new Vector3(action.MatchPos.x - 1,action.MatchPos.y,action.MatchPos.z),Color.red,5);
+            _animator.MatchTarget(action.MatchPos, action.TargetRotation, action.MatchBodyPart,
                 new MatchTargetWeightMask(action.MatchPosWeight, 0),
                 action.MatchStartTime, action.MatchTargetTime);
         }
