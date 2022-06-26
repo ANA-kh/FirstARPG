@@ -3,25 +3,25 @@ namespace FirstARPG.Cameras
 {
     public class CameraController : MonoBehaviour
     {
-        [SerializeField] Transform followTarget;
+        [SerializeField] private Transform followTarget;
 
-        [SerializeField] float rotationSpeed = 2f;
-        [SerializeField] float distance = 5;
+        [SerializeField] private float rotationSpeed = 2f;
+        [SerializeField] private float distance = 5;
 
-        [SerializeField] float minVerticalAngle = -10;
-        [SerializeField] float maxVerticalAngle = 45;
+        [SerializeField] private float minVerticalAngle = -10;
+        [SerializeField] private float maxVerticalAngle = 45;
 
-        [SerializeField] Vector2 framingOffset;
+        [SerializeField] private Vector2 framingOffset;
 
-        [SerializeField] bool invertX;
-        [SerializeField] bool invertY;
+        [SerializeField] private bool invertX;
+        [SerializeField] private bool invertY;
 
 
-        float rotationX;
-        float rotationY;
+        private float _rotationX;
+        private float _rotationY;
 
-        float invertXVal;
-        float invertYVal;
+        private float _invertXVal;
+        private float _invertYVal;
 
         private void Start()
         {
@@ -30,15 +30,15 @@ namespace FirstARPG.Cameras
 
         private void Update()
         {
-            invertXVal =  (invertX) ? -1 : 1;
-            invertYVal =  (invertY) ? -1 : 1;
+            _invertXVal =  (invertX) ? -1 : 1;
+            _invertYVal =  (invertY) ? -1 : 1;
 
-            rotationX += Input.GetAxis("Mouse Y") * invertYVal * rotationSpeed;
-            rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
+            _rotationX += Input.GetAxis("Mouse Y") * _invertYVal * rotationSpeed;
+            _rotationX = Mathf.Clamp(_rotationX, minVerticalAngle, maxVerticalAngle);
 
-            rotationY += Input.GetAxis("Mouse X") * invertXVal * rotationSpeed;
+            _rotationY += Input.GetAxis("Mouse X") * _invertXVal * rotationSpeed;
 
-            var targetRotation = Quaternion.Euler(rotationX, rotationY, 0);
+            var targetRotation = Quaternion.Euler(_rotationX, _rotationY, 0);
 
             var focusPosition = followTarget.position + new Vector3(framingOffset.x, framingOffset.y);
 
@@ -46,7 +46,7 @@ namespace FirstARPG.Cameras
             transform.rotation = targetRotation;
         }
 
-        public Quaternion PlanarRotation => Quaternion.Euler(0, rotationY, 0);
+        public Quaternion PlanarRotation => Quaternion.Euler(0, _rotationY, 0);
     }
 
 }

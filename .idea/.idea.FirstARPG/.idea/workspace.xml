@@ -33,19 +33,10 @@
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" afterDir="false" />
     </list>
     <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
-    <list id="589df3b0-9e75-46d3-8be0-55981cff9a76" name="complete player move" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraContorller/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs.meta" afterDir="false" />
-    </list>
+    <list id="589df3b0-9e75-46d3-8be0-55981cff9a76" name="complete player move" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemDropper.cs.meta" afterDir="false" />
@@ -143,31 +134,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraContoller/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/EnvironmentScanner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourAction.cs" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraController.cs">
-      <ranges>
-        <range start1="1" end1="2" start2="1" end2="2" changelist="589df3b0-9e75-46d3-8be0-55981cff9a76" />
-        <range start1="5" end1="6" start2="5" end2="6" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="7" end1="9" start2="7" end2="9" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="10" end1="12" start2="10" end2="12" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="13" end1="14" start2="13" end2="14" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="15" end1="17" start2="15" end2="17" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="19" end1="21" start2="19" end2="21" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="22" end1="24" start2="22" end2="24" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="32" end1="34" start2="32" end2="34" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="35" end1="37" start2="35" end2="37" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="38" end1="39" start2="38" end2="39" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="40" end1="41" start2="40" end2="41" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-        <range start1="48" end1="49" start2="48" end2="49" changelist="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="2A1327OACu4Q2tBAsqk2RirMedk" />
   <component name="ProjectLevelVcsManager">
@@ -233,7 +205,7 @@
       <workItem from="1656150826036" duration="1366000" />
       <workItem from="1656169700924" duration="314000" />
       <workItem from="1656215405638" duration="692000" />
-      <workItem from="1656221325512" duration="1068000" />
+      <workItem from="1656221325512" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -466,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656151580362</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="complete player move">
+      <created>1656230085193</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1656230085193</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
