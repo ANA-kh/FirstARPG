@@ -18,7 +18,7 @@ namespace FirstARPG
         }
 
         private void Update() {
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.Plus))
             {
                 Save();
             }
@@ -26,7 +26,7 @@ namespace FirstARPG
             {
                 Load();
             }
-            if (Input.GetKeyDown(KeyCode.Delete))
+            if (Input.GetKeyDown(KeyCode.Minus))
             {
                 Delete();
             }

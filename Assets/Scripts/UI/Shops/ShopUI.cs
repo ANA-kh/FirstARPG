@@ -55,7 +55,7 @@ namespace FirstARPG.UI.Shops
         {
             foreach (Transform child in _listRoot)
             {
-                Destroy(child.gameObject);//对象池   bug
+                Destroy(child.gameObject);//对象池
             }
 
             foreach (var item in _currentShop.GetFilteredItems())//TODO 把shopui看作view的话，考虑不要持有shop，让数据从Refreshui传过来，更新界面

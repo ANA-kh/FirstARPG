@@ -80,6 +80,10 @@
             <e p="Projectile.cs" t="Include" />
           </e>
           <e p="InputCache.cs" t="Include" />
+          <e p="InputSystem" t="Include">
+            <e p="Controls.cs" t="Include" />
+            <e p="InputReader.cs" t="Include" />
+          </e>
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />
             <e p="ActionStore.cs" t="Include" />

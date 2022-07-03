@@ -40,10 +40,10 @@ namespace FirstARPG.Player
             UseAbilities();
 
             //TODO delete Debug
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.DrawRay(Camera.main.transform.position,GetMouseRay().direction * 100,Color.red,20);
-            }
+            // if (Input.GetMouseButtonDown(0))
+            // {
+            //     Debug.DrawRay(Camera.main.transform.position,GetMouseRay().direction * 100,Color.red,20);
+            // }
 
             if (InteractWithComponent()) return;
 
