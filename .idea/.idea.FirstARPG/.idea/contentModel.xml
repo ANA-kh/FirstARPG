@@ -113,9 +113,9 @@
               <e p="EnvironmentScanner.cs" t="Include" />
               <e p="ParkourAction.cs" t="Include" />
               <e p="ParkourController.cs" t="Include" />
+              <e p="PlayerSimpleMove.cs" t="Include" />
             </e>
             <e p="PlayerController.cs" t="Include" />
-            <e p="PlayerSimpleMove.cs" t="Include" />
           </e>
           <e p="Saving" t="Include">
             <e p="ISaveable.cs" t="Include" />
@@ -128,6 +128,15 @@
             <e p="Shop.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
             <e p="Shopper.cs" t="Include" />
+          </e>
+          <e p="StateMachine" t="Include">
+            <e p="Player" t="Include">
+              <e p="PlayerBaseState.cs" t="Include" />
+              <e p="PlayerFreeLookState.cs" t="Include" />
+              <e p="PlayerStateMachine.cs" t="Include" />
+            </e>
+            <e p="State.cs" t="Include" />
+            <e p="StateMachine.cs" t="Include" />
           </e>
           <e p="States" t="Include">
             <e p="BaseStats.cs" t="Include" />

@@ -26,19 +26,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="some RPG model">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputReader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputReader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerFreeLookState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerFreeLookState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Controls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Controls.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Controls.inputactions.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/PlayerSimpleMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSimpleMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/PlayerSimpleMove.cs.meta" afterDir="false" />
     </list>
     <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -97,11 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/States/LevelDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DestroyAfterEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/States/CharacterClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Miscs/ActionScheduler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Miscs/DestroyAfterEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Miscs/PersistentObjectSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Miscs/CameraFacing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
@@ -147,7 +150,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Parkour System/ParkourController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputReader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerFreeLookState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerStateMachine.cs" />
       </list>
     </option>
   </component>
@@ -182,10 +190,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12748">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12748" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -215,7 +223,7 @@
       <workItem from="1656169700924" duration="314000" />
       <workItem from="1656215405638" duration="692000" />
       <workItem from="1656221325512" duration="14012000" />
-      <workItem from="1656814723393" duration="3605000" />
+      <workItem from="1656814723393" duration="7438000" />
     </task>
     <task id="LOCAL-00001" summary="some RPG model">
       <created>1654327918705</created>
@@ -497,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656247645795</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add new InputSystem">
+      <created>1656820765180</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1656820765180</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +567,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add open hide ui" />
     <MESSAGE value="add resources cursor ico" />
     <MESSAGE value="add PlayerController and mouse type" />
     <MESSAGE value="add purse" />
@@ -577,7 +591,8 @@
     <MESSAGE value="complete parkour" />
     <MESSAGE value="add some resources" />
     <MESSAGE value="add drop item function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add drop item function" />
+    <MESSAGE value="add new InputSystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new InputSystem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="559" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1656148804381">
@@ -592,22 +607,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="97" y="102" width="1272" height="1240" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1654346818408" />
-    <state width="1234" height="337" key="GridCell.Tab.0.bottom" timestamp="1656247801598">
+    <state width="1234" height="337" key="GridCell.Tab.0.bottom" timestamp="1656825371244">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="337" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1656247801598" />
-    <state width="1234" height="337" key="GridCell.Tab.0.center" timestamp="1656247801598">
+    <state width="1234" height="337" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1656825371244" />
+    <state width="1234" height="337" key="GridCell.Tab.0.center" timestamp="1656825371244">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="337" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1656247801598" />
-    <state width="1234" height="337" key="GridCell.Tab.0.left" timestamp="1656247801598">
+    <state width="1234" height="337" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1656825371244" />
+    <state width="1234" height="337" key="GridCell.Tab.0.left" timestamp="1656825371244">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="337" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1656247801598" />
-    <state width="1234" height="337" key="GridCell.Tab.0.right" timestamp="1656247801598">
+    <state width="1234" height="337" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1656825371244" />
+    <state width="1234" height="337" key="GridCell.Tab.0.right" timestamp="1656825371244">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1234" height="337" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1656247801598" />
+    <state width="1234" height="337" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1656825371244" />
     <state width="1234" height="337" key="GridCell.Tab.1.bottom" timestamp="1656247801598">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

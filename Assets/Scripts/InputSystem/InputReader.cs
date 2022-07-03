@@ -4,17 +4,29 @@ using UnityEngine.InputSystem;
 
 namespace FirstARPG.InputSystem
 {
-    public class InputReader :MonoBehaviour ,Controls.IPlayerActions
+    public class InputReader : MonoBehaviour, Controls.IPlayerActions
     {
-        private Controls _controls;
+        public Vector2 MovementValue { get; private set; }
+
         public event Action JumpEvent;
         public event Action DodgeEvent;
+
+        private Controls _controls;
 
         private void Start()
         {
             _controls = new Controls();
             _controls.Player.SetCallbacks(this);
+
             _controls.Player.Enable();
+        }
+
+        private void OnDestroy()
+        {
+            if (_controls != null)
+            {
+                _controls.Player.Disable();
+            }
         }
 
         public void OnJump(InputAction.CallbackContext context)
@@ -22,7 +34,6 @@ namespace FirstARPG.InputSystem
             if (!context.performed) { return; }
 
             JumpEvent?.Invoke();
-            Debug.Log("jumpTest");
         }
 
         public void OnDodge(InputAction.CallbackContext context)
@@ -30,6 +41,16 @@ namespace FirstARPG.InputSystem
             if (!context.performed) { return; }
 
             DodgeEvent?.Invoke();
+        }
+
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            MovementValue = context.ReadValue<Vector2>();
+        }
+
+        public void OnLook(InputAction.CallbackContext context)
+        {
+        
         }
     }
 }
