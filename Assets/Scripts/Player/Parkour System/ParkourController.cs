@@ -12,13 +12,13 @@ namespace FirstARPG.Player
 
         private EnvironmentScanner _environmentScanner;
         private Animator _animator;
-        private PlayerSimpleMove _playerController;
+        //private PlayerSimpleMove _playerController;
 
         private void Awake()
         {
             _environmentScanner = GetComponent<EnvironmentScanner>();
             _animator = GetComponent<Animator>();
-            _playerController = GetComponent<PlayerSimpleMove>();
+            //_playerController = GetComponent<PlayerSimpleMove>();
         }
 
         private void Update()
@@ -43,7 +43,7 @@ namespace FirstARPG.Player
         private IEnumerator DoParkourAction(ParkourAction action)
         {
             _inAction = true;
-            _playerController.SetControl(false);
+            //_playerController.SetControl(false);
 
             _animator.CrossFade(action.AnimName, 0.2f);
             yield return null;
@@ -59,7 +59,7 @@ namespace FirstARPG.Player
 
                 if (action.RotateToObstacle)
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, action.TargetRotation,
-                        _playerController.RotationSpeed * Time.deltaTime);
+                        1);//_playerController.RotationSpeed * Time.deltaTime);
 
                 if (action.EnableTargetMatching) //目标匹配
                     MatchTarget(action);
@@ -72,8 +72,8 @@ namespace FirstARPG.Player
 
             yield return new WaitForSeconds(action.PostActionDelay);
 
-            _playerController.ResetMove();
-            _playerController.SetControl(true);
+            //_playerController.ResetMove();
+            //_playerController.SetControl(true);
             _inAction = false;
         }
 

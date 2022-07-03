@@ -10,7 +10,7 @@ namespace FirstARPG
 
         private void Awake() 
         {
-            StartCoroutine(LoadLastScene());
+            //StartCoroutine(LoadLastScene());
         }
 
         private IEnumerator LoadLastScene() {
@@ -18,7 +18,7 @@ namespace FirstARPG
         }
 
         private void Update() {
-            if (Input.GetKeyDown(KeyCode.Plus))
+            if (Input.GetKeyDown(KeyCode.O))
             {
                 Save();
             }
@@ -26,7 +26,7 @@ namespace FirstARPG
             {
                 Load();
             }
-            if (Input.GetKeyDown(KeyCode.Minus))
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 Delete();
             }

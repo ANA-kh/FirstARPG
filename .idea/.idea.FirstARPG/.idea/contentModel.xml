@@ -78,6 +78,10 @@
           </e>
           <e p="Combat" t="Include">
             <e p="Projectile.cs" t="Include" />
+            <e p="Targeting" t="Include">
+              <e p="Target.cs" t="Include" />
+              <e p="Targeter.cs" t="Include" />
+            </e>
           </e>
           <e p="InputCache.cs" t="Include" />
           <e p="InputSystem" t="Include">
@@ -104,6 +108,7 @@
             <e p="ActionScheduler.cs" t="Include" />
             <e p="CameraFacing.cs" t="Include" />
             <e p="DestroyAfterEffect.cs" t="Include" />
+            <e p="ForceReceiver.cs" t="Include" />
             <e p="PersistentObjectSpawner.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -131,9 +136,14 @@
           </e>
           <e p="StateMachine" t="Include">
             <e p="Player" t="Include">
+              <e p="PlayerAttackingState.cs" t="Include" />
               <e p="PlayerBaseState.cs" t="Include" />
+              <e p="PlayerBlockingState.cs" t="Include" />
+              <e p="PlayerDodgingState.cs" t="Include" />
               <e p="PlayerFreeLookState.cs" t="Include" />
+              <e p="PlayerJumpingState.cs" t="Include" />
               <e p="PlayerStateMachine.cs" t="Include" />
+              <e p="PlayerTargetingState.cs" t="Include" />
             </e>
             <e p="State.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />

@@ -6,10 +6,14 @@ namespace FirstARPG.InputSystem
 {
     public class InputReader : MonoBehaviour, Controls.IPlayerActions
     {
+        public bool IsAttacking { get; private set; }
+        public bool IsBlocking { get; private set; }
         public Vector2 MovementValue { get; private set; }
 
         public event Action JumpEvent;
         public event Action DodgeEvent;
+        public event Action TargetEvent;
+        public event Action CancelEvent;
 
         private Controls _controls;
 
@@ -23,17 +27,15 @@ namespace FirstARPG.InputSystem
 
         private void OnDestroy()
         {
-            if (_controls != null)
-            {
-                _controls.Player.Disable();
-            }
+            _controls?.Player.Disable();
         }
 
         public void OnJump(InputAction.CallbackContext context)
         {
             if (!context.performed) { return; }
 
-            JumpEvent?.Invoke();
+            //JumpEvent?.Invoke();
+            Debug.Log("jumpTest");
         }
 
         public void OnDodge(InputAction.CallbackContext context)
@@ -50,7 +52,45 @@ namespace FirstARPG.InputSystem
 
         public void OnLook(InputAction.CallbackContext context)
         {
-        
+
+        }
+
+        public void OnTarget(InputAction.CallbackContext context)
+        {
+            if (!context.performed) { return; }
+
+            TargetEvent?.Invoke();
+        }
+
+        public void OnCancel(InputAction.CallbackContext context)
+        {
+            if (!context.performed) { return; }
+
+            CancelEvent?.Invoke();
+        }
+
+        public void OnAttack(InputAction.CallbackContext context)
+        {
+            // if (context.performed)
+            // {
+            //     IsAttacking = true;
+            // }
+            // else if (context.canceled)
+            // {
+            //     IsAttacking = false;
+            // }
+        }
+
+        public void OnBlock(InputAction.CallbackContext context)
+        {
+            // if (context.performed)
+            // {
+            //     IsBlocking = true;
+            // }
+            // else if (context.canceled)
+            // {
+            //     IsBlocking = false;
+            // }
         }
     }
 }

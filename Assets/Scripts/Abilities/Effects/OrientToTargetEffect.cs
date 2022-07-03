@@ -8,8 +8,9 @@ namespace FirstARPG.Abilities.Effects
     {
         public override void StartEffect(AbilityData data, Action finished)
         {
-            data.GetUser().transform.LookAt(data.GetTargetedPoint());
-            finished();
+            
+            // data.GetUser().transform.LookAt(data.GetTargetedPoint());
+            // finished();
         }
     }
 }
