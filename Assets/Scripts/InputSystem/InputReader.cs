@@ -34,8 +34,8 @@ namespace FirstARPG.InputSystem
         {
             if (!context.performed) { return; }
 
-            //JumpEvent?.Invoke();
-            Debug.Log("jumpTest");
+            JumpEvent?.Invoke();
+            //Debug.Log("jumpTest");
         }
 
         public void OnDodge(InputAction.CallbackContext context)

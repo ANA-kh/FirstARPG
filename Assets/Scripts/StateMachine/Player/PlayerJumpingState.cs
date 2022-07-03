@@ -1,25 +1,33 @@
+using System;
+using FirstARPG.Player;
+
 namespace FirstARPG.StateMachine
 {
     internal class PlayerJumpingState : PlayerBaseState
     {
+        private ParkourController _parkourController;
         public PlayerJumpingState(PlayerStateMachine stateMachine) : base(stateMachine)
         {
-            throw new System.NotImplementedException();
+            _parkourController = stateMachine.GetComponent<ParkourController>();
+            _parkourController.RotationDamping = stateMachine.RotationDamping;
         }
 
         public override void Enter()
         {
-            throw new System.NotImplementedException();
+            _parkourController.PerformAction();
         }
 
         public override void Tick(float deltaTime)
         {
-            throw new System.NotImplementedException();
+            if (!_parkourController.InAction)
+            {
+                stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
+            }
         }
 
         public override void Exit()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
