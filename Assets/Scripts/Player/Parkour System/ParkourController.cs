@@ -7,6 +7,7 @@ namespace FirstARPG.Player
     public class ParkourController : MonoBehaviour
     {
         [SerializeField] private List<ParkourAction> parkourActions;
+        private const float CrossFadeDuration = 0.25f;//与状态机中动画的crossTime一致  TODO  易混乱，后续修改
 
         public bool InAction { get; private set; }
 
@@ -65,7 +66,7 @@ namespace FirstARPG.Player
                 Debug.LogError("The parkour animation is wrong!");
 
             float timer = 0f;
-            while (timer <= animState.length)
+            while (timer <= animState.length - CrossFadeDuration)
             {
                 timer += Time.deltaTime;
 

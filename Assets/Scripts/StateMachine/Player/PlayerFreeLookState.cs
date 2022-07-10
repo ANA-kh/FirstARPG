@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace FirstARPG.StateMachine
 {
@@ -11,7 +13,7 @@ namespace FirstARPG.StateMachine
 
         private const float AnimatorDampTime = 0.1f;
 
-        private const float CrossFadeDuration = 0.1f;
+        private const float CrossFadeDuration = 0.25f;
 
         public PlayerFreeLookState(PlayerStateMachine stateMachine, bool shouldFade = true) : base(stateMachine)
         {
@@ -27,6 +29,8 @@ namespace FirstARPG.StateMachine
 
             if (_shouldFade)
             {
+                
+                Debug.Log($"time{stateMachine.Animator.GetCurrentAnimatorStateInfo(0).length-CrossFadeDuration}");
                 stateMachine.Animator.CrossFadeInFixedTime(FreeLookBlendTreeHash, CrossFadeDuration);
             }
             else

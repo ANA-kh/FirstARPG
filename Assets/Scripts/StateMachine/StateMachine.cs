@@ -16,7 +16,7 @@ namespace FirstARPG.StateMachine
             _currentState?.Enter();
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             _currentState?.Tick(Time.deltaTime);
         }

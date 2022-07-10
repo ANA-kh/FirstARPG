@@ -91,7 +91,7 @@ namespace FirstARPG.StateMachine
 
             movement += stateMachine.transform.right * stateMachine.InputReader.MovementValue.x;
             movement += stateMachine.transform.forward * stateMachine.InputReader.MovementValue.y;
-
+            Debug.Log($"movement{movement}");
             return movement;
         }
 
