@@ -82,6 +82,10 @@
               <e p="Target.cs" t="Include" />
               <e p="Targeter.cs" t="Include" />
             </e>
+            <e p="Weapon" t="Include">
+              <e p="WeaponDamage.cs" t="Include" />
+              <e p="WeaponHandler.cs" t="Include" />
+            </e>
           </e>
           <e p="InputCache.cs" t="Include" />
           <e p="InputSystem" t="Include">

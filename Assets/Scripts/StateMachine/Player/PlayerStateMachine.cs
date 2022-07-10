@@ -12,7 +12,8 @@ namespace FirstARPG.StateMachine
         public Animator Animator { get; private set; }
         public Targeter Targeter { get; private set; }
         public ForceReceiver ForceReceiver { get; private set; }
-
+        
+        [field: SerializeField]public WeaponDamage Weapon { get; private set; }
         [field: SerializeField] public float FreeLookMovementSpeed { get; private set; }
         [field: SerializeField] public float TargetingMovementSpeed { get; private set; }
         [field: SerializeField] public float RotationDamping { get; private set; }
@@ -34,6 +35,7 @@ namespace FirstARPG.StateMachine
         private void Start()
         {
             MainCameraTransform = Camera.main.transform;
+            Weapon.Owner = gameObject;
 
             SwitchState(new PlayerFreeLookState(this));
         }

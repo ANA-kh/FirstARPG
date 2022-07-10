@@ -1,9 +1,11 @@
+using System.Diagnostics;
 using FirstARPG.Miscs;
 using FirstARPG.Saving;
 using FirstARPG.Stats;
 using FirstARPG.Utils;
 using UnityEngine;
 using UnityEngine.Events;
+using Debug = UnityEngine.Debug;
 
 namespace FirstARPG.Attributes
 {
@@ -51,6 +53,7 @@ namespace FirstARPG.Attributes
 
         public void TakeDamage(GameObject instigator, float damage)
         {
+            Debug.Log($"{gameObject.name} takeDamage: {damage}");
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
             
             if(IsDead())

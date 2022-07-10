@@ -14,6 +14,7 @@
         public override void Enter()
         {
             stateMachine.Animator.CrossFadeInFixedTime(_attack.AnimationName, _attack.TransitionDuration);
+            stateMachine.Weapon.SetAttack(_attack.Damage,_attack.Force);
         }
 
         public override void Tick(float deltaTime)
