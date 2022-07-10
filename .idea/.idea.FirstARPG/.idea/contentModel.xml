@@ -136,6 +136,7 @@
           </e>
           <e p="StateMachine" t="Include">
             <e p="Player" t="Include">
+              <e p="Attack.cs" t="Include" />
               <e p="PlayerAttackingState.cs" t="Include" />
               <e p="PlayerBaseState.cs" t="Include" />
               <e p="PlayerBlockingState.cs" t="Include" />

@@ -17,7 +17,7 @@ namespace FirstARPG.Player
         }
 
         [SerializeField] CursorMapping[] cursorMappingsField = null;
-        [SerializeField] float maxNavMeshProjectionDistanceField = 1f;
+        //[SerializeField] float maxNavMeshProjectionDistanceField = 1f;
         [SerializeField] float raycastRadiusField = 1f;
         [SerializeField] private int _numberOfAbilitiesField = 6;
 

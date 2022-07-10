@@ -29,8 +29,6 @@ namespace FirstARPG.StateMachine
 
             if (_shouldFade)
             {
-                
-                Debug.Log($"time{stateMachine.Animator.GetCurrentAnimatorStateInfo(0).length-CrossFadeDuration}");
                 stateMachine.Animator.CrossFadeInFixedTime(FreeLookBlendTreeHash, CrossFadeDuration);
             }
             else
