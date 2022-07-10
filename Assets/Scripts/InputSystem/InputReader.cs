@@ -71,14 +71,14 @@ namespace FirstARPG.InputSystem
 
         public void OnAttack(InputAction.CallbackContext context)
         {
-            // if (context.performed)
-            // {
-            //     IsAttacking = true;
-            // }
-            // else if (context.canceled)
-            // {
-            //     IsAttacking = false;
-            // }
+            if (context.performed)
+            {
+                IsAttacking = true;
+            }
+            else if (context.canceled)
+            {
+                IsAttacking = false;
+            }
         }
 
         public void OnBlock(InputAction.CallbackContext context)

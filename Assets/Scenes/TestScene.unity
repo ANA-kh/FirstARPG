@@ -5270,7 +5270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849726703282, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: <TargetingMovementSpeed>k__BackingField
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849726703287, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_Center.y
@@ -5286,15 +5286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849916469680, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.082835995
+      value: 0.08283597
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849916469680, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0002990114
+      value: -0.00029897655
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849916469680, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000024854324
+      value: 0.00002485142
       objectReference: {fileID: 0}
     - target: {fileID: 4711639849934622199, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalPosition.y
