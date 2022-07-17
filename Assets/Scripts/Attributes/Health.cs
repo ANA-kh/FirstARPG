@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using FirstARPG.Miscs;
 using FirstARPG.Saving;
@@ -12,8 +13,6 @@ namespace FirstARPG.Attributes
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float regenerationPercentage = 70;
-        [SerializeField] TakeDamageEvent takeDamage;
-        public UnityEvent onDie;
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -22,7 +21,10 @@ namespace FirstARPG.Attributes
 
         LazyValue<float> healthPoints;
 
-        bool wasDeadLastFrame = false;
+        private bool _wasDeadLastFrame = false;
+        private bool _isGod = false;
+        public Action OnTakeDamage;
+        public Action OnDie;
 
         private void Awake() {
             healthPoints = new LazyValue<float>(GetInitialHealth);
@@ -50,20 +52,32 @@ namespace FirstARPG.Attributes
         {
             return healthPoints.value <= 0;
         }
+        public void SetGod(bool isGod)
+        {
+            _isGod = isGod;
+        }
 
         public void TakeDamage(GameObject instigator, float damage)
         {
+            if (_isGod)
+            {
+                return;
+            }
+            if (healthPoints.value <= 0)
+            {
+                return;
+            }
             Debug.Log($"{gameObject.name} takeDamage: {damage}");
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
-            
+
             if(IsDead())
             {
-                onDie.Invoke();
+                OnDie?.Invoke();
                 AwardExperience(instigator);
             } 
             else
             {
-                takeDamage.Invoke(damage);
+                OnTakeDamage?.Invoke();
             }
             UpdateState();
         }
@@ -96,19 +110,19 @@ namespace FirstARPG.Attributes
 
         private void UpdateState()
         {
-            Animator animator = GetComponent<Animator>();
-            if (!wasDeadLastFrame && IsDead())
+            //Animator animator = GetComponent<Animator>();
+            if (!_wasDeadLastFrame && IsDead())
             {
-                animator.SetTrigger("die");
+                //animator.SetTrigger("die");
                 GetComponent<ActionScheduler>()?.CancelCurrentAction();
             }
 
-            if (wasDeadLastFrame && !IsDead())
+            if (_wasDeadLastFrame && !IsDead())
             {
-                animator.Rebind();
+                //animator.Rebind();
             }
 
-            wasDeadLastFrame = IsDead();
+            _wasDeadLastFrame = IsDead();
         }
 
         private void AwardExperience(GameObject instigator)

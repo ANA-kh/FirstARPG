@@ -1,4 +1,5 @@
 ﻿using System;
+using FirstARPG.Attributes;
 using FirstARPG.Combat;
 using FirstARPG.Miscs;
 using UnityEngine;
@@ -14,7 +15,10 @@ namespace FirstARPG.StateMachine.Enemy
         public GameObject Player { get; private set; }
         public ForceReceiver ForceReceiver { get; private set; }
         public NavMeshAgent Agent { get; private set; }
-        
+        public Health Health { get; private set; }
+        public Target Target { get;private set; }
+        public Ragdoll Ragdoll { get; private set; }
+
         [field: SerializeField] public WeaponDamage Weapon { get; private set; }
         [field:SerializeField]public float PlayerChasingRange { get; private set; }
         [field:SerializeField]public float MovementSpeed { get; private set; }
@@ -29,6 +33,9 @@ namespace FirstARPG.StateMachine.Enemy
             Controller = GetComponent<CharacterController>();
             ForceReceiver = GetComponent<ForceReceiver>();
             Agent = GetComponent<NavMeshAgent>();
+            Health = GetComponent<Health>();
+            Target = GetComponent<Target>();
+            Ragdoll = GetComponent<Ragdoll>();
         }
 
         private void Start()
@@ -37,6 +44,27 @@ namespace FirstARPG.StateMachine.Enemy
             Agent.updateRotation = false;
             Weapon.Owner = gameObject;
             SwitchState(new EnemyIdleState(this));
+        }
+
+        private void OnEnable()
+        {
+            Health.OnTakeDamage += HandleTakeDamage;
+            Health.OnDie += HandleDie;
+        }
+
+        private void OnDisable()
+        {
+            Health.OnTakeDamage -= HandleTakeDamage;
+            Health.OnDie -= HandleDie;
+        }
+
+        private void HandleTakeDamage()
+        {
+            SwitchState(new EnemyImpactState(this));
+        }
+        private void HandleDie()
+        {
+            SwitchState(new EnemyDeadState(this));
         }
 
         private void OnDrawGizmosSelected()

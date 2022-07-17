@@ -5334,6 +5334,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498111605030239591, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498111605030239591, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498111605030239591, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3046232849765452412, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
@@ -5428,7 +5440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5562959271783986780, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000009875625
+      value: 0.00000013765107
       objectReference: {fileID: 0}
     - target: {fileID: 5562959271783986780, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5456,11 +5468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8565813061649302646, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000012146442
+      value: 0.00000001693028
       objectReference: {fileID: 0}
     - target: {fileID: 8565813061649302646, guid: 48fae194c796ef54dab535c599152c9f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000000220257
+      value: -0.0000000030700449
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fae194c796ef54dab535c599152c9f, type: 3}

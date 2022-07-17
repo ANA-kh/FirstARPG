@@ -10,7 +10,6 @@ namespace FirstARPG.Miscs
     public class ForceReceiver : MonoBehaviour
     {
         private CharacterController _controller;
-        [SerializeField] private NavMeshAgent agent;
         [SerializeField] private float drag = 0.3f;
 
         private Vector3 _dampingVelocity;
@@ -36,15 +35,6 @@ namespace FirstARPG.Miscs
             }
 
             _impact = Vector3.SmoothDamp(_impact, Vector3.zero, ref _dampingVelocity, drag);
-
-            if (agent != null)
-            {
-                if (_impact.sqrMagnitude < 0.2f * 0.2f)
-                {
-                    _impact = Vector3.zero;
-                    agent.enabled = true;
-                }
-            }
         }
 
         public void Reset()
@@ -56,10 +46,6 @@ namespace FirstARPG.Miscs
         public void AddForce(Vector3 force)
         {
             _impact += force;
-            if (agent != null)
-            {
-                agent.enabled = false;
-            }
         }
 
         public void Jump(float jumpForce)

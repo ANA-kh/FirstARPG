@@ -7,18 +7,32 @@ namespace FirstARPG.StateMachine.Enemy
     {
         private readonly int AttackHash = Animator.StringToHash("ANI_Attack1");
         private const float TransitionDuration = 0.1f;
+        private const float BeforeAttack = 0.1f;
+        private float _attackTimer;
         public EnemyAttackingState(EnemyStateMachine stateMachine) : base(stateMachine) { }
 
         public override void Enter()
         {
             stateMachine.Weapon.SetAttack(stateMachine.AttackDamage,stateMachine.AttackKonckback);
-            stateMachine.Animator.CrossFadeInFixedTime(AttackHash,TransitionDuration);
+            _attackTimer = BeforeAttack;
+            FacePlayer();
         }
 
         
 
         public override void Tick(float deltaTime)
         {
+            
+            if (_attackTimer > 0)
+            {
+                _attackTimer -= deltaTime;
+                if (_attackTimer <= 0)
+                {
+                    stateMachine.Animator.CrossFadeInFixedTime(AttackHash,TransitionDuration);
+                }
+                return;
+            }
+            
             if (GetNormalizedTime(stateMachine.Animator,"Attack") >= 1f)
             {
                 stateMachine.SwitchState(new EnemyChasingState(stateMachine));

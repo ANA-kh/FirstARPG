@@ -83,14 +83,14 @@ namespace FirstARPG.InputSystem
 
         public void OnBlock(InputAction.CallbackContext context)
         {
-            // if (context.performed)
-            // {
-            //     IsBlocking = true;
-            // }
-            // else if (context.canceled)
-            // {
-            //     IsBlocking = false;
-            // }
+            if (context.performed)
+            {
+                IsBlocking = true;
+            }
+            else if (context.canceled)
+            {
+                IsBlocking = false;
+            }
         }
     }
 }

@@ -44,6 +44,12 @@ namespace FirstARPG.StateMachine
                 stateMachine.SwitchState(new PlayerAttackingState(stateMachine, 0));
                 return;
             }
+            
+            if (stateMachine.InputReader.IsBlocking)
+            {
+                stateMachine.SwitchState(new PlayerBlockingState(stateMachine));
+                return;
+            }
 
             Vector3 movement = CalculateMovement();
 

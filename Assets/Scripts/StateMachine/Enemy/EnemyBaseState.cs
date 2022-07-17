@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using FirstARPG.Attributes;
+using UnityEngine;
 
 namespace FirstARPG.StateMachine.Enemy
 {
@@ -18,6 +19,11 @@ namespace FirstARPG.StateMachine.Enemy
 
         protected bool IsInAttackRange()
         {
+            var playerHealth = stateMachine.Player.GetComponent<Health>();
+            if (playerHealth == null || playerHealth.IsDead())
+            {
+                return false;
+            }
             return Vector3.Distance(stateMachine.transform.position, stateMachine.Player.transform.position) <= stateMachine.PlayerAttackingRange;
         }
         
