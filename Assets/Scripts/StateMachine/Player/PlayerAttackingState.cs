@@ -14,7 +14,7 @@
         public override void Enter()
         {
             stateMachine.Animator.CrossFadeInFixedTime(_attack.AnimationName, _attack.TransitionDuration);
-            stateMachine.Weapon.SetAttack(_attack.Damage,_attack.Force);
+            stateMachine.Weapon.SetAttack(_attack.Damage,_attack.Knockback);
         }
 
         public override void Tick(float deltaTime)
@@ -22,7 +22,7 @@
             Move(deltaTime);
             FaceTarget();
             
-            var normalizedTime = GetNormalizedTime();
+            var normalizedTime = GetNormalizedTime(stateMachine.Animator, "Attack");
 
             if (normalizedTime >= _previousFrameTime && normalizedTime < 1f)
             {
@@ -81,25 +81,6 @@
         public override void Exit()
         {
             
-        }
-
-        private float GetNormalizedTime()
-        {
-            var currentInfo = stateMachine.Animator.GetCurrentAnimatorStateInfo(0);
-            var nextInfo = stateMachine.Animator.GetNextAnimatorStateInfo(0);
-
-            if (stateMachine.Animator.IsInTransition(0) && currentInfo.IsTag("Attack"))
-            {
-                return nextInfo.normalizedTime;
-            }
-            else if (!stateMachine.Animator.IsInTransition(0) && currentInfo.IsTag("Attack"))
-            {
-                return currentInfo.normalizedTime;
-            }
-            else
-            {
-                return 0;
-            }
         }
     }
 }

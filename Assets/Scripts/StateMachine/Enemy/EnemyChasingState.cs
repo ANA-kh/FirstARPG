@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace FirstARPG.StateMachine.Enemy
@@ -25,7 +24,14 @@ namespace FirstARPG.StateMachine.Enemy
                 return;
             }
 
+            if (IsInAttackRange())
+            {
+                stateMachine.SwitchState(new EnemyAttackingState(stateMachine));
+                return;
+            }
+
             MoveToPlayer(deltaTime);
+            FacePlayer();
             stateMachine.Animator.SetFloat(SpeedHash, 1f,AnimatorDampTime, deltaTime);
         }
 

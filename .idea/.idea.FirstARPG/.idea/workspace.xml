@@ -25,16 +25,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="change rider version&#10;add enemyStateMachine And idel state">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs.meta" afterDir="false" />
+    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyAttackingState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyAttackingState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Player/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Player/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyBaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerAttackingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerAttackingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
     </list>
     <list id="65b27e1d-8998-4f7f-aa20-5099068aea99" name="actionUI" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -91,9 +95,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/3d/58b64b7a/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Asset Packs/Mixamo/ybot@Sword And Shield Attack.fbx.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Game/Player/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Scenes/TestScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../资源/65785 Unity3D动作游戏开发实战配书资源/CodeAndProj_f1/9.2.2_组合攻击再实现/ComposeAttack/ComposeAttackController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -160,6 +161,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
   <component name="ProjectId" id="2A1327OACu4Q2tBAsqk2RirMedk" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,7 +177,7 @@
     &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeInspectionSettingsId&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -196,10 +200,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17680">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16556">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17680" />
+      <option name="pid" value="16556" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -235,21 +239,8 @@
       <workItem from="1657419466263" duration="15595000" />
       <workItem from="1657965086394" duration="33000" />
       <workItem from="1657965371195" duration="626000" />
-      <workItem from="1657966257803" duration="8412000" />
-    </task>
-    <task id="LOCAL-00002" summary="add my modules">
-      <created>1654333611317</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654333611317</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add item drag function">
-      <created>1655306262142</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1655306262142</updated>
+      <workItem from="1657966257803" duration="9833000" />
+      <workItem from="1658033235897" duration="2421000" />
     </task>
     <task id="LOCAL-00004" summary="add tooltips  fix bag display bug">
       <created>1655390509877</created>
@@ -580,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657970794526</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add chasing state">
+      <created>1657976750120</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1657976750120</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add chasing state">
+      <created>1657976762973</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1657976762973</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="refactoring Ability_Strategy" />
     <MESSAGE value="add vfx" />
     <MESSAGE value="add Cooldown and use Mana" />
     <MESSAGE value="add DelayCompositeStratege" />
@@ -659,7 +663,8 @@
     <MESSAGE value="add attack state" />
     <MESSAGE value="add attack damage" />
     <MESSAGE value="change rider version&#10;add enemyStateMachine And idel state" />
-    <option name="LAST_COMMIT_MESSAGE" value="change rider version&#10;add enemyStateMachine And idel state" />
+    <MESSAGE value="add chasing state" />
+    <option name="LAST_COMMIT_MESSAGE" value="add chasing state" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,17 +722,17 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyBaseState.cs</url>
-          <line>25</line>
-          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\StateMachine\Enemy\EnemyBaseState.cs" initialLine="25" containingFunctionPresentation="method 'Move'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponDamage.cs</url>
+          <line>43</line>
+          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\Combat\Weapon\WeaponDamage.cs" initialLine="43" containingFunctionPresentation="method 'OnTriggerEnter'">
             <startOffsets>
-              <option value="726" />
+              <option value="1077" />
             </startOffsets>
             <endOffsets>
-              <option value="815" />
+              <option value="1162" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -100,7 +100,7 @@ namespace FirstARPG.Attributes
             if (!wasDeadLastFrame && IsDead())
             {
                 animator.SetTrigger("die");
-                GetComponent<ActionScheduler>().CancelCurrentAction();
+                GetComponent<ActionScheduler>()?.CancelCurrentAction();
             }
 
             if (wasDeadLastFrame && !IsDead())

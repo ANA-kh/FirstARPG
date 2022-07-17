@@ -1,4 +1,5 @@
 ﻿using System;
+using FirstARPG.Combat;
 using FirstARPG.Miscs;
 using UnityEngine;
 using UnityEngine.AI;
@@ -14,9 +15,12 @@ namespace FirstARPG.StateMachine.Enemy
         public ForceReceiver ForceReceiver { get; private set; }
         public NavMeshAgent Agent { get; private set; }
         
+        [field: SerializeField] public WeaponDamage Weapon { get; private set; }
         [field:SerializeField]public float PlayerChasingRange { get; private set; }
-        [field:SerializeField]public float MovementSpeed { get; set; }
-
+        [field:SerializeField]public float MovementSpeed { get; private set; }
+        [field:SerializeField]public float PlayerAttackingRange { get; private set; }
+        [field:SerializeField]public int AttackDamage { get; private set; }
+        [field:SerializeField]public float AttackKonckback { get; private set; }
 
         private void Awake()
         {
@@ -31,6 +35,7 @@ namespace FirstARPG.StateMachine.Enemy
         {
             Agent.updatePosition = false;
             Agent.updateRotation = false;
+            Weapon.Owner = gameObject;
             SwitchState(new EnemyIdleState(this));
         }
 
