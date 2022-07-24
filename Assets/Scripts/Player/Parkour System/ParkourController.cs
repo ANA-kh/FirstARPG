@@ -28,16 +28,9 @@ namespace FirstARPG.Player
             _characterController = GetComponent<CharacterController>();
         }
 
-        private void OnUpdate()
+        public bool PerformAction()
         {
-            if (Input.GetButton("Jump") && !InAction)
-            {
-                PerformAction();
-            }
-        }
-
-        public void PerformAction()
-        {
+            bool result = false;
             var hitData = _environmentScanner.ObstacleCheck();
             if (hitData.forwardHitFound)
             {
@@ -46,16 +39,20 @@ namespace FirstARPG.Player
                     if (action.CheckIfPossible(hitData, transform))
                     {
                         StartCoroutine(DoParkourAction(action));
+                        result = true;
                         break;
                     }
                 }
             }
+
+            return result;
         }
 
 
         private IEnumerator DoParkourAction(ParkourAction action)
         {
             InAction = true;
+            _animator.applyRootMotion = true;
             _characterController.enabled = false;
 
             _animator.CrossFade(action.AnimName, 0.2f);
@@ -86,6 +83,7 @@ namespace FirstARPG.Player
             yield return new WaitForSeconds(action.PostActionDelay);
             
             InAction = false;
+            _animator.applyRootMotion = false;
             _characterController.enabled = true;
         }
 

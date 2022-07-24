@@ -16,7 +16,7 @@ namespace FirstARPG.Abilities.Targeting
         }
     }
     
-    //代替了 new GameObject[]{data.GetUser()}   TODO 整合
+    //代替了 new GameObject[]{data.GetUser()}   object转换为IEnumerable方法  TODO 放到别的地方去
     static class IEnumerableExtensions
     {
         public static IEnumerable<T> ToEnumerable<T>(this T item)

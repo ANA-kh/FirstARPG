@@ -21,6 +21,7 @@ namespace FirstARPG.StateMachine
         protected void Move(Vector3 motion, float deltaTime)
         {
             stateMachine.Controller.Move((motion + stateMachine.ForceReceiver.Movement) * deltaTime);
+            stateMachine.CurVelocity = stateMachine.Controller.velocity;
         }
         
         protected void FaceTarget()

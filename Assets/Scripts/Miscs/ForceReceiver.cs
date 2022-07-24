@@ -23,7 +23,7 @@ namespace FirstARPG.Miscs
             _controller = GetComponent<CharacterController>();
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (_verticalVelocity < 0f && _controller.isGrounded)
             {

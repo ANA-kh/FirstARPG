@@ -39,6 +39,12 @@ namespace FirstARPG.StateMachine
 
         public override void Tick(float deltaTime)
         {
+            Debug.Log($"velocity{stateMachine.Controller.velocity}");
+            if (Input.GetKeyDown("k"))
+            {
+                var momentum = stateMachine.Controller.velocity;
+                stateMachine.ForceReceiver.Jump(stateMachine.JumpForce);
+            }
             if (stateMachine.InputReader.IsAttacking)
             {
                 stateMachine.SwitchState(new PlayerAttackingState(stateMachine, 0));

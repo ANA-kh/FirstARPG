@@ -19,6 +19,11 @@ namespace FirstARPG.StateMachine
         private void Update()
         {
             _currentState?.Tick(Time.deltaTime);
+            OnUpdate();
+        }
+
+        protected virtual void OnUpdate()
+        {
         }
     }
 }
