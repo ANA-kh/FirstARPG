@@ -24,6 +24,7 @@ namespace FirstARPG.StateMachine
         {
             stateMachine.InputReader.TargetEvent += OnTarget;
             stateMachine.InputReader.JumpEvent += OnJump;
+            stateMachine.InputReader.DodgeEvent += OnDodge;
 
             stateMachine.Animator.SetFloat(FreeLookSpeedHash, 0f);
 
@@ -76,6 +77,7 @@ namespace FirstARPG.StateMachine
         {
             stateMachine.InputReader.TargetEvent -= OnTarget;
             stateMachine.InputReader.JumpEvent -= OnJump;
+            //stateMachine.InputReader.DodgeEvent -= OnDodge;
         }
 
         private void OnTarget()
@@ -91,6 +93,13 @@ namespace FirstARPG.StateMachine
         private void OnJump()
         {
             stateMachine.SwitchState(new PlayerJumpingState(stateMachine));
+        }
+        
+        private void OnDodge()
+        {
+            if (stateMachine.InputReader.MovementValue == Vector2.zero) { return; }
+
+            stateMachine.SwitchState(new PlayerDodgingState(stateMachine, stateMachine.InputReader.MovementValue));
         }
 
         private Vector3 CalculateMovement()

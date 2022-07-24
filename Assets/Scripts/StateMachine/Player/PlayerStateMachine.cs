@@ -27,6 +27,8 @@ namespace FirstARPG.StateMachine
         [field: SerializeField] public float JumpForce { get; private set; }
         [field: SerializeField] public GameObject LeftHandIK { get; private set; }
         [field: SerializeField] public Attack[] Attacks { get; private set; }
+        [field: SerializeField] public float DodgeDuration { get; private set; }
+        [field: SerializeField] public float DodgeLength { get; private set; }
 
 
         public Transform MainCameraTransform { get; private set; }
