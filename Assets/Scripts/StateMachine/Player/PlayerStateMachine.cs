@@ -18,8 +18,8 @@ namespace FirstARPG.StateMachine
         public Health Health { get; private set; }
         public Ragdoll Ragdoll { get; private set; }
         public ParkourController ParkourController{ get; private set; }
-        public Vector3 CurVelocity { get; set; }
-        
+        public LedgeDetector LedgeDetector { get; private set; }
+
         [field: SerializeField]public WeaponDamage Weapon { get; private set; }
         [field: SerializeField] public float FreeLookMovementSpeed { get; private set; }
         [field: SerializeField] public float TargetingMovementSpeed { get; private set; }
@@ -29,6 +29,9 @@ namespace FirstARPG.StateMachine
         [field: SerializeField] public Attack[] Attacks { get; private set; }
         [field: SerializeField] public float DodgeDuration { get; private set; }
         [field: SerializeField] public float DodgeLength { get; private set; }
+        
+        
+        public Vector3 CurVelocity { get; set; }
 
 
         public Transform MainCameraTransform { get; private set; }
@@ -44,6 +47,7 @@ namespace FirstARPG.StateMachine
             Health = GetComponent<Health>();
             Ragdoll = GetComponent<Ragdoll>();
             ParkourController = GetComponent<ParkourController>();
+            LedgeDetector = transform.Find("LedgeDetect").GetComponent<LedgeDetector>();
         }
 
         private void Start()

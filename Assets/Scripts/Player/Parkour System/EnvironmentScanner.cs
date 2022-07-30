@@ -4,16 +4,25 @@ namespace FirstARPG.Player
 {
     public class EnvironmentScanner : MonoBehaviour
     {
-        [SerializeField] Vector3 forwardRayOffset = new Vector3(0, 2.5f, 0);
+        [SerializeField] Vector3 forwardRayOffset = new Vector3(0, 0.25f, 0);
         [SerializeField] float forwardRayLength = 0.8f;
         [SerializeField] float heightRayLength = 5;
         [SerializeField] LayerMask obstacleLayer;
 
         public ObstacleHitData ObstacleCheck()
         {
-            var hitData = new ObstacleHitData();
-
             var forwardOrigin = transform.position + forwardRayOffset;
+            return ObstacleHitData(forwardOrigin);
+        }
+        public ObstacleHitData ObstacleCheck(Vector3 position)
+        {
+            return ObstacleHitData(position);
+        }
+
+        private ObstacleHitData ObstacleHitData(Vector3 forwardOrigin)
+        {
+            
+            var hitData = new ObstacleHitData();
             hitData.forwardHitFound = Physics.Raycast(forwardOrigin, transform.forward,
                 out hitData.forwardHit, forwardRayLength, obstacleLayer);
 

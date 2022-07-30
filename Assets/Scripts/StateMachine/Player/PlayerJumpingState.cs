@@ -24,6 +24,8 @@ namespace FirstARPG.StateMachine
                 _momentum.y = 0f;
 
                 stateMachine.Animator.CrossFadeInFixedTime(JumpHash, CrossFadeDuration);
+                
+                stateMachine.LedgeDetector.OnLedgeDetect += HandleLedgeDetect;
             }
         }
 
@@ -53,7 +55,12 @@ namespace FirstARPG.StateMachine
 
         public override void Exit()
         {
-            
+            stateMachine.LedgeDetector.OnLedgeDetect -= HandleLedgeDetect;
+        }
+        
+        private void HandleLedgeDetect(Vector3 ledgeForward, Vector3 closestPoint)
+        {
+            stateMachine.SwitchState(new PlayerHangingState(stateMachine, ledgeForward, closestPoint));
         }
     }
 }
