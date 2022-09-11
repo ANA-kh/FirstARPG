@@ -28,6 +28,7 @@ namespace FirstARPG.Abilities.Targeting
             Action finished)
         {
             playerController.enabled = false;
+            playerController.InputReader.DisableCtr();
             if (_targetingPrefabInstance == null)
             {
                 _targetingPrefabInstance = Instantiate(_targetingPrefab);
@@ -59,6 +60,7 @@ namespace FirstARPG.Abilities.Targeting
                 yield return null;
             }
             playerController.enabled = true;
+            playerController.InputReader.EnableCtr();
             _targetingPrefabInstance.gameObject.SetActive(false);
             finished();
         }

@@ -40,7 +40,7 @@ namespace FirstARPG.StateMachine
 
         public override void Tick(float deltaTime)
         {
-            Debug.Log($"velocity{stateMachine.Controller.velocity}");
+            //Debug.Log($"velocity{stateMachine.Controller.velocity}");
             if (Input.GetKeyDown("k"))
             {
                 var momentum = stateMachine.Controller.velocity;

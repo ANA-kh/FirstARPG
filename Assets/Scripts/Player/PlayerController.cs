@@ -1,4 +1,5 @@
 using System;
+using FirstARPG.InputSystem;
 using FirstARPG.Inventories;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,7 +16,8 @@ namespace FirstARPG.Player
             public Texture2D texture;
             public Vector2 hotspot;
         }
-
+        
+        public InputReader InputReader { get; private set; }
         [SerializeField] CursorMapping[] cursorMappingsField = null;
         //[SerializeField] float maxNavMeshProjectionDistanceField = 1f;
         [SerializeField] float raycastRadiusField = 1f;
@@ -26,10 +28,12 @@ namespace FirstARPG.Player
 
         bool _isDraggingUI = false;
         private ActionStore _actionStore;
-        
+
 
         private void Awake() {
             _actionStore = GetComponent<ActionStore>();
+            Cursor.lockState = CursorLockMode.Locked;
+            InputReader = GetComponent<InputReader>();
         }
 
         private void Update()

@@ -10,7 +10,7 @@ namespace FirstARPG
 
         private void Awake() 
         {
-            //StartCoroutine(LoadLastScene());
+            StartCoroutine(LoadLastScene());
         }
 
         private IEnumerator LoadLastScene() {

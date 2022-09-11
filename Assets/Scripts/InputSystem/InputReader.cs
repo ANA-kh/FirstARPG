@@ -25,6 +25,16 @@ namespace FirstARPG.InputSystem
             _controls.Player.Enable();
         }
 
+        public void DisableCtr()
+        {
+            _controls?.Player.Disable();
+        }
+        
+        public void EnableCtr()
+        {
+            _controls?.Player.Enable();
+        }
+
         private void OnDestroy()
         {
             _controls?.Player.Disable();
