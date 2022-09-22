@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using FirstARPG.Attributes;
 using FirstARPG.Inventories;
 using FirstARPG.Miscs;
+using FirstARPG.Player;
 using UnityEngine;
 
 namespace FirstARPG.Abilities
@@ -14,6 +15,7 @@ namespace FirstARPG.Abilities
         [SerializeField] private EffectStrategy[] _effectStrategies;
         [SerializeField] float _cooldownTime = 0;
         [SerializeField] float _manaCost = 0;
+        private PlayerController _playerController;
 
         public override bool Use(GameObject user)
         {
@@ -32,7 +34,7 @@ namespace FirstARPG.Abilities
 
             var actionScheduler = user.GetComponent<ActionScheduler>();
             actionScheduler.StartAction(data);
-            
+            _playerController = data.GetUser().GetComponent<PlayerController>();
            _targetingStrategy.StartTargeting(data,() =>
            {
                TargetAcquired(data);
@@ -53,6 +55,7 @@ namespace FirstARPG.Abilities
             var cooldownStore = data.GetUser().GetComponent<CooldownStore>();
             cooldownStore.StartCooldown(this,_cooldownTime);
             
+            
             foreach (var filterStrategy in _filterStrategys)
             {
                 data.SetTargets(filterStrategy.Filter(data.GetTargets()));
@@ -60,13 +63,14 @@ namespace FirstARPG.Abilities
             
             foreach (var effect in _effectStrategies)
             {
+                _playerController.InputReader.DisableCtr();
                 effect.StartEffect(data, EffectFinished);
             }
         }
 
         private void EffectFinished()
         {
-            
+            _playerController.InputReader.EnableCtr();
         }
     }
 }
