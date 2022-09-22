@@ -25,10 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="" />
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs.meta" afterDir="false" />
@@ -37,7 +34,6 @@
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/RandomDropper.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/RandomDropper.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/EquipmentSlotUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/EquipmentSlotUI.cs.meta" afterDir="false" />
     </list>
     <list id="67696da1-6cb9-47e0-b3dc-f232a8ef1a02" name="testCode" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +84,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/3d/58b64b7a/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Scripts/Abilities/Ability.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.15/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
@@ -283,14 +280,7 @@
       <workItem from="1662711151049" duration="3447000" />
       <workItem from="1662869065277" duration="246000" />
       <workItem from="1663133673816" duration="1213000" />
-      <workItem from="1663842678626" duration="1081000" />
-    </task>
-    <task id="LOCAL-00009" summary="add resources cursor ico">
-      <created>1655535590653</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1655535590653</updated>
+      <workItem from="1663842678626" duration="1386000" />
     </task>
     <task id="LOCAL-00010" summary="add PlayerController and mouse type">
       <created>1655535823789</created>
@@ -628,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662869308113</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fix： disble input when post skll">
+      <created>1663843919331</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663843919331</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add DirectionalTargeting  and fire Spray ability" />
     <MESSAGE value="add CameraContorller" />
     <MESSAGE value="complete player move" />
     <MESSAGE value="add Parkour" />
@@ -717,7 +713,8 @@
     <MESSAGE value="change jump state&#10;add falling state" />
     <MESSAGE value="add dodge" />
     <MESSAGE value="fix： diable ctr when post skill" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix： diable ctr when post skill" />
+    <MESSAGE value="fix： disble input when post skll" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix： disble input when post skll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
