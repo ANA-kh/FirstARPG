@@ -25,7 +25,49 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="" />
+    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Player/PlayerRig 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Player/PlayerRig 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig.bytes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig.bytes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ExtDebug.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ExtDebug.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/FacingTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/FacingTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Velocity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Velocity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XMLib.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/System/PersistentObjects.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/System/PersistentObjects.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Targeting/Targeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Targeting/Targeter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miscs/ForceReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miscs/ForceReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miscs/PersistentObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miscs/PersistentObjectSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs.meta" afterDir="false" />
@@ -40,6 +82,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -58,6 +105,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/04/e8b4cded/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/b887bc7e/Ray.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,17 +127,28 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c8496435c834a4c9b74035eb960fcfc26800/3e/d57c7e28/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C86290A-1EC4-4F1C-9CCC-0561EFB0B424/35/09eb0b13/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C86290A-1EC4-4F1C-9CCC-0561EFB0B424/7e/9d1368da/Collider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c86290a1ec44f1c9ccc0561efb0b42418200/8e/8e87c7f3/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c86290a1ec44f1c9ccc0561efb0b42418200/97/f9e311bf/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c86290a1ec44f1c9ccc0561efb0b42418200/c4/4da0dce2/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c86290a1ec44f1c9ccc0561efb0b42418200/f8/49cc4089/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/95/6d19de05/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/ca/ed0812d1/Buffer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/cd/3f9e2158/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/c5/494a8b19/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/f5/f24f2074/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/78/da3cdb0f/Action`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/7a/ef92cd8d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/3d/58b64b7a/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Scripts/Abilities/Ability.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Dragging/DragItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XMLib/XMLib.AM/Runtime/ActionMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.15/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Devices/Mouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Plugins/UI/InputSystemUIInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -115,10 +177,12 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/HorizontalOrVerticalLayoutGroupEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/ImageEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutPropertiesPreview.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/PointerInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/MoveDirection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/Raycasters/Physics2DRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/BaseMeshEffect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/EventSystem/InputModuleTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -207,8 +271,7 @@
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -231,10 +294,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21448">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16420">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21448" />
+      <option name="pid" value="16420" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -281,27 +344,16 @@
       <workItem from="1662869065277" duration="246000" />
       <workItem from="1663133673816" duration="1213000" />
       <workItem from="1663842678626" duration="1386000" />
-    </task>
-    <task id="LOCAL-00010" summary="add PlayerController and mouse type">
-      <created>1655535823789</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1655535823789</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add PlayerController and mouse type">
-      <created>1655535840931</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1655535840931</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add purse">
-      <created>1655538320843</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1655538320843</updated>
+      <workItem from="1663844151245" duration="168000" />
+      <workItem from="1664271806946" duration="664000" />
+      <workItem from="1664285424460" duration="1261000" />
+      <workItem from="1667015240612" duration="94000" />
+      <workItem from="1669614394970" duration="4001000" />
+      <workItem from="1670574015759" duration="2296000" />
+      <workItem from="1671185266283" duration="50000" />
+      <workItem from="1671265864167" duration="18031000" />
+      <workItem from="1671332035378" duration="4832000" />
+      <workItem from="1671341513230" duration="9924000" />
     </task>
     <task id="LOCAL-00013" summary="add shop system">
       <created>1655539340466</created>
@@ -625,7 +677,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663843919331</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="change scene">
+      <created>1663844305830</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1663844305830</updated>
+    </task>
+    <task id="LOCAL-00060" summary="add xmlib.AM">
+      <created>1670575970315</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1670575970316</updated>
+    </task>
+    <task id="LOCAL-00061" summary="add XMLib(技能编辑器)">
+      <created>1671339882031</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1671339882031</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,9 +762,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add CameraContorller" />
-    <MESSAGE value="complete player move" />
-    <MESSAGE value="add Parkour" />
     <MESSAGE value="add some anim resources" />
     <MESSAGE value="fix anim end rotation bug" />
     <MESSAGE value="complete parkour" />
@@ -714,7 +784,10 @@
     <MESSAGE value="add dodge" />
     <MESSAGE value="fix： diable ctr when post skill" />
     <MESSAGE value="fix： disble input when post skll" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix： disble input when post skll" />
+    <MESSAGE value="change scene" />
+    <MESSAGE value="add xmlib.AM" />
+    <MESSAGE value="add XMLib(技能编辑器)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add XMLib(技能编辑器)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -773,16 +846,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs</url>
-          <line>30</line>
+          <line>31</line>
           <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\SavingWrapper.cs" initialLine="30" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="733" />
+              <option value="741" />
             </startOffsets>
             <endOffsets>
-              <option value="742" />
+              <option value="750" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs</url>
+          <line>30</line>
+          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\StateMachine\Player\PlayerBaseState.cs" initialLine="30" containingFunctionPresentation="method 'FaceTarget'">
+            <startOffsets>
+              <option value="884" />
+            </startOffsets>
+            <endOffsets>
+              <option value="991" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
