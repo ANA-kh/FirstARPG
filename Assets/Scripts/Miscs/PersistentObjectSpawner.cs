@@ -5,11 +5,12 @@ namespace FirstARPG.Miscs
     public class PersistentObjectSpawner : MonoBehaviour
     {
         [SerializeField] GameObject persistentObjectPrefab;
+        public bool Switch;
 
         static bool _hasSpawned = false;
 
         private void Awake() {
-            if (_hasSpawned) return;
+            if (_hasSpawned || !Switch) return;
 
             SpawnPersistentObjects();
 

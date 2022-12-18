@@ -6,6 +6,9 @@ using UnityEngine.AI;
 
 namespace FirstARPG.Miscs
 {
+    /// <summary>
+    /// 模拟受外力
+    /// </summary>
     [RequireComponent(typeof(CharacterController))]
     public class ForceReceiver : MonoBehaviour
     {

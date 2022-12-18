@@ -37,6 +37,19 @@ namespace FirstARPG.Combat
         {
             if (_targets.Count == 0) { return false; }
 
+            Target closestTarget = GetClosestTarget();
+
+            if (closestTarget == null) { return false; }
+
+            CurrentTarget = closestTarget;
+            //OldGame
+            //cineTargetGroup.AddMember(CurrentTarget.transform, 1f, 2f);
+
+            return true;
+        }
+
+        public Target GetClosestTarget()
+        {
             Target closestTarget = null;
             float closestTargetDistance = Mathf.Infinity;
 
@@ -57,19 +70,15 @@ namespace FirstARPG.Combat
                 }
             }
 
-            if (closestTarget == null) { return false; }
-
-            CurrentTarget = closestTarget;
-            cineTargetGroup.AddMember(CurrentTarget.transform, 1f, 2f);
-
-            return true;
+            return closestTarget;
         }
 
         public void Cancel()
         {
             if (CurrentTarget == null) { return; }
 
-            cineTargetGroup.RemoveMember(CurrentTarget.transform);
+            //OldGame
+            //cineTargetGroup.RemoveMember(CurrentTarget.transform);
             CurrentTarget = null;
         }
 
@@ -77,7 +86,8 @@ namespace FirstARPG.Combat
         {
             if (CurrentTarget == target)
             {
-                cineTargetGroup.RemoveMember(CurrentTarget.transform);
+                //OldGame
+                //cineTargetGroup.RemoveMember(CurrentTarget.transform);
                 CurrentTarget = null;
             }
 
