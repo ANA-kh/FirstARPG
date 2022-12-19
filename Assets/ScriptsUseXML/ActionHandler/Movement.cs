@@ -25,7 +25,7 @@ namespace XMLibGame
                 var movement = CalculateMovement(controller,InputData.AxisValue.normalized);
                            //* config.moveSpeed;
 
-                Move(controller,movement*config.moveSpeed,deltaTime);
+                controller.ForceReceiver.Move(movement*config.moveSpeed,deltaTime);
                 FaceMovementDirection(controller,movement, deltaTime);
             }
         }
@@ -45,13 +45,7 @@ namespace XMLibGame
             return forward * input.y +
                    right * input.x;
         }
-        
-        protected void Move(ActionMachineController controller,Vector3 motion, float deltaTime)
-        {
-            controller.CharacterController.Move((motion + controller.ForceReceiver.Movement) * deltaTime);
-            controller.CurVelocity = controller.CharacterController.velocity;
-        }
-        
+
         private void FaceMovementDirection(ActionMachineController controller, Vector3 movement, float deltaTime)
         {
             controller.transform.rotation = Quaternion.Lerp(

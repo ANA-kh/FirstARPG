@@ -363,32 +363,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2364970121769265527
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ANI_Walk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fa6156c1c980d2645b2e3c9404b8a97a, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1107 &-1750926562452055540
 AnimatorStateMachine:
   serializedVersion: 6
@@ -1097,9 +1071,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -7491022741422293626}
     m_Position: {x: 110, y: 350, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2364970121769265527}
-    m_Position: {x: 120, y: 410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8676071529700622345}
     m_Position: {x: 120, y: 470, z: 0}

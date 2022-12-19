@@ -29,14 +29,12 @@ namespace XMLibGame
 
         [SerializeField]
         private LayerMask goundMask;
-
-        [SerializeField]
-        public bool _isGround = true;
+        
         
         //---
         public Transform MainCameraTransform { get; private set; }
         public CharacterController CharacterController;
-        public Vector3 CurVelocity { get; set; }
+        public Vector3 CurTrueVelocity { get; set; }
         [field: SerializeField]public ForceReceiver ForceReceiver { get; private set; }
         [field: SerializeField]public WeaponDamage Weapon { get; private set; }
         [field: SerializeField] public float RotationDamping { get; private set; }
@@ -48,10 +46,8 @@ namespace XMLibGame
         private float animatorTimer;
 
         public Rigidbody rigid => _rigid;
-
-        private Quaternion _modelRotation;
-        public Quaternion modelRotation => _modelRotation;
-        public bool isGround => _isGround && Mathf.Approximately(_rigid.velocity.y, 0);
+        
+        public bool isGround => CharacterController.isGrounded;//_isGround && Mathf.Approximately(_rigid.velocity.y, 0);
 
         private void Start()
         {
@@ -61,8 +57,7 @@ namespace XMLibGame
             actionMachine.Initialize(configName, this);
             MainCameraTransform = Camera.main.transform;
             animator.enabled = false;
-
-            _modelRotation = modelRoot.rotation;
+            
 
             InitAnimation();
         }
@@ -73,18 +68,6 @@ namespace XMLibGame
             //UpdateRotation(); 旋转放到FaceMovementDirection
         }
 
-        private void UpdateRotation()
-        {
-            Vector3 velocity = rigid.velocity;
-            velocity.y = 0f;
-            if (velocity.magnitude > 0.0001f)
-            {
-                _modelRotation = Quaternion.LookRotation(velocity);
-            }
-
-            modelRoot.rotation = Quaternion.Lerp(modelRoot.rotation, _modelRotation, Time.deltaTime * rotationSpeed);
-        }
-
         public void LogicUpdate(float deltaTime)
         {
             //更新状态
@@ -93,15 +76,9 @@ namespace XMLibGame
             //更新动画
             UpdateLogicAnimation(deltaTime);
 
+            //更新模拟受力（由于characterController不受一些物理作用影响）
+            ForceReceiver.LogicUpdate(deltaTime);
             //TODO CheckGround();
-        }
-
-        private void CheckGround()
-        {
-            float length = 0.02f;
-            _isGround = rigid.velocity.y > 0
-                ? false
-                : Physics.Raycast(transform.position + length * Vector3.up, Vector3.down, length * 2, goundMask);
         }
 
         private void InitAnimation()
@@ -179,7 +156,7 @@ namespace XMLibGame
                 return;
             }
 
-            Matrix4x4 mat = Matrix4x4.TRS(transform.position, _modelRotation, Vector3.one);
+            Matrix4x4 mat = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
             var attackRanges = actionMachine.GetAttackRanges();
             var bodyRanges = actionMachine.GetBodyRanges();
             //DrawRanges(attackRanges, mat, Color.red);

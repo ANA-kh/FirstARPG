@@ -7,7 +7,7 @@
         "ANI_Idle"
       ],
       "dafualtAnimIndex": 0,
-      "fadeTime": 0.05,
+      "fadeTime": 0.2,
       "enableLoop": true,
       "nextStateName": "",
       "nextAnimIndex": -1,
@@ -45,6 +45,23 @@
             {
               "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
               "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "jump",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 4,
               "isNot": false,
               "fullMatch": false
             }
@@ -105,6 +122,23 @@
             {
               "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
               "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "jump",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 4,
               "isNot": false,
               "fullMatch": false
             }
@@ -423,6 +457,18 @@
           "enableBeginEnd": true,
           "beginFrame": 0,
           "endFrame": 8,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "enableBeginEnd": true,
+          "beginFrame": 6,
+          "endFrame": 10,
           "enableLoop": true
         }
       ],
@@ -1009,6 +1055,33 @@
       ],
       "actions": [],
       "defaultAnimaName": "ANI_Attack3"
+    },
+    {
+      "stateName": "jump",
+      "animNames": [
+        "ANI_NormalJumpUp"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.1,
+      "enableLoop": true,
+      "nextStateName": "",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.JumpConfig, Assembly-CSharp",
+          "JumpForce": 3.0,
+          "nextState": "idle"
+        }
+      ],
+      "defaultAnimaName": "ANI_NormalJumpUp"
     }
   ],
   "globalActions": []

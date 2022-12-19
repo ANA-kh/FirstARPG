@@ -26,46 +26,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Player/PlayerRig 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Player/PlayerRig 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ExtDebug.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ExtDebug.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/FacingTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/FacingTarget.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Velocity.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Velocity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XMLib.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/clips/ANI_Attack3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/System/PersistentObjects.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/System/PersistentObjects.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Targeting/Targeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Targeting/Targeter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/XMLibPlayerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/XMLibPlayerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miscs/ForceReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miscs/ForceReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miscs/PersistentObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miscs/PersistentObjectSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SavingWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -105,10 +77,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/04/e8b4cded/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/7d593d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/06/b887bc7e/Ray.cs" root0="SKIP_HIGHLIGHTING" />
@@ -294,10 +262,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16420">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16420" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -353,28 +321,8 @@
       <workItem from="1671185266283" duration="50000" />
       <workItem from="1671265864167" duration="18031000" />
       <workItem from="1671332035378" duration="4832000" />
-      <workItem from="1671341513230" duration="9924000" />
-    </task>
-    <task id="LOCAL-00013" summary="add shop system">
-      <created>1655539340466</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1655539340466</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add shop system">
-      <created>1655539346534</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1655539346534</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add abilitys">
-      <created>1655556979185</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1655556979185</updated>
+      <workItem from="1671341513230" duration="17244000" />
+      <workItem from="1671416788146" duration="103000" />
     </task>
     <task id="LOCAL-00016" summary="add abilitys">
       <created>1655556985168</created>
@@ -698,7 +646,28 @@
       <option name="project" value="LOCAL" />
       <updated>1671339882031</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add Game Base">
+      <created>1671352639398</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1671352639398</updated>
+    </task>
+    <task id="LOCAL-00063" summary="add Attack Movement Condition">
+      <created>1671352764124</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1671352764124</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add  some change for XMLib">
+      <created>1671352817425</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1671352817425</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,9 +731,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add some anim resources" />
-    <MESSAGE value="fix anim end rotation bug" />
-    <MESSAGE value="complete parkour" />
     <MESSAGE value="add some resources" />
     <MESSAGE value="add drop item function" />
     <MESSAGE value="add new InputSystem" />
@@ -787,7 +753,10 @@
     <MESSAGE value="change scene" />
     <MESSAGE value="add xmlib.AM" />
     <MESSAGE value="add XMLib(技能编辑器)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add XMLib(技能编辑器)" />
+    <MESSAGE value="add Game Base" />
+    <MESSAGE value="add Attack Movement Condition" />
+    <MESSAGE value="add  some change for XMLib" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  some change for XMLib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -859,13 +828,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs</url>
-          <line>30</line>
+          <line>31</line>
           <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\StateMachine\Player\PlayerBaseState.cs" initialLine="30" containingFunctionPresentation="method 'FaceTarget'">
             <startOffsets>
-              <option value="884" />
+              <option value="997" />
             </startOffsets>
             <endOffsets>
-              <option value="991" />
+              <option value="1104" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="71" />
