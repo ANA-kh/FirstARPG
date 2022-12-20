@@ -39,7 +39,7 @@ namespace XMLibGame
             if (config.Target)
             {
                 var controller = (ActionMachineController)node.actionMachine.controller;
-                controller.transform.position = Vector3.Lerp(controller.transform.position, config.Target.transform.position, 2.0f/config.tracingFrames);
+                controller.transform.position = Vector3.Lerp(controller.transform.position, config.Target.transform.position, 1.1f/config.tracingFrames);
             }
         }
     }

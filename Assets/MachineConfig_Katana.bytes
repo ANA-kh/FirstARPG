@@ -1,0 +1,3468 @@
+{
+  "firstStateName": "idle",
+  "states": [
+    {
+      "stateName": "idle",
+      "animNames": [
+        "GhostSamurai_Common_Idle_Inplace"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.2,
+      "enableLoop": true,
+      "nextStateName": "",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "run",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 1,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "jump",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 4,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "FlyKick",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 16,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "FlyingBox",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 32,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "InsideKick",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 48,
+              "isNot": false,
+              "fullMatch": true
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "FlyKick",
+            "FlyingBox",
+            "InsideKick"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 6.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "GhostSamurai_Common_Idle_Inplace"
+    },
+    {
+      "stateName": "run",
+      "animNames": [
+        "GhostSamurai_Common_Run_Sprint_Inplace"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": true,
+      "nextStateName": "",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "idle",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 1,
+              "isNot": true,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.MoveConfig, Assembly-CSharp",
+          "moveSpeed": 10.0
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "jump",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 4,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "FlyKick",
+            "FlyingBox",
+            "InsideKick"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 6.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "GhostSamurai_Common_Run_Sprint_Inplace"
+    },
+    {
+      "stateName": "attack1",
+      "animNames": [
+        "LAtk_0"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.1,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack2",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 60,
+          "endFrame": 73,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
+          "RotationDamping": 15.0,
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 8,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "enableBeginEnd": true,
+          "beginFrame": 9,
+          "endFrame": 20,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "LAtk_0"
+    },
+    {
+      "stateName": "attack2",
+      "animNames": [
+        "LAtk_1"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.155901,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack3",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 44,
+          "endFrame": 53,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "enableBeginEnd": true,
+          "beginFrame": 9,
+          "endFrame": 20,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "LAtk_1"
+    },
+    {
+      "stateName": "attack3",
+      "animNames": [
+        "LAtk_1"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.1299743,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "enableBeginEnd": true,
+          "beginFrame": 9,
+          "endFrame": 20,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "LAtk_1"
+    },
+    {
+      "stateName": "jump",
+      "animNames": [
+        "ANI_NormalJumpUp"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.1,
+      "enableLoop": true,
+      "nextStateName": "",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.JumpConfig, Assembly-CSharp",
+          "JumpForce": 3.0,
+          "nextState": "idle"
+        }
+      ],
+      "defaultAnimaName": "ANI_NormalJumpUp"
+    },
+    {
+      "stateName": "FlyKick",
+      "animNames": [
+        "FlyKick"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
+          "tracingFrames": 26,
+          "detectDis": 12.0,
+          "detectAngle": 30.0,
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 26,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "FlyKick",
+            "FlyingBox",
+            "InsideKick"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 6.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 46,
+          "endFrame": 66,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 46,
+          "endFrame": 66,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
+          "RotationDamping": 15.0,
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 8,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "FlyKick"
+    },
+    {
+      "stateName": "FlyingBox",
+      "animNames": [
+        "FlyingBox"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
+          "RotationDamping": 15.0,
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 8,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
+          "tracingFrames": 60,
+          "detectDis": 12.0,
+          "detectAngle": 30.0,
+          "enableBeginEnd": true,
+          "beginFrame": 3,
+          "endFrame": 58,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "FlyKick",
+            "FlyingBox",
+            "InsideKick"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 6.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 80,
+          "endFrame": 92,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 80,
+          "endFrame": 92,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "FlyingBox"
+    },
+    {
+      "stateName": "InsideKick",
+      "animNames": [
+        "InsideKick"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
+          "RotationDamping": 15.0,
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 8,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
+          "tracingFrames": 37,
+          "detectDis": 12.0,
+          "detectAngle": 30.0,
+          "enableBeginEnd": true,
+          "beginFrame": 13,
+          "endFrame": 50,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "FlyKick",
+            "FlyingBox",
+            "InsideKick"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 6.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 72,
+          "endFrame": 83,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 72,
+          "endFrame": 83,
+          "enableLoop": true
+        }
+      ],
+      "defaultAnimaName": "InsideKick"
+    }
+  ],
+  "globalActions": []
+}

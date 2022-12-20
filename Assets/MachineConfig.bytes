@@ -521,6 +521,15 @@
           "beginFrame": 6,
           "endFrame": 10,
           "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
+          "Damage": 10,
+          "impactFrameCnt": 0.0,
+          "enableBeginEnd": true,
+          "beginFrame": 9,
+          "endFrame": 41,
+          "enableLoop": true
         }
       ],
       "defaultAnimaName": "ANI_Attack1"

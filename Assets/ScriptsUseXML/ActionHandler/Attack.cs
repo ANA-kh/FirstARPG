@@ -6,7 +6,7 @@ namespace XMLibGame
 {
     [System.Serializable]
     [ActionConfig(typeof(Attack))]
-    public class AttackConfig
+    public class AttackConfig : HoldFrames
     {
         public int Damage;
         public float impactFrameCnt;
