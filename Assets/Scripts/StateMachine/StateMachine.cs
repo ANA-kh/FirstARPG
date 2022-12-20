@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace FirstARPG.StateMachine
 {
-    
     public abstract class StateMachine : MonoBehaviour
     {
-        private State _currentState;
+        protected State _currentState;
+        protected virtual bool UseUnityUpdate { get; } = true;
 
         public void SwitchState(State newState)
         {
@@ -18,12 +18,13 @@ namespace FirstARPG.StateMachine
 
         private void Update()
         {
-            _currentState?.Tick(Time.deltaTime);
-            OnUpdate();
+            if (UseUnityUpdate)
+            {
+                _currentState?.Tick(Time.deltaTime);
+                OnUpdate();
+            }
         }
 
-        protected virtual void OnUpdate()
-        {
-        }
+        protected virtual void OnUpdate() { }
     }
 }

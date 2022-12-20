@@ -11,6 +11,7 @@ namespace FirstARPG.Inventories
     public class ActionStore : MonoBehaviour, ISaveable
     {
         Dictionary<int, DockedItemSlot> dockedItems = new Dictionary<int, DockedItemSlot>();
+        public bool Skilling { get; private set; }
         private class DockedItemSlot 
         {
             public ActionItem item;
@@ -72,9 +73,10 @@ namespace FirstARPG.Inventories
         /// <returns></returns>
         public bool Use(int index, GameObject user)
         {
-            if (dockedItems.ContainsKey(index))
+            if (!Skilling&&dockedItems.ContainsKey(index))
             {
-                dockedItems[index].item.Use(user);
+                Skilling = true;
+                dockedItems[index].item.Use(user, () => { Skilling = false;});
                 if (dockedItems[index].item.isConsumable())
                 {
                     RemoveItems(index, 1);

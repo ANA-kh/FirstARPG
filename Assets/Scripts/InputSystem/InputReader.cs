@@ -102,5 +102,15 @@ namespace FirstARPG.InputSystem
                 IsBlocking = false;
             }
         }
+
+        public void OnSkill1(InputAction.CallbackContext context)
+        {
+            
+        }
+
+        public void OnSkill2(InputAction.CallbackContext context)
+        {
+            
+        }
     }
 }

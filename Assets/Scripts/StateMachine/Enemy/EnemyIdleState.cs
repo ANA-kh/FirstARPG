@@ -30,10 +30,11 @@ namespace FirstARPG.StateMachine.Enemy
         public override void Tick(float deltaTime)
         {
             Move(deltaTime);
-            if (IsInChaseRange())
-            {
-                stateMachine.SwitchState(new EnemyChasingState(stateMachine));
-            }
+            //TODO  暂时关掉chasing
+            // if (IsInChaseRange())
+            // {
+            //     stateMachine.SwitchState(new EnemyChasingState(stateMachine));
+            // }
             stateMachine.Animator.SetFloat(SpeedHash, 0f, AnimatorDampTime, deltaTime);
         }
 

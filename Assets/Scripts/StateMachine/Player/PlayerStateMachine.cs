@@ -35,7 +35,8 @@ namespace FirstARPG.StateMachine
 
 
         public Transform MainCameraTransform { get; private set; }
-        
+
+        protected override bool UseUnityUpdate { get; } = false;
 
         private void Awake()
         {
@@ -69,6 +70,12 @@ namespace FirstARPG.StateMachine
         {
             Health.OnTakeDamage -= HandleTakeDamage;
             Health.OnDie -= HandleDie;
+        }
+        
+        public void LogicUpdate()
+        {
+            _currentState?.Tick(Time.deltaTime);
+            OnUpdate();
         }
 
         private void HandleTakeDamage()

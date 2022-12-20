@@ -9,6 +9,7 @@ using XMLib.AM;
 
 namespace XMLibGame
 {
+    [Flags]
     public enum InputEvents
     {
         None = 0b0000,
@@ -16,6 +17,9 @@ namespace XMLibGame
         Attack = 0b0010,
         Jump = 0b0100,
         Jumping = 0b1000,
+        Skill1 = 0b1_0000,
+        Skill2 = 0b10_0000,
+        Tab = 0b100_0000,
     }
 
     public static class InputData
@@ -25,7 +29,11 @@ namespace XMLibGame
 
         public static bool HasEvent(InputEvents e, bool fullMatch = false)
         {
-            return fullMatch ? ((InputEvents & e) == InputEvents) : ((InputEvents & e) != 0);
+            // if (InputEvents == InputEvents.None)
+            // {
+            //     return false;
+            // }
+            return fullMatch ? ((InputEvents & e) == e) : ((InputEvents & e) != 0);
         }
 
         public static void Clear()
@@ -106,6 +114,21 @@ namespace XMLibGame
             {
                 InputData.InputEvents |= InputEvents.Jumping;
             }
+
+            if (player.Skill1.triggered)
+            {
+                InputData.InputEvents |= InputEvents.Skill1;
+            }
+            
+            if (player.Skill2.triggered)
+            {
+                InputData.InputEvents |= InputEvents.Skill2;
+            }
+
+            if (player.Target.triggered)
+            {
+                InputData.InputEvents |= InputEvents.Tab;
+            }
         }
 
         private void LogicUpdate()
@@ -118,9 +141,6 @@ namespace XMLibGame
                 RunLogicUpdate(logicDeltaTime);
                 _brain.ManualUpdate();//手动更新相机，解决相机抖动的问题
             }
-            
-            // RunLogicUpdate(Time.deltaTime);
-            // //_brain.ManualUpdate();//手动更新相机，解决相机抖动的问题
         }
 
         private void RunLogicUpdate(float logicDeltaTime)

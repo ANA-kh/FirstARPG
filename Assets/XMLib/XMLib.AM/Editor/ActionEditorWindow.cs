@@ -44,7 +44,7 @@ namespace XMLib.AM
 
         public ViewType showView;
 
-        public float frameRate => 0.033f;
+        public float frameRate => 1/60f;
 
         public Vector2 otherViewScrollPos = Vector2.zero;
 

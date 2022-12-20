@@ -70,6 +70,40 @@
           "beginFrame": 0,
           "endFrame": 0,
           "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "skill",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 16,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "changeWeapon",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 80,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
         }
       ],
       "defaultAnimaName": "ANI_Idle"
@@ -139,6 +173,23 @@
             {
               "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
               "events": 4,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": false,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "skill",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 16,
               "isNot": false,
               "fullMatch": false
             }
@@ -1082,6 +1133,113 @@
         }
       ],
       "defaultAnimaName": "ANI_NormalJumpUp"
+    },
+    {
+      "stateName": "skill",
+      "animNames": [],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": true,
+      "nextStateName": "",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.SkillConfig, Assembly-CSharp",
+          "skillIndex": 1,
+          "NextState": "idle"
+        }
+      ],
+      "defaultAnimaName": ""
+    },
+    {
+      "stateName": "changeWeapon",
+      "animNames": [
+        "ANI_Idle"
+      ],
+      "dafualtAnimIndex": 0,
+      "fadeTime": 0.05,
+      "enableLoop": false,
+      "nextStateName": "idle",
+      "nextAnimIndex": -1,
+      "frames": [
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        },
+        {
+          "stayAttackRange": false,
+          "stayBodyRange": false,
+          "attackRanges": [],
+          "bodyRanges": []
+        }
+      ],
+      "actions": [
+        {
+          "$type": "XMLibGame.ChangeWeaponConfig, Assembly-CSharp",
+          "weaponIndex": 1,
+          "changeActionMachine": true,
+          "actionMachineIndex": 1
+        }
+      ],
+      "defaultAnimaName": "ANI_Idle"
     }
   ],
   "globalActions": []

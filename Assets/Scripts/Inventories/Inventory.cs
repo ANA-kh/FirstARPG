@@ -13,8 +13,9 @@ namespace FirstARPG.Inventories
         [Tooltip("Allowed size")]
         [SerializeField] int inventorySize = 16;
         
-        InventorySlot[] _slots;
+        public InventorySlot[] _slots;
 
+        [Serializable]
         public struct InventorySlot
         {
             public InventoryItem item;
@@ -191,8 +192,10 @@ namespace FirstARPG.Inventories
             AddToFirstEnableSlot(item, 3);
             item = InventoryItem.GetFromID("0a2cb717-4ad3-4fc5-96ac-10fd3d6ef1cf");
             AddToFirstEnableSlot(item, 3);
-            item = InventoryItem.GetFromID("82d72e62-0992-403e-a330-b48be4701ad9");
-            AddToFirstEnableSlot(item, 2);
+            item = InventoryItem.GetFromID("6e8db41c-dd2b-4875-bb59-d245f58752af");
+            AddToFirstEnableSlot(item, 1);
+            item = InventoryItem.GetFromID("679b562b-5a2d-4699-81e9-466816186014");
+            AddToFirstEnableSlot(item, 1);
             
         }
 

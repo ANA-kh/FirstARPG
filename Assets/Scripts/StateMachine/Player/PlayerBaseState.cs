@@ -22,7 +22,7 @@ namespace FirstARPG.StateMachine
         {
             stateMachine.Controller.Move((motion + stateMachine.ForceReceiver.Movement) * deltaTime);
             stateMachine.CurVelocity = stateMachine.Controller.velocity;
-            Debug.Log($"stateMachine.CurVelocity{stateMachine.CurVelocity.magnitude} motion{motion.magnitude}");
+            //Debug.Log($"stateMachine.CurVelocity{stateMachine.CurVelocity.magnitude} motion{motion.magnitude}");
         }
         
         protected void FaceTarget()

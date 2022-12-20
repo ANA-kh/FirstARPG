@@ -1,6 +1,7 @@
 using System;
 using FirstARPG.InputSystem;
 using FirstARPG.Inventories;
+using FirstARPG.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
@@ -28,26 +29,47 @@ namespace FirstARPG.Player
 
         bool _isDraggingUI = false;
         private ActionStore _actionStore;
-
+        private PlayerStateMachine _playerStateMachine;
+        public bool UseXMLib;
 
         private void Awake() {
             _actionStore = GetComponent<ActionStore>();
             Cursor.lockState = CursorLockMode.Locked;
             InputReader = GetComponent<InputReader>();
+            _playerStateMachine = GetComponent<PlayerStateMachine>();
         }
 
         private void Update()
         {
             if (InteractWithUI()) return;//UI交互时屏蔽其他点击操作
-            
 
-            UseAbilities();
+
+            if (_playerStateMachine)
+            {
+                _playerStateMachine.LogicUpdate();
+            }
+
+            if (!UseXMLib)
+            {
+                UseAbilities();
+            }
 
             //TODO delete Debug
             // if (Input.GetMouseButtonDown(0))
             // {
             //     Debug.DrawRay(Camera.main.transform.position,GetMouseRay().direction * 100,Color.red,20);
             // }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                if (Cursor.lockState == CursorLockMode.Locked)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                }
+            }
 
             if (InteractWithComponent()) return;
 

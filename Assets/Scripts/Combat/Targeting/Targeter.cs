@@ -1,15 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using XMLibGame;
 
 namespace FirstARPG.Combat
 {
     public class Targeter : MonoBehaviour
     {
-        [SerializeField] private CinemachineTargetGroup cineTargetGroup;
+        [SerializeField]
+        private CinemachineTargetGroup cineTargetGroup;
         private Camera _mainCamera;
         private List<Target> _targets = new List<Target>();
+        public Transform Player;
 
         public Target CurrentTarget { get; private set; }
 
@@ -20,7 +24,10 @@ namespace FirstARPG.Combat
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.TryGetComponent<Target>(out var target)) { return; }
+            if (!other.TryGetComponent<Target>(out var target))
+            {
+                return;
+            }
 
             _targets.Add(target);
             target.OnDestroyed += RemoveTarget;
@@ -28,18 +35,27 @@ namespace FirstARPG.Combat
 
         private void OnTriggerExit(Collider other)
         {
-            if (!other.TryGetComponent<Target>(out var target)) { return; }
+            if (!other.TryGetComponent<Target>(out var target))
+            {
+                return;
+            }
 
             RemoveTarget(target);
         }
-        
+
         public bool SelectTarget()
         {
-            if (_targets.Count == 0) { return false; }
+            if (_targets.Count == 0)
+            {
+                return false;
+            }
 
             Target closestTarget = GetClosestTarget();
 
-            if (closestTarget == null) { return false; }
+            if (closestTarget == null)
+            {
+                return false;
+            }
 
             CurrentTarget = closestTarget;
             //OldGame
@@ -75,7 +91,10 @@ namespace FirstARPG.Combat
 
         public void Cancel()
         {
-            if (CurrentTarget == null) { return; }
+            if (CurrentTarget == null)
+            {
+                return;
+            }
 
             //OldGame
             //cineTargetGroup.RemoveMember(CurrentTarget.transform);
@@ -93,6 +112,76 @@ namespace FirstARPG.Combat
 
             target.OnDestroyed -= RemoveTarget;
             _targets.Remove(target);
+        }
+
+        public Target GetClosestTargetInAngle(float maxDis,float configDetectAngle)
+        {
+            Target result = null;
+            var detectDirection = DetectDirection();
+            if (detectDirection != Vector3.zero)
+            {
+                var closestAngle = configDetectAngle;
+
+                foreach (var target in _targets)
+                {
+                    if (!target.GetComponentInChildren<Renderer>().isVisible)
+                    {
+                        continue;
+                    }
+                    //calculate angle between forward and target position
+                    var targetDir = target.transform.position - Player.position;
+                    var angle = Vector3.Angle(targetDir, detectDirection);
+                    if (angle < closestAngle && targetDir.magnitude < maxDis)
+                    {
+                        closestAngle = angle;
+                        result = target;
+                    }
+                }
+            }
+
+            ClosestTarget = result;
+            return result;
+        }
+
+        public Target ClosestTarget { get; set; }
+
+        private Vector3 DetectDirection()
+        {
+            if (_mainCamera)
+            {
+                var forward = _mainCamera.transform.forward;
+                var right = _mainCamera.transform.right;
+                forward.y = 0f;
+                right.y = 0f;
+
+                forward.Normalize();
+                right.Normalize();
+
+                var input = InputData.AxisValue.normalized;
+                if (input == Vector2.zero)
+                {
+                    return forward;
+                }
+                var detectDirection = forward * input.y + right * input.x;
+                return detectDirection;
+            }
+
+            return Vector3.zero;
+        }
+
+        private void OnDrawGizmos()
+        {
+            var derection = DetectDirection();
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(Player.position, derection * 2);
+            Gizmos.DrawWireSphere(Player.position + derection * 2, 0.2f);
+            var target = GetClosestTargetInAngle(5,30);
+            if (target != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(target.transform.position, 1f);
+            }
         }
     }
 }

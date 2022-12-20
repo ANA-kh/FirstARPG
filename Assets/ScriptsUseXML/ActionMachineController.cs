@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using FirstARPG.Combat;
+using FirstARPG.Inventories;
 using FirstARPG.Miscs;
 using UnityEngine;
 using XMLib;
@@ -13,7 +14,7 @@ namespace XMLibGame
     public class ActionMachineController : MonoBehaviour
     {
         [SerializeField]
-        private string configName = null;
+        private List<string> configNames = null;
 
         [SerializeField]
         private Animator animator = null;
@@ -22,43 +23,49 @@ namespace XMLibGame
         private Rigidbody _rigid = null;
 
         [SerializeField]
-        private Transform modelRoot = null;
-
-        [SerializeField]
-        private float rotationSpeed = 1;
-
-        [SerializeField]
         private LayerMask goundMask;
-        
-        
+
         //---
         public Transform MainCameraTransform { get; private set; }
         public CharacterController CharacterController;
         public Vector3 CurTrueVelocity { get; set; }
-        [field: SerializeField]public ForceReceiver ForceReceiver { get; private set; }
-        [field: SerializeField]public WeaponDamage Weapon { get; private set; }
+        [field: SerializeField] public ForceReceiver ForceReceiver { get; private set; }
+        [field: SerializeField] public WeaponDamage Weapon { get; private set; }
         [field: SerializeField] public float RotationDamping { get; private set; }
         [field: SerializeField] public WeaponHandler WeaponHandler { get; private set; }
-        [field: SerializeField]public Targeter Targeter { get; private set; }
+        [field: SerializeField] public Targeter Targeter { get; private set; }
+        [field: SerializeField] public ActionStore ActionStore { get; private set; }
         //
 
         private IActionMachine actionMachine;
         private float animatorTimer;
 
         public Rigidbody rigid => _rigid;
-        
-        public bool isGround => CharacterController.isGrounded;//_isGround && Mathf.Approximately(_rigid.velocity.y, 0);
+
+        public bool isGround =>
+            CharacterController.isGrounded; //_isGround && Mathf.Approximately(_rigid.velocity.y, 0);
 
         private void Start()
         {
             animatorTimer = 0;
 
             actionMachine = new ActionMachine();
-            actionMachine.Initialize(configName, this);
+            actionMachine.Initialize(configNames[0], this);
             MainCameraTransform = Camera.main.transform;
             animator.enabled = false;
-            
 
+
+            InitAnimation();
+        }
+
+        public void ChangeWeapon(int index)
+        {
+            Weapon = WeaponHandler.ChangeWeapon(index);
+        }
+
+        public void ChangeActionMachine(int index)
+        {
+            actionMachine.Initialize(configNames[index], this);
             InitAnimation();
         }
 
@@ -144,7 +151,10 @@ namespace XMLibGame
                     fixedTimeOffset = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
                 }
 
-                animator.CrossFadeInFixedTime(animName, fadeTime, 0, fixedTimeOffset);
+                if (animName != string.Empty)
+                {
+                    animator.CrossFadeInFixedTime(animName, fadeTime, 0, fixedTimeOffset);
+                }
                 animator.Update(0);
             }
         }

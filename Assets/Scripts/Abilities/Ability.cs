@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using FirstARPG.Attributes;
 using FirstARPG.Inventories;
@@ -16,8 +17,10 @@ namespace FirstARPG.Abilities
         [SerializeField] float _cooldownTime = 0;
         [SerializeField] float _manaCost = 0;
         private PlayerController _playerController;
+        private Action _onFinish;
+        private int _effectNums;
 
-        public override bool Use(GameObject user)
+        public override bool Use(GameObject user, Action finish)
         {
             var mana = user.GetComponent<Mana>();
             if (mana.GetMana() < _manaCost)
@@ -39,8 +42,8 @@ namespace FirstARPG.Abilities
            {
                TargetAcquired(data);
            });
-
-            return true;
+           _onFinish = finish;
+           return true;
         }
 
         private void TargetAcquired(AbilityData data)
@@ -60,7 +63,8 @@ namespace FirstARPG.Abilities
             {
                 data.SetTargets(filterStrategy.Filter(data.GetTargets()));
             }
-            
+
+            _effectNums = _effectStrategies.Length;
             foreach (var effect in _effectStrategies)
             {
                 _playerController.InputReader.DisableCtr();
@@ -70,7 +74,12 @@ namespace FirstARPG.Abilities
 
         private void EffectFinished()
         {
+            _effectNums--;
             _playerController.InputReader.EnableCtr();
+            if (_effectNums == 0)
+            {
+                 _onFinish?.Invoke();
+            }
         }
     }
 }
