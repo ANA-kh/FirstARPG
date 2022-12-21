@@ -9,6 +9,7 @@ namespace FirstARPG.Combat
         private int curIndex = 0;
         public List<GameObject> weaponLogics = new List<GameObject>();
         public List<GameObject> weapons = new List<GameObject>();
+        public List<GameObject> backWeapons = new List<GameObject>();
 
         public WeaponDamage ChangeWeapon(int index)
         {
@@ -20,9 +21,12 @@ namespace FirstARPG.Combat
                 }
                 else
                 {
-                    weaponLogic = weaponLogics[index];
                     weapons[curIndex].gameObject.SetActive(false);
+                    backWeapons[curIndex].gameObject.SetActive(true);
                     weapons[index].gameObject.SetActive(true);
+                    backWeapons[index].gameObject.SetActive(false);
+                    weaponLogic = weaponLogics[index];
+                    
                     curIndex = index;
                     return weaponLogic.GetComponent<WeaponDamage>();
                 }

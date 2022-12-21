@@ -71,12 +71,22 @@ namespace XMLibGame
 
         private void Update()
         {
-            UpdateAnimation();
+            if (!UseLogicAnimationUpdate)
+            {
+                UpdateAnimation();
+            }
             //UpdateRotation(); 旋转放到FaceMovementDirection
         }
 
+        public bool UseLogicAnimationUpdate { get; set; }
+
         public void LogicUpdate(float deltaTime)
         {
+            if (UseLogicAnimationUpdate)
+            {
+                LogicUpdateAnimation(deltaTime);
+            }
+            
             //更新状态
             actionMachine.LogicUpdate(deltaTime);
 
@@ -108,6 +118,29 @@ namespace XMLibGame
             }
 
             float deltaTime = Time.deltaTime;
+            if (deltaTime < animatorTimer)
+            {
+                animatorTimer -= deltaTime;
+            }
+            else
+            {
+                deltaTime = animatorTimer;
+                animatorTimer = 0f;
+            }
+
+            if (animator != null)
+            {
+                animator.Update(deltaTime);
+            }
+        }
+        
+        private void LogicUpdateAnimation(float deltaTime)
+        {
+            if (animatorTimer <= 0)
+            {
+                return;
+            }
+            
             if (deltaTime < animatorTimer)
             {
                 animatorTimer -= deltaTime;

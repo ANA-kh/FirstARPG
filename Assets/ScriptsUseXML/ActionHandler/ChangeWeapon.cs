@@ -6,7 +6,7 @@ namespace XMLibGame
 {
     [Serializable]
     [ActionConfig(typeof(ChangeWeapon))]
-    public class ChangeWeaponConfig
+    public class ChangeWeaponConfig : HoldFrames
     {
         public int weaponIndex;
         public bool changeActionMachine;

@@ -22,6 +22,7 @@ namespace FirstARPG.StateMachine.Enemy
         [field: SerializeField] public WeaponDamage Weapon { get; private set; }
         [field:SerializeField]public float PlayerChasingRange { get; private set; }
         [field:SerializeField]public float MovementSpeed { get; private set; }
+        [field:SerializeField]public float ChasingAroundSpeed { get; private set; }
         [field:SerializeField]public float PlayerAttackingRange { get; private set; }
         [field:SerializeField]public int AttackDamage { get; private set; }
         [field:SerializeField]public float AttackKonckback { get; private set; }
@@ -65,6 +66,16 @@ namespace FirstARPG.StateMachine.Enemy
         private void HandleDie()
         {
             SwitchState(new EnemyDeadState(this));
+        }
+        
+        public bool CheckState(Type type)
+        {
+            return _currentState.GetType() == type;
+        }
+        
+        public void ChasingPlayer()
+        {
+            SwitchState(new EnemyChasingState(this));
         }
 
         private void OnDrawGizmosSelected()

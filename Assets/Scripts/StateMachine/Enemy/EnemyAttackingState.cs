@@ -35,7 +35,7 @@ namespace FirstARPG.StateMachine.Enemy
             
             if (GetNormalizedTime(stateMachine.Animator,"Attack") >= 1f)
             {
-                stateMachine.SwitchState(new EnemyChasingState(stateMachine));
+                stateMachine.SwitchState(new EnemyChasingAroundState(stateMachine));
             }
         }
 

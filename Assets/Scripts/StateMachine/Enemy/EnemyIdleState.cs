@@ -10,7 +10,7 @@ namespace FirstARPG.StateMachine.Enemy
         private const float CrossFadeDuration = 0.2f;
         private const float AnimatorDampTime = 0.1f;
 
-        public EnemyIdleState(EnemyStateMachine stateMachine,bool shouldFade = true) : base(stateMachine)
+        public EnemyIdleState(EnemyStateMachine stateMachine, bool shouldFade = true) : base(stateMachine)
         {
             _shouldFade = shouldFade;
         }
@@ -30,11 +30,11 @@ namespace FirstARPG.StateMachine.Enemy
         public override void Tick(float deltaTime)
         {
             Move(deltaTime);
-            //TODO  暂时关掉chasing
-            // if (IsInChaseRange())
-            // {
-            //     stateMachine.SwitchState(new EnemyChasingState(stateMachine));
-            // }
+            if (IsInChaseRange())
+            {
+                stateMachine.SwitchState(new EnemyChasingAroundState(stateMachine));
+            }
+
             stateMachine.Animator.SetFloat(SpeedHash, 0f, AnimatorDampTime, deltaTime);
         }
 
