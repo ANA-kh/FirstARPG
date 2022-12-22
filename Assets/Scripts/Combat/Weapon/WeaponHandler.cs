@@ -43,5 +43,10 @@ namespace FirstARPG.Combat
         {
             weaponLogic.SetActive(false);
         }
+
+        public GameObject GetCurrentWeapon()
+        {
+            return weapons[curIndex];
+        }
     }
 }

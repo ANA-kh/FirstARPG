@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using FirstARPG.Combat;
 using FirstARPG.Inventories;
 using FirstARPG.Miscs;
@@ -35,6 +36,12 @@ namespace XMLibGame
         [field: SerializeField] public WeaponHandler WeaponHandler { get; private set; }
         [field: SerializeField] public Targeter Targeter { get; private set; }
         [field: SerializeField] public ActionStore ActionStore { get; private set; }
+        [field: SerializeField] public GameObject Model { get; private set; }
+        [field: SerializeField] public Material GlowMaterial { get; private set; }
+        [field: SerializeField] public CinemachineImpulseSource Impulse { get; set; }
+        [Header("Particles")]
+        public ParticleSystem blueTrail;
+        public ParticleSystem whiteTrail;
         //
 
         private IActionMachine actionMachine;
@@ -44,6 +51,7 @@ namespace XMLibGame
 
         public bool isGround =>
             CharacterController.isGrounded; //_isGround && Mathf.Approximately(_rigid.velocity.y, 0);
+        
 
         private void Start()
         {
@@ -97,6 +105,21 @@ namespace XMLibGame
             //更新模拟受力（由于characterController不受一些物理作用影响）
             ForceReceiver.LogicUpdate(deltaTime);
             //TODO CheckGround();
+        }
+        
+        public void ShowBody(bool state)
+        {
+            var skinMeshList = GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (var smr in skinMeshList)
+            {
+                smr.enabled = state;
+            }
+            
+            var meshList = GetComponentsInChildren<MeshRenderer>();
+            foreach (var mr in meshList)
+            {
+                mr.enabled = state;
+            }
         }
 
         private void InitAnimation()

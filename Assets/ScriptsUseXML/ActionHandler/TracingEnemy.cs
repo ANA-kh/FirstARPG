@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using FirstARPG.Combat;
 using UnityEngine;
 using XMLib.AM;
@@ -12,7 +13,9 @@ namespace XMLibGame
         public int tracingFrames = 1;
         public float detectDis;
         public float detectAngle;
+        public bool justShowWeapon;
         [Newtonsoft.Json.JsonIgnore] public Vector3 DisPerFrame { get; set; }
+        [Newtonsoft.Json.JsonIgnore] public GameObject WeaponParent { get; set; }
     }
     
     public class TracingEnemy : IActionHandler
@@ -24,16 +27,47 @@ namespace XMLibGame
             var target = controller.Targeter.GetClosestTargetInAngle(config.detectDis, config.detectAngle);
             if (target)
             {
-                config.DisPerFrame = (target.transform.position - controller.transform.position) * 1f / config.tracingFrames;    
+                var configDisPerFrame = (target.transform.position - controller.transform.position) * 1f / config.tracingFrames;
+                configDisPerFrame.y = 0;
+                config.DisPerFrame = configDisPerFrame;
             }
             else
             {
                 config.DisPerFrame = Vector3.zero;
             }
+            
+            if (config.justShowWeapon)
+            {
+                var weapon = controller.WeaponHandler.GetCurrentWeapon();
+                config.WeaponParent = weapon.transform.parent.gameObject;
+                weapon.transform.SetParent(null,true);
+                controller.ShowBody(false);
+                weapon.transform.rotation = Quaternion.LookRotation(config.DisPerFrame);
+                controller.blueTrail.transform.position = weapon.transform.position;
+                controller.whiteTrail.transform.rotation = weapon.transform.rotation;
+                controller.blueTrail.Play();
+                controller.whiteTrail.Play();
+            }
         }
 
         public void Exit(ActionNode node)
         {
+            var config = (TracingEnemyConfig)node.config;
+            var controller = (ActionMachineController)node.actionMachine.controller;
+            if (config.justShowWeapon)
+            {
+                controller.ShowBody(true);
+                var weapon = controller.WeaponHandler.GetCurrentWeapon();
+                weapon.transform.parent = config.WeaponParent.transform;
+                weapon.transform.localPosition = Vector3.zero;
+                weapon.transform.localEulerAngles = new Vector3(0, -90, 90);
+                weapon.transform.localScale = Vector3.one;
+                controller.blueTrail.Stop();
+                controller.whiteTrail.Stop();
+                
+                //相机震动
+                controller.Impulse.GenerateImpulse(Vector3.right);
+            }
         }
 
         public void Update(ActionNode node, float deltaTime)
@@ -42,6 +76,51 @@ namespace XMLibGame
             var controller = (ActionMachineController)node.actionMachine.controller;
             var transform = controller.transform;
             transform.position = transform.position + config.DisPerFrame;
+            if (config.justShowWeapon)
+            {
+                var weapon = controller.WeaponHandler.GetCurrentWeapon();
+                weapon.transform.position = weapon.transform.position + config.DisPerFrame;
+                //var target = controller.Targeter.GetClosestTargetInAngle(config.detectDis, config.detectAngle);
+                
+            }
+        }
+    }
+
+    [Serializable]
+    [ActionConfig(typeof(Clone_ChangeMaterial))]
+    public class Clone_ChangeMaterialConfig : HoldFrames
+    {
+        [Newtonsoft.Json.JsonIgnore] public GameObject Clone{get; set; }
+    }
+    public class Clone_ChangeMaterial : IActionHandler
+    {
+        public void Enter(ActionNode node)
+        {
+            var controller = (ActionMachineController)node.actionMachine.controller;
+            var config = (Clone_ChangeMaterialConfig)node.config;
+            config.Clone = GameObject.Instantiate(controller.Model, controller.Model.transform);
+            config.Clone.transform.SetParent(null,true);
+            foreach (var skinnedMeshRenderer in config.Clone.GetComponentsInChildren<SkinnedMeshRenderer>())
+            {
+                skinnedMeshRenderer.enabled = true;
+                var materials = new Material[3]
+                {
+                    controller.GlowMaterial,
+                    controller.GlowMaterial,
+                    controller.GlowMaterial
+                };
+                skinnedMeshRenderer.materials = materials;
+            }
+        }
+
+        public void Exit(ActionNode node)
+        {
+            var config = (Clone_ChangeMaterialConfig)node.config;
+            GameObject.Destroy(config.Clone);
+        }
+
+        public void Update(ActionNode node, float deltaTime)
+        {
         }
     }
 }
