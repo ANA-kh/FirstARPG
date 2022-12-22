@@ -20,6 +20,7 @@ namespace XMLibGame
         Skill1 = 0b1_0000,
         Skill2 = 0b10_0000,
         Tab = 0b100_0000,
+        Dodge = 0b1000_0000,
     }
 
     public static class InputData
@@ -128,6 +129,11 @@ namespace XMLibGame
             if (player.Target.triggered)
             {
                 InputData.InputEvents |= InputEvents.Tab;
+            }
+
+            if (player.Dodge.triggered)
+            {
+                InputData.InputEvents |= InputEvents.Dodge;
             }
         }
 

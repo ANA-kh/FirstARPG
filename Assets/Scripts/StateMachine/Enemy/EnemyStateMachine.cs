@@ -26,6 +26,10 @@ namespace FirstARPG.StateMachine.Enemy
         [field:SerializeField]public float PlayerAttackingRange { get; private set; }
         [field:SerializeField]public int AttackDamage { get; private set; }
         [field:SerializeField]public float AttackKonckback { get; private set; }
+        
+        //TODO  Test code 
+        public bool StopEnemy;
+        public float ChasingAroundDis = 10;
 
         private void Awake()
         {

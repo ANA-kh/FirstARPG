@@ -26,22 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Common/Inplace_GreatSword_Equip.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Common/Inplace_GreatSword_Equip.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/katana/APose/Attack/Inplace/GhostSamurai_APose_Attack01_1_ALL_Inplace.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/katana/APose/Attack/Inplace/GhostSamurai_APose_Attack01_1_ALL_Inplace.FBX.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyAttackingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyAttackingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/Editor/ActionEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/Editor/ActionEditorWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -98,7 +97,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/89/ca47d62e/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/cc/ee3d3edd/CursorLockMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0C849643-5C83-4A4C-9B74-035EB960FCFC/77/5d32840b/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c8496435c834a4c9b74035eb960fcfc26800/12/0324bd1e/RuntimeAnimatorController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c8496435c834a4c9b74035eb960fcfc26800/3e/d57c7e28/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c8496435c834a4c9b74035eb960fcfc26800/ba/59d409c0/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C86290A-1EC4-4F1C-9CCC-0561EFB0B424/35/09eb0b13/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C86290A-1EC4-4F1C-9CCC-0561EFB0B424/7e/9d1368da/Collider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c34b75de3fc4b43babbd260b14ffeeb61800/58/00c0b52f/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
@@ -119,6 +120,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/3d/58b64b7a/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B273739A-52E0-4942-8E50-4D0459A80B99/a0/e808d0ef/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/3c/fca311c9/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/fd/70f64bae/AnimatorController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,6 +130,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/XMLib/XMLib.AM/Runtime/ActionMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Editor/Editors/CinemachineConfinerEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Editor/Editors/CinemachineStateDrivenCameraEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Editor/Editors/CinemachineVirtualCameraEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.15/Runtime/Core/CameraState.cs" root0="SKIP_HIGHLIGHTING" />
@@ -285,10 +288,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="29756">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21680">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="29756" />
+      <option name="pid" value="21680" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -348,14 +351,8 @@
       <workItem from="1671416788146" duration="103000" />
       <workItem from="1671416907957" duration="33283000" />
       <workItem from="1671503838368" duration="30664000" />
-      <workItem from="1671598587185" duration="4350000" />
-    </task>
-    <task id="LOCAL-00019" summary="add mana  and stats Displays">
-      <created>1655616083084</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1655616083084</updated>
+      <workItem from="1671598587185" duration="19218000" />
+      <workItem from="1671671398171" duration="1880000" />
     </task>
     <task id="LOCAL-00020" summary="add hp bar">
       <created>1655621591750</created>
@@ -693,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671539174106</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add some animation&#10;change Enemy stateMachine">
+      <created>1671606527915</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1671606527915</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,8 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add basic movement StateMachine" />
-    <MESSAGE value="add targeting and some statement" />
     <MESSAGE value="add parkour to jumpstate" />
     <MESSAGE value="add targeting animation" />
     <MESSAGE value="add targeting special movement" />
@@ -782,7 +784,9 @@
     <MESSAGE value="add  jump velocity handler" />
     <MESSAGE value="fix some bug" />
     <MESSAGE value="add character model and some animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add character model and some animation" />
+    <MESSAGE value="add some animation" />
+    <MESSAGE value="add some animation&#10;change Enemy stateMachine" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some animation&#10;change Enemy stateMachine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -893,17 +897,17 @@
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs</url>
-          <line>81</line>
-          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\StateMachine\Enemy\EnemyChasingAroundState.cs" initialLine="77" containingFunctionPresentation="method 'Tick'">
+          <url>file://$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Jump.cs</url>
+          <line>30</line>
+          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\ScriptsUseXML\ActionHandler\Jump.cs" initialLine="30" containingFunctionPresentation="method 'Enter'">
             <startOffsets>
-              <option value="3073" />
+              <option value="746" />
             </startOffsets>
             <endOffsets>
-              <option value="3095" />
+              <option value="786" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="138" />
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

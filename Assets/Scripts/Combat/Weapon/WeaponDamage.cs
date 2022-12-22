@@ -37,6 +37,7 @@ namespace FirstARPG.Combat
             if (other.TryGetComponent<Health>(out Health health))
             {
                 health.TakeDamage(Owner,_damage);
+                Debug.Log("--------------------TakeDamage");
             }
 
             if (other.TryGetComponent<ForceReceiver>(out ForceReceiver forceReceiver))

@@ -30,7 +30,7 @@ namespace FirstARPG.StateMachine.Enemy
         public override void Tick(float deltaTime)
         {
             Move(deltaTime);
-            if (IsInChaseRange())
+            if (!stateMachine.StopEnemy&&IsInChaseRange())
             {
                 stateMachine.SwitchState(new EnemyChasingAroundState(stateMachine));
             }

@@ -12,9 +12,7 @@ namespace XMLibGame
         public int tracingFrames = 1;
         public float detectDis;
         public float detectAngle;
-        [Newtonsoft.Json.JsonIgnore]
-        public Target Target{get; set; }
-        [Newtonsoft.Json.JsonIgnore] public float frameCount { get; set; } = 0;
+        [Newtonsoft.Json.JsonIgnore] public Vector3 DisPerFrame { get; set; }
     }
     
     public class TracingEnemy : IActionHandler
@@ -23,9 +21,15 @@ namespace XMLibGame
         {
             var config = (TracingEnemyConfig)node.config;
             var controller = (ActionMachineController)node.actionMachine.controller;
-            controller.Targeter.GetClosestTargetInAngle(config.detectDis, config.detectAngle);
-            config.Target = controller.Targeter.ClosestTarget;
-            config.frameCount = 0;
+            var target = controller.Targeter.GetClosestTargetInAngle(config.detectDis, config.detectAngle);
+            if (target)
+            {
+                config.DisPerFrame = (target.transform.position - controller.transform.position) * 1f / config.tracingFrames;    
+            }
+            else
+            {
+                config.DisPerFrame = Vector3.zero;
+            }
         }
 
         public void Exit(ActionNode node)
@@ -35,12 +39,9 @@ namespace XMLibGame
         public void Update(ActionNode node, float deltaTime)
         {
             var config = (TracingEnemyConfig)node.config;
-            config.frameCount++;
-            if (config.Target)
-            {
-                var controller = (ActionMachineController)node.actionMachine.controller;
-                controller.transform.position = Vector3.Lerp(controller.transform.position, config.Target.transform.position, 1.1f/config.tracingFrames);
-            }
+            var controller = (ActionMachineController)node.actionMachine.controller;
+            var transform = controller.transform;
+            transform.position = transform.position + config.DisPerFrame;
         }
     }
 }

@@ -53,7 +53,7 @@ namespace XMLibGame
             actionMachine.Initialize(configNames[0], this);
             MainCameraTransform = Camera.main.transform;
             animator.enabled = false;
-
+            Weapon.Owner = gameObject;
 
             InitAnimation();
         }
@@ -61,6 +61,7 @@ namespace XMLibGame
         public void ChangeWeapon(int index)
         {
             Weapon = WeaponHandler.ChangeWeapon(index);
+            Weapon.Owner = gameObject;
         }
 
         public void ChangeActionMachine(int index)
@@ -78,7 +79,7 @@ namespace XMLibGame
             //UpdateRotation(); 旋转放到FaceMovementDirection
         }
 
-        public bool UseLogicAnimationUpdate { get; set; }
+        public bool UseLogicAnimationUpdate;
 
         public void LogicUpdate(float deltaTime)
         {
