@@ -7,6 +7,7 @@ namespace FirstARPG.StateMachine.Enemy
         private readonly int ImpactHash = Animator.StringToHash("ANI_Impact");
         private const float CrossFadeDuration = 0.1f;
         private float _duration = 1f;
+        private float impactSpeed = 5;
         
         public EnemyImpactState(EnemyStateMachine stateMachine) : base(stateMachine)
         {
@@ -16,11 +17,14 @@ namespace FirstARPG.StateMachine.Enemy
         {
             stateMachine.Animator.CrossFadeInFixedTime(ImpactHash,CrossFadeDuration);
             stateMachine.Agent.enabled = false;
+            FacePlayer();
         }
 
         public override void Tick(float deltaTime)
         {
+            
             Move(deltaTime);
+            
             _duration -= deltaTime;
             if (_duration <= 0f)
             {

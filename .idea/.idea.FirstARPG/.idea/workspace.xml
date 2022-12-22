@@ -26,25 +26,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="add slash state">
-      <change afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/katana/APose/Dodge.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/katana/APose/Dodge/Inplace.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/katana/APose/Dodge/Inplace/GhostSamurai_APose_Dodge_F_Inplace.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/katana/APose/Dodge/Inplace/GhostSamurai_APose_Dodge_F_Inplace.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig_1.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MachineConfig_1.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particle.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particle.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TrailParticle.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TrailParticle.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TrailParticle2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TrailParticle2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Clone_ChangeMaterial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Clone_ChangeMaterial.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_1.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_1.bytes.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyImpactState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyImpactState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/ChangeWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -128,6 +123,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/3c/fca311c9/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/fd/70f64bae/AnimatorController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -361,21 +357,7 @@
       <workItem from="1671416907957" duration="33283000" />
       <workItem from="1671503838368" duration="30664000" />
       <workItem from="1671598587185" duration="19218000" />
-      <workItem from="1671671398171" duration="17148000" />
-    </task>
-    <task id="LOCAL-00023" summary="add vfx">
-      <created>1655624569036</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1655624569036</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add vfx">
-      <created>1655624607989</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1655624607989</updated>
+      <workItem from="1671671398171" duration="18751000" />
     </task>
     <task id="LOCAL-00025" summary="add Cooldown and use Mana">
       <created>1655630328792</created>
@@ -706,7 +688,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671687210394</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="add slash state">
+      <created>1671703588332</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1671703588332</updated>
+    </task>
+    <task id="LOCAL-00073" summary="add slash state">
+      <created>1671703603053</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1671703603053</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

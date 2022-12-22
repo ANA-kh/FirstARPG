@@ -1,22 +1,22 @@
-using System;
-using FirstARPG.Combat;
 using XMLib.AM;
 
 namespace XMLibGame
 {
-    [Serializable]
-    [ActionConfig(typeof(ChangeWeapon))]
-    public class ChangeWeaponConfig : HoldFrames
+    
+    [System.Serializable]
+    [ActionConfig(typeof(ChangeMachine))]
+    public class ChangeMachineConfig : HoldFrames
     {
-        public int weaponIndex;
+        public int actionMachineIndex;
     }
-    public class ChangeWeapon : IActionHandler
+    public class ChangeMachine : IActionHandler
     {
         public void Enter(ActionNode node)
         {
             var controller = (ActionMachineController)node.actionMachine.controller;
-            var config = (ChangeWeaponConfig)node.config;
-            controller.ChangeWeapon(config.weaponIndex);
+            var config = (ChangeMachineConfig)node.config;
+            
+            controller.ChangeActionMachine(config.actionMachineIndex);
         }
 
         public void Exit(ActionNode node)

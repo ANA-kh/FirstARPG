@@ -9,7 +9,7 @@ namespace XMLibGame
     public class AttackConfig : HoldFrames
     {
         public int Damage;
-        public float impactFrameCnt;
+        public float Knockback = 5;
     }
 
     public class Attack : IActionHandler
@@ -20,7 +20,7 @@ namespace XMLibGame
             var config = (AttackConfig)node.config;
             var controller = (ActionMachineController)node.actionMachine.controller;
             controller.WeaponHandler.EnableWeapon();
-            controller.Weapon.SetAttack(config.Damage,0);
+            controller.Weapon.SetAttack(config.Damage,config.Knockback);
         }
 
         public void Exit(ActionNode node)
