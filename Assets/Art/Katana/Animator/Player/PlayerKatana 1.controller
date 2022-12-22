@@ -3508,6 +3508,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &76842785659531330
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GhostSamurai_APose_Dodge_F_Inplace
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 5d4b27233a082584e999cf82b470ab87, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &89300116571760817
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4068,9 +4094,6 @@ AnimatorStateMachine:
     m_State: {fileID: 3218001780327823296}
     m_Position: {x: 360, y: -30, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1713576704138249773}
-    m_Position: {x: 350, y: 320, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -8449535120651773559}
     m_Position: {x: -210, y: 320, z: 0}
   - serializedVersion: 1
@@ -4100,6 +4123,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -6090272573331676553}
     m_Position: {x: 399.19232, y: 483.48816, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 76842785659531330}
+    m_Position: {x: 380, y: 390, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: -2823946707388090189}
@@ -4240,32 +4266,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger:
   - LAtk
---- !u!1102 &1713576704138249773
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: GreatSword_Dodge_B
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a42d995d2867fcc4ab57d54462843204, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!206 &1892702234474872216
 BlendTree:
   m_ObjectHideFlags: 1
