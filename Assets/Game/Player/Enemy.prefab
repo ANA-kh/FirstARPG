@@ -696,7 +696,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 900723166994262290}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &868545019535497922
 SkinnedMeshRenderer:
@@ -1989,7 +1989,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 900723166994262290}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &5716173521211175007
 SkinnedMeshRenderer:
@@ -2832,8 +2832,8 @@ Transform:
   m_LocalPosition: {x: 2.56, y: 0.8, z: 3.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2028149292057262713}
   - {fileID: 4459787951848456376}
+  - {fileID: 2028149292057262713}
   - {fileID: 6073059619889472259}
   - {fileID: 5908023441572744629}
   - {fileID: 9183218792406251273}
@@ -2937,9 +2937,12 @@ MonoBehaviour:
   <Weapon>k__BackingField: {fileID: 2210506797460185989}
   <PlayerChasingRange>k__BackingField: 10
   <MovementSpeed>k__BackingField: 5
+  <ChasingAroundSpeed>k__BackingField: 0
   <PlayerAttackingRange>k__BackingField: 1.3
   <AttackDamage>k__BackingField: 20
   <AttackKonckback>k__BackingField: 0
+  StopEnemy: 0
+  ChasingAroundDis: 10
 --- !u!95 &4258308010771446603
 Animator:
   serializedVersion: 3
@@ -2986,6 +2989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponLogic: {fileID: 2210506797460185985}
+  weaponLogics: []
+  weapons: []
+  backWeapons: []
 --- !u!114 &1855999538010412931
 MonoBehaviour:
   m_ObjectHideFlags: 0

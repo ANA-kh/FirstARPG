@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: a42d995d2867fcc4ab57d54462843204
+guid: efc78026f41873e4caea40b433babcad
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -467,7 +467,7 @@ ModelImporter:
     second: upperarm_r
   - first:
       74: 7400000
-    second: GreatSword_Dodge_B
+    second: GreatSword_SPAttack1
   - first:
       95: 9500000
     second: //RootNode
@@ -482,6 +482,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -500,11 +501,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: GreatSword_Dodge_B
+      name: GreatSword_SPAttack1
       takeName: Take 001
       internalID: 0
       firstFrame: 0
-      lastFrame: 80
+      lastFrame: 360
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -513,50 +514,16 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: AnimationMove
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: -4
-            inSlope: Infinity
-            outSlope: 0
-            tangentMode: 7
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.69335604
-            value: 0
-            inSlope: Infinity
-            outSlope: 0
-            tangentMode: 7
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
+      curves: []
       events: []
       transformMask: []
       maskType: 3
@@ -574,6 +541,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -585,6 +553,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -1323,7 +1292,8 @@ ModelImporter:
     - name: ik_hand_r
       parentName: ik_hand_gun
       position: {x: -0, y: 0, z: 0.000000076293944}
-      rotation: {x: -0.000000022351745, y: 0.0000000074505793, z: 0.000000014901159, w: 1}
+      rotation: {x: -0.000000022351745, y: 0.0000000074505793, z: 0.000000014901159,
+        w: 1}
       scale: {x: 1.0000001, y: 0.9999999, z: 0.9999997}
     - name: ik_hand_l
       parentName: ik_hand_gun
@@ -1347,12 +1317,14 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c0c5dd0275493e44d9ef7418695dd3cd, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c0c5dd0275493e44d9ef7418695dd3cd,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
