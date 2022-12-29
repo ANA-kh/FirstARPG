@@ -3068,7 +3068,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 30,
           "endFrame": 47,
@@ -3861,7 +3861,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 22,
           "endFrame": 37,
@@ -4709,7 +4709,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 43,
           "endFrame": 59,
@@ -4721,7 +4721,7 @@
     {
       "stateName": "skill1",
       "animNames": [
-        "mixamo"
+        "GreatSword_Attack08"
       ],
       "dafualtAnimIndex": 0,
       "fadeTime": 0.05,
@@ -5608,103 +5608,15 @@
       ],
       "actions": [
         {
-          "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
-          "RotationDamping": 15.0,
+          "$type": "XMLibGame.SliceMeshConfig, Assembly-CSharp",
+          "power": 0.0,
           "enableBeginEnd": true,
-          "beginFrame": 19,
-          "endFrame": 45,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
-          "stateNames": [
-            "jumpAttack",
-            "spAttack1",
-            "spAttack2"
-          ],
-          "priority": 2,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 2,
-              "isNot": false,
-              "fullMatch": false
-            },
-            {
-              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
-              "maxDis": 12.0,
-              "detectAngle": 30.0
-            }
-          ],
-          "enableBeginEnd": true,
-          "beginFrame": 108,
-          "endFrame": 145,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "attack1",
-          "priority": 0,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 2,
-              "isNot": false,
-              "fullMatch": false
-            }
-          ],
-          "enableBeginEnd": true,
-          "beginFrame": 108,
-          "endFrame": 145,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "run",
-          "priority": 0,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 129,
-              "isNot": false,
-              "fullMatch": false
-            }
-          ],
-          "enableBeginEnd": true,
-          "beginFrame": 128,
-          "endFrame": 145,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
-          "Damage": 0,
-          "impactFrameCnt": 0.0,
-          "enableBeginEnd": true,
-          "beginFrame": 101,
-          "endFrame": 120,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.Clone_ChangeMaterialConfig, Assembly-CSharp",
-          "enableBeginEnd": true,
-          "beginFrame": 84,
-          "endFrame": 108,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
-          "tracingFrames": 17,
-          "detectDis": 12.0,
-          "detectAngle": 30.0,
-          "justShowWeapon": true,
-          "enableBeginEnd": true,
-          "beginFrame": 83,
-          "endFrame": 100,
+          "beginFrame": 41,
+          "endFrame": 41,
           "enableLoop": true
         }
       ],
-      "defaultAnimaName": "mixamo"
+      "defaultAnimaName": "GreatSword_Attack08"
     }
   ],
   "globalActions": []

@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
-using EzySlice;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using XMLib;
@@ -90,7 +89,6 @@ namespace XMLibGame
         {
             UpdateInput();
             LogicUpdate();
-            Debug();
         }
 
         private void UpdateInput()
@@ -101,6 +99,7 @@ namespace XMLibGame
             {
                 InputData.InputEvents |= InputEvents.Moving;
                 InputData.AxisValue = move;
+                Debug.Log($"move :{move}");
             }
 
             if (player.Attack.triggered)
@@ -163,85 +162,6 @@ namespace XMLibGame
 
             //清理输入
             InputData.Clear();
-        }
-
-        public Transform CutPlane;
-
-        public void Debug()
-        {
-            if (UnityEngine.Input.GetKeyDown(KeyCode.K))
-            {
-                var hits = Physics.OverlapBox(CutPlane.position, new Vector3(5, 0.1f, 5), CutPlane.rotation, LayerMask.GetMask("Enemy"));
-                
-                foreach (var item in hits)
-                {
-                    var meshGameObject = GetMeshGameObject(item);
-                    if (meshGameObject== null)
-                    {
-                        continue;
-                    }
-                    var hull = SliceObject(meshGameObject);
-                    if (hull != null)
-                    {
-                        GameObject bottom = hull.CreateLowerHull(meshGameObject);
-                        GameObject top = hull.CreateUpperHull(meshGameObject);
-                        AddHullComponents(bottom);
-                        AddHullComponents(top);
-                        Destroy(meshGameObject);
-                    }
-                }
-            }
-        }
-
-        private static GameObject GetMeshGameObject(Collider item)
-        {
-            if (item.GetComponent<MeshFilter>() == null)
-            {
-                var skinnedMesh = item.GetComponent<SkinnedMeshRenderer>();
-                if (skinnedMesh)
-                {
-                    Mesh staticMesh = new Mesh();
-                    GameObject goNewMesh = new GameObject();
-
-                    skinnedMesh.BakeMesh(staticMesh);
-                    goNewMesh.transform.position = skinnedMesh.transform.position;
-                    goNewMesh.AddComponent<MeshFilter>().sharedMesh = staticMesh;
-                    goNewMesh.AddComponent<MeshRenderer>().sharedMaterials = skinnedMesh.materials;
-                    // goNewMesh.AddComponent<Rigidbody>().useGravity = true;
-                    // goNewMesh.AddComponent<BoxCollider>();
-                    Destroy(item.transform.parent.gameObject);
-
-                    return goNewMesh;
-                }
-
-                return null;
-            }
-
-            return item.gameObject;
-        }
-
-        public SlicedHull SliceObject(GameObject obj, Material crossSectionMaterial = null)
-        {
-            // slice the provided object using the transforms of this object
-            if (obj.GetComponent<MeshFilter>() == null)
-            {
-                return null;
-            }
-
-
-            return obj.Slice(CutPlane.position, CutPlane.up, crossSectionMaterial);
-        }
-
-        public void AddHullComponents(GameObject go)
-        {
-            go.layer = 9;
-            Rigidbody rb = go.AddComponent<Rigidbody>();
-            rb.interpolation = RigidbodyInterpolation.Interpolate;
-            MeshCollider collider = go.AddComponent<MeshCollider>();
-            collider.convex = true;
-
-            //TODO 对上半部分和下半部的分别施加力
-            rb.AddExplosionForce(100, go.transform.position, 20);
         }
     }
 }

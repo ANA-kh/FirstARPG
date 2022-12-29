@@ -269,6 +269,23 @@
           "beginFrame": 0,
           "endFrame": 0,
           "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 0,
+          "endFrame": 0,
+          "enableLoop": true
         }
       ],
       "defaultAnimaName": "GhostSamurai_Common_Run_Sprint_Inplace"
@@ -2316,7 +2333,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 56,
           "endFrame": 68,
@@ -3369,7 +3386,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 68,
           "endFrame": 78,
@@ -4614,7 +4631,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 73,
           "endFrame": 85,
@@ -5198,7 +5215,7 @@
     {
       "stateName": "dodge",
       "animNames": [
-        "GhostSamurai_APose_Dodge_F_Inplace"
+        "DodgeTree"
       ],
       "dafualtAnimIndex": 0,
       "fadeTime": 0.05,
@@ -5445,275 +5462,80 @@
           "stayBodyRange": false,
           "attackRanges": [],
           "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
-        },
-        {
-          "stayAttackRange": false,
-          "stayBodyRange": false,
-          "attackRanges": [],
-          "bodyRanges": []
         }
       ],
       "actions": [
         {
-          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
-          "velocity": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 13.0
-          },
+          "$type": "XMLibGame.DodgeConfig, Assembly-CSharp",
+          "speed": 15.0,
           "enableBeginEnd": true,
-          "beginFrame": 6,
+          "beginFrame": 0,
           "endFrame": 24,
           "enableLoop": true
         },
         {
-          "$type": "XMLibGame.VelocityConfig, Assembly-CSharp",
-          "velocity": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 13.0
-          },
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "run",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 1,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
           "enableBeginEnd": true,
-          "beginFrame": 25,
-          "endFrame": 57,
+          "beginFrame": 31,
+          "endFrame": 39,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "attack1",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 22,
+          "endFrame": 39,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
+          "stateNames": [
+            "jumpAttack",
+            "spAttack1",
+            "spAttack2"
+          ],
+          "priority": 2,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 2,
+              "isNot": false,
+              "fullMatch": false
+            },
+            {
+              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
+              "minDis": 4.0,
+              "maxDis": 12.0,
+              "detectAngle": 30.0
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 22,
+          "endFrame": 39,
           "enableLoop": true
         }
       ],
-      "defaultAnimaName": "GhostSamurai_APose_Dodge_F_Inplace"
+      "defaultAnimaName": "DodgeTree"
     },
     {
       "stateName": "attack1",
@@ -6598,7 +6420,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 20,
           "endFrame": 28,
@@ -7418,7 +7240,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 16,
           "endFrame": 25,
@@ -8310,7 +8132,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 20,
           "endFrame": 28,
@@ -9202,7 +9024,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 20,
           "endFrame": 28,
@@ -10094,7 +9916,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 16,
           "endFrame": 39,
@@ -10942,7 +10764,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 30,
           "endFrame": 43,
@@ -11912,7 +11734,7 @@
         {
           "$type": "XMLibGame.AttackConfig, Assembly-CSharp",
           "Damage": 0,
-          "impactFrameCnt": 0.0,
+          "Knockback": 5.0,
           "enableBeginEnd": true,
           "beginFrame": 101,
           "endFrame": 120,

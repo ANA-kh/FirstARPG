@@ -26,13 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/SliceMesh.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/SliceMesh.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Dodge/Inplace_GreatSword_Dodge_B.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Dodge/Inplace_GreatSword_Dodge_B.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Player/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Player/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Movement/Inplace_GreatSword_Strafe_Run_F.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Movement/Inplace_GreatSword_Strafe_Run_F.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Battle/Inplace_GreatSword_SPAttack1.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Battle/Inplace_GreatSword_SPAttack1.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
@@ -88,6 +94,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/58/4a1249fb/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/89/ca47d62e/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/cc/ee3d3edd/CursorLockMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/cf/23451247/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/d1/c2b1c11d/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/d6/b46c1378/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0C849643-5C83-4A4C-9B74-035EB960FCFC/77/5d32840b/Animator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -254,17 +261,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.24478178",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Software\2020.3.25f1c1\Editor\Unity.exe" />
@@ -284,10 +292,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19104">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15380">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19104" />
+      <option name="pid" value="15380" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -349,21 +357,8 @@
       <workItem from="1671503838368" duration="30664000" />
       <workItem from="1671598587185" duration="19218000" />
       <workItem from="1671671398171" duration="20133000" />
-      <workItem from="1671784127817" duration="7741000" />
-    </task>
-    <task id="LOCAL-00026" summary="add DelayCompositeStratege">
-      <created>1655642643700</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1655642643700</updated>
-    </task>
-    <task id="LOCAL-00027" summary="add DelayCompositeStratege">
-      <created>1655642754045</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1655642754045</updated>
+      <workItem from="1671784127817" duration="8467000" />
+      <workItem from="1672290128629" duration="8198000" />
     </task>
     <task id="LOCAL-00028" summary="add some anim resources">
       <created>1655642772945</created>
@@ -694,7 +689,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671706732870</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Import EzySlise&#10;test Mesh Slice">
+      <created>1671794645659</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1671794645659</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Import EzySlise&#10;test Mesh Slice">
+      <created>1671794691391</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1671794691391</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add attack state" />
     <MESSAGE value="add attack damage" />
     <MESSAGE value="change rider version&#10;add enemyStateMachine And idel state" />
     <MESSAGE value="add chasing state" />
@@ -783,7 +791,8 @@
     <MESSAGE value="change to univasal RP" />
     <MESSAGE value="add slash state" />
     <MESSAGE value="Polish acitonMachine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polish acitonMachine" />
+    <MESSAGE value="Import EzySlise&#10;test Mesh Slice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import EzySlise&#10;test Mesh Slice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -905,19 +914,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Combat/Weapon/WeaponDamage.cs</url>
-          <line>45</line>
-          <properties documentPath="E:\UnityProject\_ARPG\FirstARPG\Assets\Scripts\Combat\Weapon\WeaponDamage.cs" initialLine="45" containingFunctionPresentation="method 'OnTriggerEnter'">
-            <startOffsets>
-              <option value="1240" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1287" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="153" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

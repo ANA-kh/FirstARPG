@@ -17,8 +17,7 @@ namespace XMLibGame
         [SerializeField]
         private List<string> configNames = null;
 
-        [SerializeField]
-        private Animator animator = null;
+        [field: SerializeField] public Animator Animator { get;private set; }
 
         [SerializeField]
         private Rigidbody _rigid = null;
@@ -42,6 +41,9 @@ namespace XMLibGame
         [Header("Particles")]
         public ParticleSystem blueTrail;
         public ParticleSystem whiteTrail;
+        [Header("Slice")]
+        public Transform CutPlane;
+        public ParticleSystem[] SliceParticles;
         //
 
         private IActionMachine actionMachine;
@@ -60,7 +62,7 @@ namespace XMLibGame
             actionMachine = new ActionMachine();
             actionMachine.Initialize(configNames[0], this);
             MainCameraTransform = Camera.main.transform;
-            animator.enabled = false;
+            Animator.enabled = false;
             Weapon.Owner = gameObject;
 
             InitAnimation();
@@ -124,14 +126,14 @@ namespace XMLibGame
 
         private void InitAnimation()
         {
-            if (animator == null)
+            if (Animator == null)
             {
                 return;
             }
 
             string animName = actionMachine.GetAnimName();
-            animator.Play(animName, 0, 0);
-            animator.Update(0);
+            Animator.Play(animName, 0, 0);
+            Animator.Update(0);
         }
 
         private void UpdateAnimation()
@@ -152,9 +154,9 @@ namespace XMLibGame
                 animatorTimer = 0f;
             }
 
-            if (animator != null)
+            if (Animator != null)
             {
-                animator.Update(deltaTime);
+                Animator.Update(deltaTime);
             }
         }
         
@@ -175,9 +177,9 @@ namespace XMLibGame
                 animatorTimer = 0f;
             }
 
-            if (animator != null)
+            if (Animator != null)
             {
-                animator.Update(deltaTime);
+                Animator.Update(deltaTime);
             }
         }
 
@@ -195,7 +197,7 @@ namespace XMLibGame
                 Debug.Log($"StateChanged：{actionMachine.stateName}");
             }
 
-            if (animator != null && (eventTypes & ActionMachineEvent.AnimChanged) != 0)
+            if (Animator != null && (eventTypes & ActionMachineEvent.AnimChanged) != 0)
             {
                 StateConfig config = actionMachine.GetStateConfig();
 
@@ -205,14 +207,14 @@ namespace XMLibGame
 
                 if ((eventTypes & ActionMachineEvent.HoldAnimDuration) != 0)
                 {
-                    fixedTimeOffset = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+                    fixedTimeOffset = Animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
                 }
 
                 if (animName != string.Empty)
                 {
-                    animator.CrossFadeInFixedTime(animName, fadeTime, 0, fixedTimeOffset);
+                    Animator.CrossFadeInFixedTime(animName, fadeTime, 0, fixedTimeOffset);
                 }
-                animator.Update(0);
+                Animator.Update(0);
             }
         }
 
