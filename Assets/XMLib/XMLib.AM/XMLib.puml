@@ -1,32 +1,71 @@
 ﻿@startuml
 'https://plantuml.com/class-diagram
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+package "FSM" <<Cloud>> #DDDDDD
+{
+    class ActionMachine
+    class ActionNode
+    {
+        +IActionMachine ActionMachine
+        +Object config
+        +IActionHandler ActionHandler
+    }
+    
+    interface IActionMachine
+    {
+        void LogicUpdate()
+        void ChangeState()
+    }
+    interface IActionHandler
+    {
+        void Enter(ActionNode node)
+        void Exit(ActionNode node)
+        void Update(ActionNode node, Single deltaTime)
+    }
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+package "DATA:使用Newtonsoft 序列化保存" <<Cloud>> #DDDDDD
+{
+    class MachineConfig
+    {
+        +String firstStateName
+        +StateConfig[] States
+    }
+    class StateConfig
+    {
+        +String stateName
+        +ActionConfig[]actions
+    }
+    class ActionConfig
+    {
+    }
 }
 
-class ActionMachine
-class ActionNode
+note as N1
+通过扩展这两个类来实现自定义功能
+end note
+IActionHandler .. N1
+N1 .. ActionConfig
 
 
 
+
+ActionNode *-up- "1" IActionMachine
+ActionNode *-- "1" IActionHandler
+ActionNode *-- "1" ActionConfig
+ActionMachine ..|> IActionMachine
+
+MachineConfig *-- "n" StateConfig
+StateConfig *-- "n" ActionConfig
+ActionMachine *-left- "1" MachineConfig
+ActionMachine *-- "n" ActionNode
+
+class ActionMachineHelper
+{
+    +{static} IActionHandler GetActionHandler()
+    +{static} ActionNode CreateActionNode()
+}
+note bottom of ActionMachineHelper
+辅助ActionMachine的初始化等
+(通过ActionConfig Attribute反射拿到ActionHandler,并创建对应的ActionNode)
+end note
 @enduml
