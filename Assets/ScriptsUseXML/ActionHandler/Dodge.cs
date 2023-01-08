@@ -18,13 +18,18 @@ namespace XMLibGame
         {
             var config = node.config as DodgeConfig;
             var controller = (ActionMachineController)node.actionMachine.controller;
-            controller.Animator.SetFloat("FB",InputData.AxisValue.y);
-            controller.Animator.SetFloat("LR",InputData.AxisValue.x);
             var movement = CalculateMovement(controller,InputData.AxisValue.normalized).normalized;
             if (movement == Vector3.zero)
             {
                 movement = controller.transform.forward;
             }
+
+            var y = Vector3.Dot(movement, controller.transform.forward);
+            var xCross = Vector3.Cross(movement, controller.transform.forward);
+            var x =  xCross.z> 0 ? xCross.magnitude : -xCross.magnitude;
+            Debug.Log($"xCross.z{xCross.z}FB:{y} LR:{x}");
+            controller.Animator.SetFloat("FB",y);
+            controller.Animator.SetFloat("LR",x);
             config.DodgeDir = movement * config.speed;
         }
 

@@ -20,7 +20,7 @@ namespace XMLibGame
             var config = (AttackConfig)node.config;
             var controller = (ActionMachineController)node.actionMachine.controller;
             controller.WeaponHandler.EnableWeapon();
-            controller.Weapon.SetAttack(config.Damage,config.Knockback);
+            controller.Weapon.SetAttack(config.Damage,3);
         }
 
         public void Exit(ActionNode node)

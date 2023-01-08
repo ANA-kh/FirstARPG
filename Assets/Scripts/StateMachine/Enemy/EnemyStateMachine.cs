@@ -30,6 +30,7 @@ namespace FirstARPG.StateMachine.Enemy
         //TODO  Test code 
         public bool StopEnemy;
         public float ChasingAroundDis = 10;
+        public float ChasingAroundTime;
 
         private void Awake()
         {

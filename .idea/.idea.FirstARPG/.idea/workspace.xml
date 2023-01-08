@@ -27,8 +27,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Battle/Inplace_GreatSword_FocusEnergy_R_Loop.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Battle/Inplace_GreatSword_FocusEnergy_R_Loop.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/XMLib.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/XMLib.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animation/EnemyController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/TracingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/SliceMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/SliceMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/SliceMesh.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/SliceMesh.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs" afterDir="false" />
@@ -80,6 +93,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/91/2aaa71f2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086CE0B-9B00-409A-8713-A9C4FE866B9D/a6/5b424336/Cursor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/20/7a99fc3e/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/28/d7f56bed/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/58/4a1249fb/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/89/ca47d62e/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0086ce0b9b00409a8713a9c4fe866b9d13c000/cc/ee3d3edd/CursorLockMode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -112,7 +126,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/3c/fca311c9/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dee5332789ab43dda30f837d99674efe766200/fd/70f64bae/AnimatorController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Fork/third-person-combat-and-traversal/Assets/Scripts/Combat/Targeting/Targeter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/Art/Katana/GameAssets/GreatSword_Animset/Animation/GreatSword/Inplace/Battle/Inplace_GreatSword_FocusEnergy_R_Loop.FBX.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Dragging/DragItem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,6 +151,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Plugins/UI/VirtualMouseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/Samples~/UIvsGameInput/UIvsGameInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/Api/TestStatus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/GUI/Views/PlayModeTestListGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner/TestRunner/Callbacks/TestResultRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_BitmapShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
@@ -282,10 +297,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9020">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="9020" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -349,14 +364,9 @@
       <workItem from="1671671398171" duration="20133000" />
       <workItem from="1671784127817" duration="8467000" />
       <workItem from="1672290128629" duration="9349000" />
-      <workItem from="1672461383611" duration="7781000" />
-    </task>
-    <task id="LOCAL-00029" summary="add ability item health potion">
-      <created>1655645111859</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1655645111859</updated>
+      <workItem from="1672461383611" duration="8046000" />
+      <workItem from="1672547685752" duration="630000" />
+      <workItem from="1672659708478" duration="7280000" />
     </task>
     <task id="LOCAL-00030" summary="add fire spray">
       <created>1655648648604</created>
@@ -694,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672301372390</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="XMLib UML">
+      <created>1672469697240</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1672469697240</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="change rider version&#10;add enemyStateMachine And idel state" />
     <MESSAGE value="add chasing state" />
     <MESSAGE value="add attacking state" />
     <MESSAGE value="add some state" />
@@ -783,7 +799,8 @@
     <MESSAGE value="Polish acitonMachine" />
     <MESSAGE value="Import EzySlise&#10;test Mesh Slice" />
     <MESSAGE value="add great sword spAttack" />
-    <option name="LAST_COMMIT_MESSAGE" value="add great sword spAttack" />
+    <MESSAGE value="XMLib UML" />
+    <option name="LAST_COMMIT_MESSAGE" value="XMLib UML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

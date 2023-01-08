@@ -2252,13 +2252,14 @@
       "actions": [
         {
           "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
-          "tracingFrames": 34,
+          "tracingFrames": 18,
           "detectDis": 12.0,
           "detectAngle": 30.0,
           "justShowWeapon": false,
+          "delayFrame": 0,
           "enableBeginEnd": true,
-          "beginFrame": 0,
-          "endFrame": 30,
+          "beginFrame": 10,
+          "endFrame": 26,
           "enableLoop": true
         },
         {
@@ -3313,10 +3314,11 @@
         },
         {
           "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
-          "tracingFrames": 14,
+          "tracingFrames": 13,
           "detectDis": 12.0,
           "detectAngle": 30.0,
           "justShowWeapon": false,
+          "delayFrame": 0,
           "enableBeginEnd": true,
           "beginFrame": 57,
           "endFrame": 68,
@@ -4558,13 +4560,14 @@
         },
         {
           "$type": "XMLibGame.TracingEnemyConfig, Assembly-CSharp",
-          "tracingFrames": 17,
+          "tracingFrames": 13,
           "detectDis": 12.0,
           "detectAngle": 30.0,
           "justShowWeapon": false,
+          "delayFrame": 0,
           "enableBeginEnd": true,
-          "beginFrame": 60,
-          "endFrame": 74,
+          "beginFrame": 61,
+          "endFrame": 72,
           "enableLoop": true
         },
         {
@@ -11753,6 +11756,7 @@
           "detectDis": 12.0,
           "detectAngle": 30.0,
           "justShowWeapon": true,
+          "delayFrame": 13,
           "enableBeginEnd": true,
           "beginFrame": 83,
           "endFrame": 100,

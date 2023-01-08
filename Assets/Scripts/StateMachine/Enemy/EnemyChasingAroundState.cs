@@ -8,6 +8,7 @@ namespace FirstARPG.StateMachine.Enemy
         protected readonly int LocomotionHash = Animator.StringToHash("Locomotion");
         protected readonly int DirectionHash = Animator.StringToHash("Direction");
         private bool _shouldFade;
+        private float chasingAroundTime;
         private const float CrossFadeDuration = 0.2f;
         protected const float AnimatorDampTime = 0.1f;
         public EnemyChasingAroundState(EnemyStateMachine stateMachine) : base(stateMachine) { }
@@ -25,11 +26,11 @@ namespace FirstARPG.StateMachine.Enemy
                 return;
             }
 
-            if (IsInAttackRange())
-            {
-                stateMachine.SwitchState(new EnemyAttackingState(stateMachine));
-                return;
-            }
+            // if (IsInAttackRange())
+            // {
+            //     stateMachine.SwitchState(new EnemyAttackingState(stateMachine));
+            //     return;
+            // }
 
             FacePlayer();
             MoveAroundPlayer(deltaTime);
@@ -63,23 +64,32 @@ namespace FirstARPG.StateMachine.Enemy
             if (stateMachine.Agent.isOnNavMesh)
             {
                 var dis = Vector3.Distance(stateMachine.Player.transform.position, stateMachine.transform.position);
-                if (dis <= stateMachine.ChasingAroundDis -1)
+                // if (dis <= stateMachine.ChasingAroundDis -1)
+                // {
+                //     MoveToPlayer(deltaTime,false);
+                // }
+                // else 
+                if (dis <= stateMachine.ChasingAroundDis)
                 {
-                    MoveToPlayer(deltaTime,false);
-                }
-                else if (dis <= stateMachine.ChasingAroundDis)
-                {
-                    Move(stateMachine.transform.right * stateMachine.ChasingAroundSpeed, deltaTime); //TODO 添加左右随机
-                    stateMachine.Animator.SetFloat(DirectionHash, 0.9f, AnimatorDampTime, deltaTime);
-                    stateMachine.Animator.SetFloat(SpeedHash, 0.4f, AnimatorDampTime, deltaTime);
+                    chasingAroundTime += deltaTime;
+                    
+                        if (chasingAroundTime <= stateMachine.ChasingAroundTime)
+                        {
+                            Move(stateMachine.transform.right * stateMachine.ChasingAroundSpeed, deltaTime); //TODO 添加左右随机
+                            stateMachine.Animator.SetFloat(DirectionHash, 0.9f, AnimatorDampTime, deltaTime);
+                            stateMachine.Animator.SetFloat(SpeedHash, 0.4f, AnimatorDampTime, deltaTime); 
+                        }
+                        else
+                        {
+                            stateMachine.SwitchState(new EnemyIdleState(stateMachine,true,Random.Range(2,5)));
+                        }
                 }
                 else
                 {
                     MoveToPlayer(deltaTime);
                 }
             }
-
-            stateMachine.Agent.velocity = stateMachine.Controller.velocity;
+            
         }
 
         public override void Exit()

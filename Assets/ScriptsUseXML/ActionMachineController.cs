@@ -111,13 +111,13 @@ namespace XMLibGame
         
         public void ShowBody(bool state)
         {
-            var skinMeshList = GetComponentsInChildren<SkinnedMeshRenderer>();
+            var skinMeshList = Model.GetComponentsInChildren<SkinnedMeshRenderer>();
             foreach (var smr in skinMeshList)
             {
                 smr.enabled = state;
             }
             
-            var meshList = GetComponentsInChildren<MeshRenderer>();
+            var meshList = Model.GetComponentsInChildren<MeshRenderer>();
             foreach (var mr in meshList)
             {
                 mr.enabled = state;

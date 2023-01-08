@@ -99,7 +99,6 @@ namespace XMLibGame
             {
                 InputData.InputEvents |= InputEvents.Moving;
                 InputData.AxisValue = move;
-                Debug.Log($"move :{move}");
             }
 
             if (player.Attack.triggered)

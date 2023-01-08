@@ -198,33 +198,6 @@
           "beginFrame": 0,
           "endFrame": 0,
           "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
-          "stateNames": [
-            "jumpAttack",
-            "spAttack1",
-            "spAttack2"
-          ],
-          "priority": 2,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 2,
-              "isNot": false,
-              "fullMatch": false
-            },
-            {
-              "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
-              "maxDis": 12.0,
-              "detectAngle": 30.0
-            }
-          ],
-          "enableBeginEnd": false,
-          "beginFrame": 0,
-          "endFrame": 0,
-          "enableLoop": true
         }
       ],
       "defaultAnimaName": "GreatSword_Strafe_Run_F"
