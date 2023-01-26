@@ -25,16 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
+    <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="fix enemy chasing bug">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Katana/Animator/Player/PlayerKatana 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_GreateSword.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MachineConfig_Katana.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/XMLibGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyChasingAroundState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyImpactState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Enemy/EnemyImpactState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs" afterDir="false" />
@@ -124,6 +117,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Player/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Dragging/DragItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/ActionHandler/Condition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProject/_ARPG/FirstARPG/Assets/ScriptsUseXML/ActionHandler/Dodge.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/ActionMachineController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptsUseXML/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/XMLib/XMLib.AM/Runtime/ActionMachine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -368,13 +362,7 @@
       <workItem from="1673156346499" duration="6663000" />
       <workItem from="1673170548545" duration="2145000" />
       <workItem from="1674530509330" duration="784000" />
-    </task>
-    <task id="LOCAL-00031" summary="add DirectionalTargeting  and fire Spray ability">
-      <created>1656144852149</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1656144852149</updated>
+      <workItem from="1674708020009" duration="656000" />
     </task>
     <task id="LOCAL-00032" summary="add CameraContorller">
       <created>1656148352518</created>
@@ -712,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673156584706</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="fix enemy chasing bug">
+      <created>1674708108851</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1674708108851</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -776,7 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add attacking state" />
     <MESSAGE value="add some state" />
     <MESSAGE value="change jump state&#10;add falling state" />
     <MESSAGE value="add dodge" />
@@ -801,7 +795,8 @@
     <MESSAGE value="add great sword spAttack" />
     <MESSAGE value="XMLib UML" />
     <MESSAGE value="polish action machine" />
-    <option name="LAST_COMMIT_MESSAGE" value="polish action machine" />
+    <MESSAGE value="fix enemy chasing bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix enemy chasing bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

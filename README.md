@@ -1,4 +1,6 @@
 # FirstARPG
-练习demo
-# 操作
-TAB锁定敌人，左键平a，右键格挡，空格跳跃，i打开背包，123456使用物品栏（物品栏里可以放技能）
+## 动作编辑器
+RunTime部分代码结构
+![](Document/XMLibRunTime.png)
+
+## 技能系统
