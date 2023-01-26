@@ -36,7 +36,7 @@ namespace FirstARPG.StateMachine.Enemy
             MoveAroundPlayer(deltaTime);
         }
 
-        protected void MoveToPlayer(float deltaTime,bool forward = true)
+        protected void MoveToPlayer(float deltaTime, bool forward = true)
         {
             if (stateMachine.Agent.isOnNavMesh)
             {
@@ -72,24 +72,15 @@ namespace FirstARPG.StateMachine.Enemy
                 if (dis <= stateMachine.ChasingAroundDis)
                 {
                     chasingAroundTime += deltaTime;
-                    
-                        if (chasingAroundTime <= stateMachine.ChasingAroundTime)
-                        {
-                            Move(stateMachine.transform.right * stateMachine.ChasingAroundSpeed, deltaTime); //TODO 添加左右随机
-                            stateMachine.Animator.SetFloat(DirectionHash, 0.9f, AnimatorDampTime, deltaTime);
-                            stateMachine.Animator.SetFloat(SpeedHash, 0.4f, AnimatorDampTime, deltaTime); 
-                        }
-                        else
-                        {
-                            stateMachine.SwitchState(new EnemyIdleState(stateMachine,true,Random.Range(2,5)));
-                        }
+                    Move(stateMachine.transform.right * stateMachine.ChasingAroundSpeed, deltaTime); //TODO 添加左右随机
+                    stateMachine.Animator.SetFloat(DirectionHash, 0.9f, AnimatorDampTime, deltaTime);
+                    stateMachine.Animator.SetFloat(SpeedHash, 0.4f, AnimatorDampTime, deltaTime);
                 }
                 else
                 {
                     MoveToPlayer(deltaTime);
                 }
             }
-            
         }
 
         public override void Exit()

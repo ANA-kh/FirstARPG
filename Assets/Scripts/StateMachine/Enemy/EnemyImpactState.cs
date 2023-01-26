@@ -30,6 +30,9 @@ namespace FirstARPG.StateMachine.Enemy
             {
                 stateMachine.SwitchState(new EnemyIdleState(stateMachine));
             }
+            
+            //TEST
+            stateMachine.StopEnemy = false;
         }
 
         public override void Exit()

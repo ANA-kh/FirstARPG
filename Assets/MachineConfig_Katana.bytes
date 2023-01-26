@@ -56,23 +56,6 @@
         },
         {
           "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "jump",
-          "priority": 0,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 4,
-              "isNot": false,
-              "fullMatch": false
-            }
-          ],
-          "enableBeginEnd": true,
-          "beginFrame": 0,
-          "endFrame": 0,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
           "stateName": "skill1",
           "priority": 0,
           "checker": [
@@ -108,7 +91,6 @@
         {
           "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
           "stateNames": [
-            "jumpAttack",
             "spAttack1",
             "spAttack2"
           ],
@@ -122,7 +104,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -227,26 +209,8 @@
           "enableLoop": true
         },
         {
-          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "jump",
-          "priority": 0,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 4,
-              "isNot": false,
-              "fullMatch": false
-            }
-          ],
-          "enableBeginEnd": false,
-          "beginFrame": 0,
-          "endFrame": 0,
-          "enableLoop": true
-        },
-        {
           "$type": "XMLibGame.RandomConditionConfig, Assembly-CSharp",
           "stateNames": [
-            "jumpAttack",
             "spAttack1",
             "spAttack2"
           ],
@@ -260,7 +224,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -2266,8 +2230,8 @@
           "$type": "XMLibGame.FacingTargetConfig, Assembly-CSharp",
           "RotationDamping": 15.0,
           "enableBeginEnd": true,
-          "beginFrame": 0,
-          "endFrame": 10,
+          "beginFrame": 4,
+          "endFrame": 17,
           "enableLoop": true
         },
         {
@@ -2287,7 +2251,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -2338,6 +2302,23 @@
           "enableBeginEnd": true,
           "beginFrame": 56,
           "endFrame": 68,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 74,
+          "endFrame": 130,
           "enableLoop": true
         }
       ],
@@ -3358,7 +3339,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -3392,6 +3373,23 @@
           "enableBeginEnd": true,
           "beginFrame": 68,
           "endFrame": 78,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 80,
+          "endFrame": 130,
           "enableLoop": true
         }
       ],
@@ -4604,7 +4602,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -4638,6 +4636,23 @@
           "enableBeginEnd": true,
           "beginFrame": 73,
           "endFrame": 85,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 96,
+          "endFrame": 189,
           "enableLoop": true
         }
       ],
@@ -5536,6 +5551,23 @@
           "beginFrame": 22,
           "endFrame": 39,
           "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "jumpAttack",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 32,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 22,
+          "endFrame": 39,
+          "enableLoop": true
         }
       ],
       "defaultAnimaName": "DodgeTree"
@@ -6410,7 +6442,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -6427,6 +6459,23 @@
           "enableBeginEnd": true,
           "beginFrame": 20,
           "endFrame": 28,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 20,
+          "endFrame": 130,
           "enableLoop": true
         }
       ],
@@ -7230,7 +7279,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -7247,6 +7296,23 @@
           "enableBeginEnd": true,
           "beginFrame": 16,
           "endFrame": 25,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 20,
+          "endFrame": 118,
           "enableLoop": true
         }
       ],
@@ -8122,7 +8188,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -9906,7 +9972,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }
@@ -9923,6 +9989,23 @@
           "enableBeginEnd": true,
           "beginFrame": 16,
           "endFrame": 39,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 32,
+          "endFrame": 130,
           "enableLoop": true
         }
       ],
@@ -10771,6 +10854,23 @@
           "enableBeginEnd": true,
           "beginFrame": 30,
           "endFrame": 43,
+          "enableLoop": true
+        },
+        {
+          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
+          "stateName": "dodge",
+          "priority": 0,
+          "checker": [
+            {
+              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
+              "events": 128,
+              "isNot": false,
+              "fullMatch": false
+            }
+          ],
+          "enableBeginEnd": true,
+          "beginFrame": 48,
+          "endFrame": 130,
           "enableLoop": true
         }
       ],
@@ -11690,7 +11790,7 @@
             },
             {
               "$type": "XMLibGame.Conditions.DistanceChecker, Assembly-CSharp",
-              "minDis": 4.0,
+              "minDis": 7.0,
               "maxDis": 12.0,
               "detectAngle": 30.0
             }

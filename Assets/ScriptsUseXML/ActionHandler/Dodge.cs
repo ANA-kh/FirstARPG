@@ -26,8 +26,8 @@ namespace XMLibGame
 
             var y = Vector3.Dot(movement, controller.transform.forward);
             var xCross = Vector3.Cross(movement, controller.transform.forward);
-            var x =  xCross.z> 0 ? xCross.magnitude : -xCross.magnitude;
-            Debug.Log($"xCross.z{xCross.z}FB:{y} LR:{x}");
+            var x =  xCross.y > 0 ? -xCross.magnitude : xCross.magnitude;
+            Debug.Log($"forward:{controller.transform.forward} movement{movement}\n xCross.y{xCross.y}FB:{y} LR:{x}");
             controller.Animator.SetFloat("FB",y);
             controller.Animator.SetFloat("LR",x);
             config.DodgeDir = movement * config.speed;

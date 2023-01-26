@@ -56,23 +56,6 @@
         },
         {
           "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "jump",
-          "priority": 0,
-          "checker": [
-            {
-              "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 4,
-              "isNot": false,
-              "fullMatch": false
-            }
-          ],
-          "enableBeginEnd": true,
-          "beginFrame": 0,
-          "endFrame": 0,
-          "enableLoop": true
-        },
-        {
-          "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
           "stateName": "skill1",
           "priority": 0,
           "checker": [
@@ -184,17 +167,17 @@
         },
         {
           "$type": "XMLibGame.ConditionConfig, Assembly-CSharp",
-          "stateName": "jump",
+          "stateName": "dodge",
           "priority": 0,
           "checker": [
             {
               "$type": "XMLibGame.Conditions.KeyCodeChecker, Assembly-CSharp",
-              "events": 4,
+              "events": 128,
               "isNot": false,
               "fullMatch": false
             }
           ],
-          "enableBeginEnd": false,
+          "enableBeginEnd": true,
           "beginFrame": 0,
           "endFrame": 0,
           "enableLoop": true
@@ -2163,7 +2146,7 @@
           "velocity": {
             "x": 0.0,
             "y": 0.0,
-            "z": 13.0
+            "z": 15.0
           },
           "enableBeginEnd": true,
           "beginFrame": 6,
@@ -2175,7 +2158,7 @@
           "velocity": {
             "x": 0.0,
             "y": 0.0,
-            "z": 13.0
+            "z": 15.0
           },
           "enableBeginEnd": true,
           "beginFrame": 25,
