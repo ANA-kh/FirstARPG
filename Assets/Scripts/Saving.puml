@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface ISaveable 
+{
+    +CaptureState()
+    +RestoreState()
+}
+
+class SavingSystem 
+{
+    -SaveableEntity[] SaveableEntities
+    -CaptureState()
+    -RestoreState()
+    +Save()
+    +Load()
+    +Delete()
+}
+
+class SaveableEntity 
+{
+    -string uniqueId
+    -object State
+    +CaptureState()
+    +RestoreState()
+}
+
+note right of SaveableEntity::CaptureState
+    获取当前gameObject所有
+    实现接口ISaveable的component,
+    并调用ISaveable.CaptureState,
+    捕获保存信息
+end note
+
+SavingSystem o-- SaveableEntity
+SavingSystem .left.> BinaryFormatter
+SaveableEntity .left.> ISaveable
+Inventory .up.|> ISaveable
+Shop .up.|> ISaveable
+CharacterState .up.|> ISaveable
+
+
+@enduml

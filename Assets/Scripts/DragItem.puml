@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+class DragItem <T>
+{
+    -IDragSource<T> source
+    -IDragDestination<T> GetContainer()
+    void OnBeginDrag()
+    void OnDrag()
+    void OnEndDrag()
+}
+
+interface IDragSource<T>
+{
+    +T GetItem()
+    +int GetNumber()
+    +void RemoveItems(int number)
+}
+
+interface IDragDestination<T>
+{
+    +int MaxAcceptable(T item)
+    +void AddItems(T item, int number)
+}
+interface IDragContainer<T>
+
+IDragContainer -down-|> IDragSource
+IDragContainer -down-|> IDragDestination
+
+DragItem .up.> IDragDestination
+DragItem -up-> IDragSource
+@enduml

@@ -11,6 +11,8 @@ namespace FirstARPG.Saving
 {
     public class SavingSystem : MonoBehaviour
     {
+        private SaveableEntity[] SaveableEntities => FindObjectsOfType<SaveableEntity>();
+
         /// <summary>
         /// 加载保存的场景
         /// </summary>
@@ -84,7 +86,7 @@ namespace FirstARPG.Saving
 
         private void CaptureState(Dictionary<string, object> state)
         {
-            foreach (SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
+            foreach (SaveableEntity saveable in SaveableEntities)
             {
                 state[saveable.GetUniqueIdentifier()] = saveable.CaptureState();
             }
@@ -94,7 +96,7 @@ namespace FirstARPG.Saving
 
         private void RestoreState(Dictionary<string, object> state)
         {
-            foreach (SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
+            foreach (SaveableEntity saveable in SaveableEntities)
             {
                 string id = saveable.GetUniqueIdentifier();
                 if (state.ContainsKey(id))

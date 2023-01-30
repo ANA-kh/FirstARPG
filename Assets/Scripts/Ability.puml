@@ -1,0 +1,53 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+skinparam linetype polyline 
+
+package Ability <<Rectangle>> #DDDDDD
+{
+    class Ability
+    {
+        -TargetingStrategy _targetingStrategy
+        -FilterStrategy[] _filterStrategys
+        -EffectStrategy[] _effectStrategies
+        -Action _onFinished
+        
+        +Use()
+    }
+    
+    abstract class TargetingStrategy
+    {
+        {abstract} StartTargeting()
+    }
+    abstract class FilterStrategy
+    {
+        {abstract} Filter()
+    }
+    abstract class EffectStrategy
+    {
+        {abstract}  StartEffect()
+    }
+    Ability o-- TargetingStrategy
+    Ability o-- FilterStrategy
+    Ability o-- EffectStrategy
+    
+    
+    TargetingStrategy <|-- Self
+    TargetingStrategy <|-- Point
+    TargetingStrategy <|-- Direction
+    TargetingStrategy <|-- Area
+    
+    FilterStrategy <|-- Enemy
+    FilterStrategy <|-- Friendly
+    
+    EffectStrategy <|-- Damage
+    EffectStrategy <|-- Buff
+    EffectStrategy <|-- SpawnProjectile
+    EffectStrategy <|-- Composite
+    Composite o-- EffectStrategy
+}
+
+
+    TargetingStrategy -up-|> ScriptableObject
+    FilterStrategy -up-|> ScriptableObject
+    EffectStrategy -up-|> ScriptableObject
+@enduml
