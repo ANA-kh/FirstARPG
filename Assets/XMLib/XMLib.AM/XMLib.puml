@@ -49,15 +49,15 @@ N1 .. ActionConfig
 
 
 
-ActionNode *-up- "1" IActionMachine
+ActionNode -up-> "1" IActionMachine
 ActionNode *-- "1" IActionHandler
 ActionNode *-- "1" ActionConfig
 ActionMachine ..|> IActionMachine
 
-MachineConfig *-- "n" StateConfig
-StateConfig *-- "n" ActionConfig
+MachineConfig o-- "n" StateConfig
+StateConfig o-- "n" ActionConfig
 ActionMachine *-left- "1" MachineConfig
-ActionMachine *-- "n" ActionNode
+ActionMachine o-- "n" ActionNode
 
 class ActionMachineHelper
 {

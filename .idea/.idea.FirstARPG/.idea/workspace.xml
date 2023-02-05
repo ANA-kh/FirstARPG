@@ -26,19 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a4e7c-b8fa-43c9-b61b-a1b88b6fd483" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ability.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ability.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DragItem.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DragItem.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Saving.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Document/Ability.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Document/Draging.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Document/Saving.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstARPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/XMLib.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XMLib/XMLib.AM/XMLib.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Document/XMLibRunTime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Document/XMLibRunTime.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <list id="20bf5f78-af11-4751-a8a4-cab2c3ccb0b5" name="later" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/DropLibrary.cs" afterDir="false" />
@@ -54,11 +45,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -283,21 +269,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TODO_SCOPE": "All Places",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.24478178",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.24478178&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Software\2020.3.25f1c1\Editor\Unity.exe" />
@@ -393,14 +379,10 @@
       <workItem from="1674708020009" duration="1695000" />
       <workItem from="1674957492154" duration="795000" />
       <workItem from="1674991107373" duration="132000" />
-      <workItem from="1675044463790" duration="19550000" />
-    </task>
-    <task id="LOCAL-00033" summary="complete player move">
-      <created>1656151580362</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1656151580362</updated>
+      <workItem from="1675044463790" duration="19628000" />
+      <workItem from="1675066998933" duration="1771000" />
+      <workItem from="1675500439802" duration="2167000" />
+      <workItem from="1675511375859" duration="722000" />
     </task>
     <task id="LOCAL-00034" summary="complete player move">
       <created>1656230085193</created>
@@ -738,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674708710192</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="update readme">
+      <created>1675066212520</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1675066212521</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
